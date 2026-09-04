@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { nombre: "Diablos Gordos", logo: "assets/logos/Diablos_Gordos.jpg" },     
         { nombre: "Rayados FC", logo: "assets/logos/Rayados.jpg" },     
         { nombre: "Tortilleros FC", logo: "assets/logos/Tortilleros.png" },     
-        { nombre: "Borussia Nola", logo: "assets/logos/Borussia Nola.png" },     
+        { nombre: "Carniceria Villalobos", logo: "assets/logos/villalobos.jpg" },     
         { nombre: "Gordos Belicones", logo: "assets/logos/belicones.png" },     
         { nombre: "JR Transmisiones", logo: "assets/logos/JR Transmisiones.png" },     
         { nombre: "Chuper Amigos", logo: "assets/logos/chuperamigos.png" },     
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { cargo: "Equipero", nombre: "Jhonatan Amaury Estrada Llamas" }
             ],
             calendario: [
-                { j: "Amistoso", fecha: "01/09/2026", hora: "21:10", local: "assets/logos/Furia_Roja.png", res: "vs", visita: "assets/logos/Cruz_Azul_mezquitan.png" }
+                { j: "Amistoso", fecha: "08/09/2026", hora: "21:10", local: "assets/logos/Tortilleros.png", res: "vs", visita: "assets/logos/Furia_Roja.png" }
             ]
         },
         "1": { // Datos de 7 Mares
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { cargo: "Equipero", nombre: "César Daniel Aguilar García" }
             ],
             calendario: [
-                { j: "Amistoso", fecha: "31/08/2026", hora: "22:10", local: "assets/logos/belicones.png", res: "vs", visita: "assets/logos/7_Mares.jpg" }
+                { j: "Amistoso", fecha: "07/09/2026", hora: "22:10", local: "assets/logos/belicones.png", res: "vs", visita: "assets/logos/7_Mares.jpg" }
             ]
         },
         "2": { // Datos de Titanes L.A.
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "Amisto", fecha: "31/Agosto/2026", hora: "21:10", local: "assets/logos/Titanes.jpg", res: "vs", visita: "assets/logos/Tortilleros.png" }
+                { j: "Amistoso", fecha: "07/09/2026", hora: "21:10", local: "assets/logos/Titanes.jpg", res: "vs", visita: "assets/logos/Diablos_Gordos.jpg" }
             ]
         },
         "3": { // Datos de Robles FC
@@ -174,139 +174,315 @@ document.addEventListener("DOMContentLoaded", () => {
                 { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "Amistoso", fecha: "01/sept/2026", hora: "22:10", local: "assets/logos/Robles.jpg", res: "vs", visita: "assets/logos/Diablos_Gordos.jpg" }
+                { j: "Amistoso", fecha: "08/sept/2026", hora: "22:10", local: "assets/logos/Robles.jpg", res: "vs", visita: "assets/logos/Rayados.jpg" }
             ]
         },
         "4": { // Datos de Cruz Azul Mezquitán
             plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
+                { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "Amistoso", fecha: "01/Sept/2026", hora: "21:10", local: "assets/logos/Furia_Roja.png", res: "vs", visita: "assets/logos/Cruz_Azul_mezquitan.png" }
+                { j: "-", fecha: "-", hora: "-", local: "-", res: "vs", visita: "-" }
             ]
         },
         "5": { // Datos de Megavitese
-            plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+           plantilla: [
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
+                { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
+                { j: "-", fecha: "-", hora: "-", local: "-", res: "vs", visita: "-" }
             ]
         },
-        "6": { // Datos de Panza Brava
+        "6": { // Datos de Pana Brava
             plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
-            ],
+                { cargo: "Equipero", nombre: "" }
+            ],            
             calendario: [
-                { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
+                { j: "J 1", fecha: "08/09/2026", hora: "20:10", local: "assets/logos/Pansa_Brava.jpg", res: "vs", visita: "assets/logos/JR Transmisiones.png" }
             ]
         },
         "7": { // Datos de Diablos Gordos
             plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
-            ],
+                { cargo: "Equipero", nombre: "" }
+            ],            
             calendario: [
-                    { j: "Amistoso", fecha: "01/sept/2026", hora: "22:10", local: "assets/logos/Robles.jpg", res: "vs", visita: "assets/logos/Diablos_Gordos.jpg" }
+                    { j: "Amistoso", fecha: "07/09/2026", hora: "21:10", local: "assets/logos/Titanes.jpg", res: "vs", visita: "assets/logos/Diablos_Gordos.jpg" }
             ]
         },
         "8": { // Datos de Rayados FC
-            plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+           plantilla: [
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
+                { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
+                { j: "Amistoso", fecha: "08/sept/2026", hora: "22:10", local: "assets/logos/Robles.jpg", res: "vs", visita: "assets/logos/Rayados.jpg" }
             ]
         },
         "9": { // Datos de Tortilleros FC 
-            plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+             plantilla: [
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
+                { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "Amisto", fecha: "31/Agosto/2026", hora: "21:10", local: "assets/logos/Titanes.jpg", res: "vs", visita: "assets/logos/Tortilleros.png" }
+                { j: "Amistoso", fecha: "08/09/2026", hora: "21:10", local: "assets/logos/Tortilleros.png", res: "vs", visita: "assets/logos/Furia_Roja.png" }
             ]
         },
         "10": { // Datos de Carniceria Villalobos
             plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
+                { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
+                { j: "J 1", fecha: "07/09/2026", hora: "20:10", local: "assets/logos/chuperamigos.png", res: "vs", visita: "assets/logos/villalobos.jpg" }
             ]
         },
         "11": { // Datos de Gordos Belicones
-            plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+             plantilla: [
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
+                { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "Amistoso", fecha: "31/Agosto/2026", hora: "22:10", local: "assets/logos/belicones.png", res: "vs", visita: "assets/logos/7_Mares.jpg" }
+                { j: "Amistoso", fecha: "07/09/2026", hora: "22:10", local: "assets/logos/belicones.png", res: "vs", visita: "assets/logos/7_Mares.jpg" }
             ]
         },
         "12": { // Datos de JR Transmisiones
             plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
-            ],
+                { cargo: "Equipero", nombre: "" }
+            ],            
             calendario: [
-                { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
+                { j: "J 1", fecha: "08/09/2026", hora: "20:10", local: "assets/logos/Pansa_Brava.jpg", res: "vs", visita: "assets/logos/JR Transmisiones.png" }
             ]
         },
         "13": { // Datos de Chuper Amigos
             plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
+                { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
+                { j: "J 1", fecha: "07/09/2026", hora: "20:10", local: "assets/logos/chuperamigos.png", res: "vs", visita: "assets/logos/villalobos.jpg" }
             ]
         },
         "14": { // Datos de Jalisco FC
-            plantilla: [
-                { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
-                { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
+           plantilla: [
+                { num: 1, pos: "", nombre: "", cat: "" },
+                { num: 2, pos: "", nombre: "", cat: "" },
+                { num: 3, pos: "", nombre: "", cat: "" },
+                { num: 4, pos: "", nombre: "", cat: "" },
+                { num: 5, pos: "", nombre: "", cat: "" },
+                { num: 6, pos: "", nombre: "", cat: "" },
+                { num: 7, pos: "", nombre: "", cat: "" },
+                { num: 8, pos: "", nombre: "", cat: "" },
+                { num: 9, pos: "", nombre: "", cat: "" },
+                { num: 10, pos: "", nombre: "", cat: "" },
+                { num: 11, pos: "", nombre: "", cat: "" },
+                { num: 12, pos: "", nombre: "", cat: "" },
+                { num: 13, pos: "", nombre: "", cat: "" },
+                { num: 14, pos: "", nombre: "", cat: "" },
+                { num: 15, pos: "", nombre: "", cat: "" },
+                { num: 16, pos: "", nombre: "", cat: "" },
+                { num: 17, pos: "", nombre: "", cat: "" },
+                { num: 18, pos: "", nombre: "", cat: "" }
             ],
             cuerpoTecnico: [
-                { cargo: "Auxiliar T cnico", nombre: "Ra l S nchez" }
+                { cargo: "Equipero", nombre: "" }
             ],
             calendario: [
-                { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
+                { j: "-", fecha: "-", hora: "-", local: "-", res: "vs", visita: "-" }
             ]
         }
     };
