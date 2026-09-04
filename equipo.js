@@ -35,8 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ========================================== 
     const equipos = [     
         { nombre: "Furia Roja", logo: "assets/logos/Furia_Roja.png" },     
-        { nombre: "7 Mares", logo: "assets/logos/7_Mares.jpg" },     
-        { nombre: "Deseos de Vivir", logo: "assets/logos/Urus.jpg" },     
+        { nombre: "7 Mares", logo: "assets/logos/7_Mares.jpg" },        
         { nombre: "Titanes L.A.", logo: "assets/logos/Titanes.jpg" },     
         { nombre: "Robles FC", logo: "assets/logos/Robles.jpg" },     
         { nombre: "Cruz Azul Mezquitán", logo: "assets/logos/Cruz_Azul_mezquitan.png" },     
@@ -122,35 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "Amistoso", fecha: "31/08/2026", hora: "22:10", local: "assets/logos/belicones.png", res: "vs", visita: "assets/logos/7_Mares.jpg" }
             ]
         },
-        "2": { // Datos de Deseos de Vivir
-            plantilla: [
-                { num: 1, pos: "", nombre: "", cat: "" },
-                { num: 2, pos: "", nombre: "", cat: "" },
-                { num: 3, pos: "", nombre: "", cat: "" },
-                { num: 4, pos: "", nombre: "", cat: "" },
-                { num: 5, pos: "", nombre: "", cat: "" },
-                { num: 6, pos: "", nombre: "", cat: "" },
-                { num: 7, pos: "", nombre: "", cat: "" },
-                { num: 8, pos: "", nombre: "", cat: "" },
-                { num: 9, pos: "", nombre: "", cat: "" },
-                { num: 10, pos: "", nombre: "", cat: "" },
-                { num: 11, pos: "", nombre: "", cat: "" },
-                { num: 12, pos: "", nombre: "", cat: "" },
-                { num: 13, pos: "", nombre: "", cat: "" },
-                { num: 14, pos: "", nombre: "", cat: "" },
-                { num: 15, pos: "", nombre: "", cat: "" },
-                { num: 16, pos: "", nombre: "", cat: "" },
-                { num: 17, pos: "", nombre: "", cat: "" },
-                { num: 18, pos: "", nombre: "", cat: "" }
-            ],
-            cuerpoTecnico: [
-                { cargo: "Equipero", nombre: "" }
-            ],
-            calendario: [
-                { j: "", fecha: "", hora: "", local: "assets/logos/Urus.jpg", res: "vs", visita: "" }
-            ]
-        },
-        "3": { // Datos de Titanes L.A.
+        "2": { // Datos de Titanes L.A.
             plantilla: [
                 { num: 1, pos: "", nombre: "", cat: "" },
                 { num: 2, pos: "", nombre: "", cat: "" },
@@ -178,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "Amisto", fecha: "31/Agosto/2026", hora: "21:10", local: "assets/logos/Titanes.jpg", res: "vs", visita: "assets/logos/Tortilleros.png" }
             ]
         },
-        "4": { // Datos de Robles FC
+        "3": { // Datos de Robles FC
             plantilla: [
                 { num: 1, pos: "", nombre: "", cat: "" },
                 { num: 2, pos: "", nombre: "", cat: "" },
@@ -206,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "Amistoso", fecha: "01/sept/2026", hora: "22:10", local: "assets/logos/Robles.jpg", res: "vs", visita: "assets/logos/Diablos_Gordos.jpg" }
             ]
         },
-        "5": { // Datos de Cruz Azul Mezquitán
+        "4": { // Datos de Cruz Azul Mezquitán
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -218,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "Amistoso", fecha: "01/Sept/2026", hora: "21:10", local: "assets/logos/Furia_Roja.png", res: "vs", visita: "assets/logos/Cruz_Azul_mezquitan.png" }
             ]
         },
-        "6": { // Datos de Megavitese
+        "5": { // Datos de Megavitese
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -230,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
             ]
         },
-        "7": { // Datos de Panza Brava
+        "6": { // Datos de Panza Brava
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -242,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
             ]
         },
-        "8": { // Datos de Diablos Gordos
+        "7": { // Datos de Diablos Gordos
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -254,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     { j: "Amistoso", fecha: "01/sept/2026", hora: "22:10", local: "assets/logos/Robles.jpg", res: "vs", visita: "assets/logos/Diablos_Gordos.jpg" }
             ]
         },
-        "9": { // Datos de Rayados FC
+        "8": { // Datos de Rayados FC
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -266,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
             ]
         },
-        "10": { // Datos de Tortilleros FC 
+        "9": { // Datos de Tortilleros FC 
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -278,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "Amisto", fecha: "31/Agosto/2026", hora: "21:10", local: "assets/logos/Titanes.jpg", res: "vs", visita: "assets/logos/Tortilleros.png" }
             ]
         },
-        "11": { // Datos de Borussia Nola
+        "10": { // Datos de Carniceria Villalobos
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -290,7 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
             ]
         },
-        "12": { // Datos de Gordos Belicones
+        "11": { // Datos de Gordos Belicones
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -302,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "Amistoso", fecha: "31/Agosto/2026", hora: "22:10", local: "assets/logos/belicones.png", res: "vs", visita: "assets/logos/7_Mares.jpg" }
             ]
         },
-        "13": { // Datos de JR Transmisiones
+        "12": { // Datos de JR Transmisiones
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -314,7 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
             ]
         },
-        "14": { // Datos de Chuper Amigos
+        "13": { // Datos de Chuper Amigos
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }
@@ -326,7 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J 1", fecha: "2026/08/23", hora: "21:00", local: "assets/logos/7_Mares.jpg", res: "vs", visita: "assets/logos/Robles.jpg" }
             ]
         },
-        "15": { // Datos de Jalisco FC
+        "14": { // Datos de Jalisco FC
             plantilla: [
                 { num: 12, pos: "Portero", nombre: "Luis Silva", cat: "Mayor" },
                 { num: 9, pos: "Delantero", nombre: "Pedro L pez", cat: "General" }

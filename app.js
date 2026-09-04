@@ -1,8 +1,7 @@
 // Array de los 16 equipos participantes 
 const equipos = [     
     { nombre: "Furia Roja", logo: "assets/logos/Furia_Roja.png", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
-    { nombre: "7 Mares", logo: "assets/logos/7_Mares.jpg", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
-    { nombre: "Deseos de Vivir", logo: "assets/logos/Urus.jpg", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
+    { nombre: "7 Mares", logo: "assets/logos/7_Mares.jpg", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },        
     { nombre: "Titanes L.A.", logo: "assets/logos/Titanes.jpg", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
     { nombre: "Robles FC", logo: "assets/logos/Robles.jpg", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
     { nombre: "Cruz Azul Mezquitán", logo: "assets/logos/Cruz_Azul_mezquitan.png", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
@@ -11,7 +10,7 @@ const equipos = [
     { nombre: "Diablos Gordos", logo: "assets/logos/Diablos_Gordos.jpg", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
     { nombre: "Rayados FC", logo: "assets/logos/Rayados.jpg", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
     { nombre: "Tortilleros FC", logo: "assets/logos/Tortilleros.png", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
-    { nombre: "Borussia Nola", logo: "assets/logos/Borussia Nola.png", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
+    { nombre: "Carnicería Villalobos", logo: "assets/logos/villalobos.jpg", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
     { nombre: "Gordos Belicones", logo: "assets/logos/belicones.png", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
     { nombre: "JR Transmisiones", logo: "assets/logos/JR Transmisiones.png", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
     { nombre: "Chuper Amigos", logo: "assets/logos/chuperamigos.png", pj: 0, g: 0, e: 0, p: 0, pts: 0, dg: "0" },     
