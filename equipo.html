@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="es-MX"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Detalle del Equipo - Liga Municipal de Fut7 de Barrios</title>     
+    <link rel="stylesheet" href="style.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">     
+    <style>         
+        .hidden { display: none; }         
+        .chevron-icon { font-size: 0.8rem; margin-left: 5px; }     
+    </style> 
+</head> 
+<body>     
+    <header class="navbar">         
+        <div class="logo-container">             
+            <img src="logo liga de barrios.PNG" alt="Logo de la Liga Municipal de Fut7 de Barrios" class="logo-img">             
+            <h1 class="site-title">Liga Municipal de<br><span>Fut7 de Barrios</span></h1>         
+        </div>         
+        <nav class="nav-links" aria-label="Menú principal">             
+            <ul>                 
+                <li><a href="index.html">Inicio</a></li>                 
+                <li><a href="#">Directiva</a></li>                                  
+                <li class="dropdown">                     
+                    <a href="#" id="btn-equipos">Equipos <i class="fas fa-chevron-down chevron-icon"></i></a>                     
+                    <ul class="dropdown-menu hidden" id="menu-equipos">                         
+                        <li><a href="equipo.html?id=0">Furia Roja</a></li>
+                        <li><a href="equipo.html?id=1">7 Mares</a></li>
+                        <li><a href="equipo.html?id=2">Deseos de Vivir</a></li>
+                        <li><a href="equipo.html?id=3">Titanes L.A.</a></li>
+                        <li><a href="equipo.html?id=4">Robles FC</a></li>
+                        <li><a href="equipo.html?id=5">Cruz Azul Mezquitán</a></li>
+                        <li><a href="equipo.html?id=6">Megavitese</a></li>
+                        <li><a href="equipo.html?id=7">Panza Brava</a></li>
+                        <li><a href="equipo.html?id=8">Diablos Gordos</a></li>
+                        <li><a href="equipo.html?id=9">Rayados FC</a></li>
+                        <li><a href="equipo.html?id=10">Tortilleros FC</a></li>
+                        <li><a href="equipo.html?id=11">Borussia Nola</a></li>
+                        <li><a href="equipo.html?id=12">Gordos Belicones</a></li>
+                        <li><a href="equipo.html?id=13">JR Transmisiones</a></li>
+                        <li><a href="equipo.html?id=14">Chuper Amigos</a></li>
+                        <li><a href="equipo.html?id=15">Jalisco FC</a></li>                    
+                    </ul>                 
+                </li>                                  
+                <li><a href="reglamentos.html">Reglamentos</a></li>             
+            </ul>         
+        </nav>     
+    </header>     
+
+    <section class="team-hero">         
+        <div class="team-hero-content">             
+            <img id="detail-logo" src="" alt="Logo Equipo" class="detail-logo" onerror="this.style.display='none'">             
+            <h1 id="detail-name" class="detail-name">Cargando Equipo...</h1>         
+        </div>     
+    </section>     
+   
+    <main class="team-dashboard">         
+        <div class="dashboard-left">             
+            <div class="card">                 
+                <h2 class="card-title">PLANTILLA</h2>                 
+                <table class="card-table">                     
+                    <thead>                         
+                        <tr>                             
+                            <th>NUMERO</th>                             
+                            <th>EDAD</th>                             
+                            <th>JUGADOR</th>                             
+                            <th>J. JUGADOS</th>                         
+                        </tr>                     
+                    </thead>                     
+                    <tbody id="plantilla-cuerpo">                         
+                        <!-- Llenado por JS -->                     
+                    </tbody>                 
+                </table>             
+            </div>             
+            
+            <div class="card">                 
+                <h2 class="card-title">CUERPO TÉCNICO</h2>                 
+                <table class="card-table">                     
+                    <thead>                         
+                        <tr>                             
+                            <th>CARGO</th>                             
+                            <th>NOMBRE</th>                         
+                        </tr>                     
+                    </thead>                     
+                    <tbody id="cuerpo-tecnico">                         
+                        <!-- Llenado por JS -->                     
+                    </tbody>                 
+                </table>             
+            </div>         
+        </div>         
+        
+        <div class="dashboard-right">             
+            <div class="card">                 
+                <h2 class="card-title">CALENDARIO</h2>                 
+                <table class="card-table">                     
+                    <thead>                         
+                        <tr>                             
+                            <th>JORNADA</th>                             
+                            <th>FECHA</th>                             
+                            <th>HORA</th>                             
+                            <th>LOCAL</th>                             
+                            <th>VS</th>                             
+                            <th>VISITA</th>                         
+                        </tr>                     
+                    </thead>                     
+                    <tbody id="calendario-cuerpo">                         
+                        <!-- Llenado por JS -->                     
+                    </tbody>                 
+                </table>             
+            </div>         
+        </div>     
+    </main>     
+
+    <footer class="site-footer">         
+        <div class="footer-grid">             
+            <div class="footer-col">                 
+                <h4>Información</h4>                 
+                <p>&copy; 2026 Liga Municipal de Fut7 de Barrios.</p>                 
+                <p>Fundada en 2026.</p>             
+            </div>                          
+            <div class="footer-col">                 
+                <h4>Redes Sociales</h4>                 
+                <div class="social-icons">                     
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>                     
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>                     
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>                 
+                </div>             
+            </div>             
+            <div class="footer-col">                 
+                <h4>Dirección</h4>                 
+                <p>Cancha Loma del Aire</p>                 
+                <p>Autlán de Navarro, Jalisco, México.</p>             
+            </div>             
+            <div class="footer-col contact-col">                 
+                <h4>Contacto</h4>                 
+                <a href="https://wa.me/523171078158" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">                     
+                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp                 
+                </a>             
+            </div>         
+        </div>                  
+        <div class="footer-bottom">             
+            <a href="/admin-login">Inicio de sesión de Administrador</a>         
+        </div>     
+    </footer>     
+    <script src="equipo.js"></script> 
+</body> 
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="es-MX"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Liga Municipal de Fut7 de Barrios</title>     
+    <link rel="stylesheet" href="style.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">     
+    <style>         
+        .hidden { display: none; }         
+        .chevron-icon { font-size: 0.8rem; margin-left: 5px; }     
+    </style> 
+</head> 
+<body>     
+    <header class="navbar">         
+        <div class="logo-container">             
+            <img src="logo liga de barrios.PNG" alt="Logo de la Liga Municipal de Fut7 de Barrios" class="logo-img">             
+            <h1 class="site-title">Liga Municipal de<br><span>Fut7 de Barrios</span></h1>         
+        </div>         
+        <nav class="nav-links" aria-label="Menú principal">             
+            <ul>                 
+                <li><a href="#" class="active">Inicio</a></li>                 
+                <li><a href="directiva.html">Directiva</a></li>                                  
+                <li class="dropdown">                     
+                    <a href="#" id="btn-equipos">Equipos <i class="fas fa-chevron-down chevron-icon"></i></a>                     
+                    <ul class="dropdown-menu hidden" id="menu-equipos">                         
+                        <li><a href="equipo.html?id=0">Furia Roja</a></li>
+                        <li><a href="equipo.html?id=1">7 Mares</a></li>
+                        <li><a href="equipo.html?id=2">Deseos de Vivir</a></li>
+                        <li><a href="equipo.html?id=3">Titanes L.A.</a></li>
+                        <li><a href="equipo.html?id=4">Robles FC</a></li>
+                        <li><a href="equipo.html?id=5">Cruz Azul Mezquitán</a></li>
+                        <li><a href="equipo.html?id=6">Megavitese</a></li>
+                        <li><a href="equipo.html?id=7">Panza Brava</a></li>
+                        <li><a href="equipo.html?id=8">Diablos Gordos</a></li>
+                        <li><a href="equipo.html?id=9">Rayados FC</a></li>
+                        <li><a href="equipo.html?id=10">Tortilleros FC</a></li>
+                        <li><a href="equipo.html?id=11">Borussia Nola</a></li>
+                        <li><a href="equipo.html?id=12">Gordos Belicones</a></li>
+                        <li><a href="equipo.html?id=13">JR Transmisiones</a></li>
+                        <li><a href="equipo.html?id=14">Chuper Amigos</a></li>
+                        <li><a href="equipo.html?id=15">Jalisco FC</a></li>                    
+                    </ul>                 
+                </li>                                  
+                <li><a href="reglamentos.html">Reglamentos</a></li>             
+            </ul>         
+        </nav>     
+    </header>     
+
+    <main>         
+        <section class="hero-banner">             
+            <p class="hero-subtitle">Jornada 1</p>                          
+            <div class="matches-carousel">                 
+                <div class="match-card-hero">                     
+                    <h2 class="hero-match">Deportivo Urus <span class="vs-text">vs</span> Diablos Gordos</h2>                     
+                    <p class="hero-details">Lunes, 20:00 hrs - Cancha Loma del Aire</p>                 
+                </div>                 
+                <div class="match-card-hero">                     
+                    <h2 class="hero-match">Capibaras <span class="vs-text">vs</span> Deportivo FC Blokeros</h2>                     
+                    <p class="hero-details">Lunes, 21:00 hrs - Cancha Loma del Aire</p>                 
+                </div>                 
+                <div class="match-card-hero">                     
+                    <h2 class="hero-match">Gordos Belicones <span class="vs-text">vs</span> Titanes L.A.</h2>                     
+                    <p class="hero-details">Lunes, 22:00 hrs - Cancha Loma del Aire</p>                 
+                </div>                 
+                <div class="match-card-hero">                     
+                    <h2 class="hero-match">7 Mares <span class="vs-text">vs</span> Robles FC</h2>                     
+                    <p class="hero-details">Martes, 20:00 hrs - Cancha Loma del Aire</p>                 
+                </div>                 
+                <div class="match-card-hero">                     
+                    <h2 class="hero-match">Gorditos Mezquitan <span class="vs-text">vs</span> Borussia Nola</h2>                     
+                    <p class="hero-details">Martes, 21:00 hrs - Cancha Loma del Aire</p>                 
+                </div>                 
+                <div class="match-card-hero">                     
+                    <h2 class="hero-match">Furia Roja <span class="vs-text">vs</span> Rayados</h2>                     
+                    <p class="hero-details">Martes, 22:00 hrs - Cancha Loma del Aire</p>                 
+                </div>             
+            </div>             
+            <button class="btn-primary">Ver Calendario Completo</button>         
+        </section>         
+        
+        <section class="standings-container">             
+            <h2 class="section-title">Tabla General de Posiciones</h2>             
+            <div class="table-wrapper">                 
+                <table class="standings-table">                     
+                    <thead>                         
+                        <tr>                             
+                            <th>Pos</th>                             
+                            <th class="team-col">Equipo</th>                             
+                            <th>PJ</th>                             
+                            <th>PG</th>                             
+                            <th>PE</th>                             
+                            <th>PP</th>                             
+                            <th>Puntos</th>                             
+                            <th>GF</th>                             
+                            <th>GC</th>                             
+                            <th>Dif. Goles</th>                             
+                            <th>%</th>                             
+                            <th>PE</th>                         
+                        </tr>                     
+                    </thead>                     
+                    <tbody id="tabla-cuerpo">                         
+                        <!-- Los datos se inyectan con JavaScript -->                     
+                    </tbody>                 
+                </table>             
+            </div>         
+        </section>     
+    </main>     
+
+    <footer class="site-footer">         
+        <div class="footer-grid">             
+            <div class="footer-col">                 
+                <h4>Información</h4>                 
+                <p>&copy; 2026 Liga Municipal de Fut7 de Barrios.</p>                 
+                <p>Fundada en 2026.</p>             
+            </div>                          
+            <div class="footer-col">                 
+                <h4>Redes Sociales</h4>                 
+                <div class="social-icons">                     
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>                     
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>                     
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>                 
+                </div>             
+            </div>             
+            <div class="footer-col">                 
+                <h4>Dirección</h4>                 
+                <p>Cancha Loma del Aire</p>                 
+                <p>Autlán de Navarro, Jalisco, México.</p>             
+            </div>             
+            <div class="footer-col contact-col">                 
+                <h4>Contacto</h4>                 
+                <a href="https://wa.me/5213171078158" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">                     
+                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp                 
+                </a>             
+            </div>         
+        </div>                  
+        <div class="footer-bottom">             
+            <a href="/admin-login">Inicio de sesión de Administrador</a>         
+        </div>     
+    </footer>     
+    <script src="app.js"></script> 
+</body> 
+</html>
