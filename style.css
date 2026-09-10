@@ -568,3 +568,293 @@ body {
         margin: 0 15px 40px;
     }
 }
+/* Asegura que el marcador y los textos de la tabla no se corten en varias líneas */
+.card-table td, 
+.card-table th {
+    white-space: nowrap;
+}
+
+/* Da un ancho mínimo y alineación vertical correcta a las celdas del calendario */
+#calendario-cuerpo td {
+    vertical-align: middle;
+    padding: 12px 8px;
+}
+
+/* Espacio específico para que el marcador respire en una sola línea */
+#calendario-cuerpo td:nth-child(5) {
+    min-width: 110px;
+    font-weight: 600;
+}
+
+/* Permite desplazamiento horizontal fluido si la pantalla es estrecha */
+.card {
+    overflow-x: auto;
+}
+/* =========================================
+   SECCIÓN DE RESULTADOS (ESTILO AFICHE)
+   ========================================= */
+.resultados-section {
+    max-width: 650px;
+    margin: 30px auto 60px;
+    padding: 35px 20px;
+    background: radial-gradient(circle at center top, rgba(20, 55, 30, 0.95), rgba(8, 20, 12, 0.98)),
+                url('assets/estadio-bg.jpg') center/cover no-repeat;
+    background-color: #0d1e13;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: 'Segoe UI', Impact, Arial, sans-serif;
+}
+
+.resultados-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.res-title-main {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.8);
+}
+
+.res-badge-jornada {
+    display: inline-flex;
+    flex-direction: column;
+    background: #ffee00;
+    color: #0a0a0a;
+    padding: 6px 28px;
+    border-radius: 20px;
+    transform: skew(-8deg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin-bottom: 12px;
+}
+
+.res-badge-jornada span {
+    transform: skew(8deg);
+}
+
+.jornada-txt {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.sub-jornada {
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.res-dates {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 4px 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.res-venue {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    color: #f1f1f1;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.resultados-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.res-match-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.res-match-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    border-radius: 24px;
+    overflow: visible;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.res-side {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 16px;
+    white-space: nowrap;
+}
+
+.res-side.local {
+    background: #ffffff;
+    color: #1a1a1a;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    justify-content: flex-start;
+    padding-right: 38px;
+}
+
+.res-side.visita {
+    background: rgba(35, 35, 35, 0.78);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    justify-content: flex-end;
+    padding-left: 38px;
+}
+
+.res-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.res-team-name {
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.res-score-badge {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000000;
+    color: #ffffff;
+    border: 3px solid #ffee00;
+    border-radius: 16px;
+    min-width: 62px;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    padding: 0 4px;
+}
+
+.score-num {
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.score-penal {
+    font-size: 0.65rem;
+    font-weight: bold;
+    color: #ffee00;
+    line-height: 1;
+    margin-top: 1px;
+}
+
+.res-match-time {
+    margin: 6px 0 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+    .res-title-main { font-size: 1.7rem; }
+    .jornada-txt { font-size: 1.2rem; }
+    .sub-jornada { font-size: 0.95rem; }
+    .res-team-name { font-size: 0.95rem; }
+    .res-match-row { height: 42px; }
+    .res-logo { width: 26px; height: 26px; }
+    .res-score-badge {
+        min-width: 52px;
+        height: 38px;
+    }
+    .score-num { font-size: 1.05rem; }
+    .res-match-time { font-size: 0.85rem; }
+}
+/* =========================================
+   CARDS DEL BANNER CON LOGOS
+   ========================================= */
+.match-card-hero {
+    width: 360px; /* Ancho cómodo para logos y nombres */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-match-teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.hero-team {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.hero-team-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-team-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.vs-badge {
+    background: #ffee00;
+    color: #111111;
+    font-weight: 900;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .match-card-hero {
+        width: 300px;
+    }
+    .hero-team-logo {
+        width: 42px;
+        height: 42px;
+    }
+    .hero-team-name {
+        font-size: 0.85rem;
+    }
+}
