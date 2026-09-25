@@ -16,44 +16,56 @@ const equipos = [
     { nombre: "Jalisco FC", logo: "assets/logos/jalisco_FC.png", pj: 3, g: 0, e: 0, p: 3, pts: 0, gf:0, gc: 15, pe: 0, dg: "-15" }                        
 ];
 
-const tablaCuerpo = document.getElementById("tabla-cuerpo"); 
+const tablaCuerpo = document.getElementById("tabla-cuerpo");  
 
-if (tablaCuerpo) {     
-    tablaCuerpo.innerHTML = "";     
-    equipos.forEach((equipo, index) => {         
-        const fila = document.createElement("tr"); 
-        const logoImg = equipo.logo ? equipo.logo : "";  
+if (tablaCuerpo) {          
+    tablaCuerpo.innerHTML = "";          
 
-        // Cálculo dinámico del porcentaje de efectividad (Puntos obtenidos / Puntos posibles)
-        const puntosPosibles = equipo.pj * 3;
-        const porcentaje = equipo.pj > 0 ? ((equipo.pts / puntosPosibles) * 100).toFixed(0) : 0;
+    // LÓGICA DE ORDENAMIENTO (Tabla General)
+    equipos.sort((a, b) => {
+        if (b.pts !== a.pts) return b.pts - a.pts;
+        
+        const difA = parseInt(a.dg);
+        const difB = parseInt(b.dg);
+        if (difB !== difA) return difB - difA;
+        
+        return b.gf - a.gf;
+    });
 
-        fila.innerHTML = `     
-            <td>${index + 1}</td>     
-            <td class="team-name">         
-                <a href="equipo.html?id=${index}" style="text-decoration: none; color: inherit;">
-                    <div class="team-info" style="cursor: pointer;">             
-                        <img src="${logoImg}" alt="Escudo ${equipo.nombre}" class="team-logo" onerror="this.style.display='none'">             
-                        <span>${equipo.nombre}</span>         
-                    </div>
-                </a>     
-            </td>     
-            <td>${equipo.pj}</td>     
-            <td>${equipo.g}</td>     
-            <td>${equipo.e}</td>     
-            <td>${equipo.p}</td>     
-            <td class="puntos-col">${equipo.pts}</td>     
-            <td>${equipo.gf}</td>      <!-- Goles a favor -->
-            <td>${equipo.gc}</td>      <!-- Goles en contra -->
-            <td>${equipo.dg}</td>     
-            <td>${porcentaje}%</td>    <!-- Porcentaje -->
-            <td>${equipo.pe}</td>      <!-- Puntos extras -->
-        `;
-            
-        tablaCuerpo.appendChild(fila);     
-    }); 
+    // Generar la tabla
+    equipos.forEach((equipo, index) => {                  
+        const fila = document.createElement("tr");          
+        const logoImg = equipo.logo ? equipo.logo : "";           
+        
+        // CÁLCULO MODIFICADO: Efectividad en función de 3 (Puntos por partido)
+        // Se divide los puntos obtenidos entre los partidos jugados.
+        const porcentaje = equipo.pj > 0 ? (equipo.pts / equipo.pj).toFixed(2) : "0.00";         
+        
+        fila.innerHTML = `                  
+            <td>${index + 1}</td>                  
+            <td class="team-name">                          
+                <a href="equipo.html?id=${index}" style="text-decoration: none; color: inherit;">                     
+                    <div class="team-info" style="cursor: pointer;">                                      
+                        <img src="${logoImg}" alt="Escudo ${equipo.nombre}" class="team-logo" onerror="this.style.display='none'">                                      
+                        <span>${equipo.nombre}</span>                              
+                    </div>                 
+                </a>                  
+            </td>                  
+            <td>${equipo.pj}</td>                  
+            <td>${equipo.g}</td>                  
+            <td>${equipo.e}</td>                  
+            <td>${equipo.p}</td>                  
+            <td class="puntos-col">${equipo.pts}</td>                  
+            <td>${equipo.gf}</td>      <!-- Goles a favor -->             
+            <td>${equipo.gc}</td>      <!-- Goles en contra -->             
+            <td>${equipo.dg}</td>                  
+            <td>${porcentaje}</td>     <!-- Efectividad sobre 3 (Se retiró el símbolo %) -->             
+            <td>${equipo.pe}</td>      <!-- Puntos extras -->         
+        `;                      
+        
+        tablaCuerpo.appendChild(fila);          
+    });  
 }
-
 // ========================================== 
 // LÓGICA DEL MENÚ DESPLEGABLE 
 // ========================================== 
