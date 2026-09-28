@@ -1,31 +1,27 @@
-<!DOCTYPE html> 
-<html lang="es-MX"> 
-<head>     
-    <meta charset="UTF-8">     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-    <title>Liga Municipal de Fut7 de Barrios</title>     
-    <link rel="stylesheet" href="style.css">     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">     
-    <style>         
-        .hidden { display: none; }         
-        .chevron-icon { font-size: 0.8rem; margin-left: 5px; }     
-    </style> 
-</head> 
-<body>     
-    <header class="navbar">         
-        <div class="logo-container">             
-            <img src="logo liga de barrios.PNG" alt="Logo de la Liga Municipal de Fut7 de Barrios" class="logo-img">             
-            <h1 class="site-title">Liga Municipal de<br><span>Fut7 de Barrios</span></h1>         
-        </div>         
-        <nav class="nav-links" aria-label="Menú principal">             
-            <ul>                 
-                <li><a href="#" class="active">Inicio</a></li>                 
-                <li><a href="directiva.html">Directiva</a></li>                                  
-                <li class="dropdown">                     
-                    <a href="#" id="btn-equipos">Equipos <i class="fas fa-chevron-down chevron-icon"></i></a>                     
-                    <ul class="dropdown-menu hidden" id="menu-equipos">                         
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga Municipal de Fut7 de Barrios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logo liga de barrios.PNG" alt="Logo de la Liga Municipal de Fut7 de Barrios" class="logo-img">
+            <h1 class="site-title">Liga Municipal de<br><span>Fut7 de Barrios</span></h1>
+        </div>
+        <nav class="nav-links" aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="directiva.html">Directiva</a></li>
+                <li class="dropdown">
+                    <a href="#" id="btn-equipos">Equipos <i class="fas fa-chevron-down chevron-icon"></i></a>
+                    <ul class="dropdown-menu" id="menu-equipos">
                         <li><a href="equipo.html?id=0">Furia Roja</a></li>
-                        <li><a href="equipo.html?id=1">7 Mares</a></li>                        
+                        <li><a href="equipo.html?id=1">7 Mares</a></li>
                         <li><a href="equipo.html?id=2">Titanes L.A.</a></li>
                         <li><a href="equipo.html?id=3">Robles FC</a></li>
                         <li><a href="equipo.html?id=4">Cruz Azul Mezquitán</a></li>
@@ -33,24 +29,21 @@
                         <li><a href="equipo.html?id=6">Diablos Gordos</a></li>
                         <li><a href="equipo.html?id=7">Rayados FC</a></li>
                         <li><a href="equipo.html?id=8">Tortilleros FC</a></li>
-                        <li><a href="equipo.html?id=9">Carniceria Villalobos</a></li>
+                        <li><a href="equipo.html?id=9">Carnicería Villalobos</a></li>
                         <li><a href="equipo.html?id=10">Gordos Belicones</a></li>
                         <li><a href="equipo.html?id=11">JR Transmisiones</a></li>
                         <li><a href="equipo.html?id=12">Chuper Amigos</a></li>
-                        <li><a href="equipo.html?id=13">Jalisco FC</a></li>                    
-                    </ul>                 
-                </li>                                  
-                <li><a href="reglamentos.html">Reglamentos</a></li>             
-            </ul>         
-        </nav>     
-    </header>     
-
-    <main>  
+                        <li><a href="equipo.html?id=13">Jalisco FC</a></li>
+                    </ul>
+                </li>
+                <li><a href="reglamentos.html">Reglamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <section class="hero-banner">
             <p class="hero-subtitle">Pendientes Jornada 2</p>
-
             <div class="matches-carousel">
-                <!- Partido 1 ->
                 <div class="match-card-hero">
                     <div class="hero-match-teams">
                         <div class="hero-team">
@@ -65,8 +58,6 @@
                     </div>
                     <p class="hero-details">Lunes 28 de Septiembre, 20:10 Hrs - Cancha Loma del Aire</p>
                 </div>
-
-                <!- Partido 2 ->
                 <div class="match-card-hero">
                     <div class="hero-match-teams">
                         <div class="hero-team">
@@ -81,8 +72,6 @@
                     </div>
                     <p class="hero-details">Lunes 28 de Septiembre, 21:10 Hrs - Cancha Loma del Aire</p>
                 </div>
-
-                <!- Partido 3 ->
                 <div class="match-card-hero">
                     <div class="hero-match-teams">
                         <div class="hero-team">
@@ -97,346 +86,203 @@
                     </div>
                     <p class="hero-details">Lunes 28 de Septiembre, 22:10 Hrs - Cancha Loma del Aire</p>
                 </div>
-   </section>
-      <!-- 
-<section class="hero-banner">
-            <p class="hero-subtitle">Jornada 4</p>
+            </div>
+        </section>
 
-            <div class="matches-carousel">
-                <!- Partido 1 ->
-                <div class="match-card-hero">
-                    <div class="hero-match-teams">
-                        <div class="hero-team">
-                            <img src="assets/logos/7_Mares.jpg" alt="7 Mares" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">7 Mares</span>
-                        </div>
-                        <span class="vs-badge">VS</span>
-                        <div class="hero-team">
-                            <img src="assets/logos/JR Transmisiones.png" alt="JR Transmisiones" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">JR Transmisiones</span>
-                        </div>
-                    </div>
-                    <p class="hero-details">Lunes 28 de Septiembre, 20:10 Hrs - Cancha Loma del Aire</p>
+        <!-- SECCIÓN RESULTADOS -->
+        <section class="resultados-section">
+            <div class="resultados-header">
+                <h2 class="res-title-main">Liga Municipal FUT 7 de Barrios</h2>
+                <div class="res-badge-jornada">
+                    <span class="jornada-txt">JORNADA 3</span>
+                    <span class="sub-jornada">RESULTADOS</span>
                 </div>
-
-                <!- Partido 2 ->
-                <div class="match-card-hero">
-                    <div class="hero-match-teams">
-                        <div class="hero-team">
-                            <img src="assets/logos/belicones.png" alt="Gordos Belicones" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Gordos Belicones</span>
+                <p class="res-dates">21, 22 y 23 de Septiembre</p>
+                <p class="res-venue">Cancha: Loma del Aire</p>
+            </div>
+            <div class="resultados-list">
+                <div class="res-match-wrapper">
+                    <div class="res-match-row">
+                        <div class="res-side local">
+                            <img src="assets/logos/Cruz_Azul_mezquitan.png" alt="Cruz Azul" class="res-logo" onerror="this.style.display='none'">
+                            <span class="res-team-name">Cruz Azul Mezquitán</span>
                         </div>
-                        <span class="vs-badge">VS</span>
-                        <div class="hero-team">
-                            <img src="assets/logos/Cruz_Azul_mezquitan.png" alt="Cruz Azul Mezquitán" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Cruz Azul Mezquitán</span>
+                        <div class="res-score-badge">
+                            <span class="score-num">1 - 0</span>
+                        </div>
+                        <div class="res-side visita">
+                            <span class="res-team-name">Titanes L.A.</span>
+                            <img src="assets/logos/Titanes.jpg" alt="Titanes L.A." class="res-logo" onerror="this.style.display='none'">
                         </div>
                     </div>
-                    <p class="hero-details">Lunes 28 de Septiembre, 21:10 Hrs - Cancha Loma del Aire</p>
+                    <p class="res-match-time">21 de Septiembre - 8:10 p.m.</p>
                 </div>
-
-                <!- Partido 3 ->
-                <div class="match-card-hero">
-                    <div class="hero-match-teams">
-                        <div class="hero-team">
-                            <img src="assets/logos/Titanes.jpg" alt="Titanes L.A." class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Titanes L.A.</span>
+                <div class="res-match-wrapper">
+                    <div class="res-match-row">
+                        <div class="res-side local">
+                            <img src="assets/logos/belicones.png" alt="Gordos Belicones" class="res-logo" onerror="this.style.display='none'">
+                            <span class="res-team-name">Gordos Belicones</span>
                         </div>
-                        <span class="vs-badge">VS</span>
-                        <div class="hero-team">
-                            <img src="assets/logos/Pansa_Brava.jpg" alt="Pansa Brava" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Pansa Brava</span>
+                        <div class="res-score-badge">
+                            <span class="score-num">8 - 0</span>
+                        </div>
+                        <div class="res-side visita">
+                            <span class="res-team-name">Chuper Amigos</span>
+                            <img src="assets/logos/chuperamigos.png" alt="Chuper Amigos" class="res-logo" onerror="this.style.display='none'">
                         </div>
                     </div>
-                    <p class="hero-details">Lunes 28 de Septiembre, 22:10 Hrs - Cancha Loma del Aire</p>
+                    <p class="res-match-time">21 de Septiembre - 9:10 p.m.</p>
                 </div>
-
-                <!- Partido 4 ->
-                <div class="match-card-hero">
-                    <div class="hero-match-teams">
-                        <div class="hero-team">
-                            <img src="assets/logos/chuperamigos.png" alt="Chuper Amigos" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Chuper Amigos</span>
+                <div class="res-match-wrapper">
+                    <div class="res-match-row">
+                        <div class="res-side local">
+                            <img src="assets/logos/Pansa_Brava.jpg" alt="Pansa Brava" class="res-logo" onerror="this.style.display='none'">
+                            <span class="res-team-name">Pansa Brava</span>
                         </div>
-                        <span class="vs-badge">VS</span>
-                        <div class="hero-team">
-                            <img src="assets/logos/Tortilleros.png" alt="Tortilleros FC" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Tortilleros FC </span>
+                        <div class="res-score-badge">
+                            <span class="score-num">5 - 0</span>
+                        </div>
+                        <div class="res-side visita">
+                            <span class="res-team-name">Jalisco FC</span>
+                            <img src="assets/logos/jalisco_FC.png" alt="Jalisco FC" class="res-logo" onerror="this.style.display='none'">
                         </div>
                     </div>
-                    <p class="hero-details">Martes 29 de Septiembre, 20:10 Hrs - Cancha Loma del Aire</p>
+                    <p class="res-match-time">21 de Septiembre - 10:10 p.m.</p>
                 </div>
-
-                <!- Partido 5 ->
-                <div class="match-card-hero">
-                    <div class="hero-match-teams">
-                        <div class="hero-team">
-                            <img src="assets/logos/villalobos.jpg" alt="Carnicería Villalobos" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Carnicería Villalobos</span>
+                <div class="res-match-wrapper">
+                    <div class="res-match-row">
+                        <div class="res-side local">
+                            <img src="assets/logos/Furia_Roja.png" alt="Furia Roja" class="res-logo" onerror="this.style.display='none'">
+                            <span class="res-team-name">Furia Roja</span>
                         </div>
-                        <span class="vs-badge">VS</span>
-                        <div class="hero-team">
-                            <img src="assets/logos/Rayados.jpg" alt="Rayados FC" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Rayados FC</span>
+                        <div class="res-score-badge">
+                            <span class="score-num">0 - 5</span>
+                        </div>
+                        <div class="res-side visita">
+                            <span class="res-team-name">JR Transmisiones</span>
+                            <img src="assets/logos/JR Transmisiones.png" alt="JR Transmisiones" class="res-logo" onerror="this.style.display='none'">
                         </div>
                     </div>
-                    <p class="hero-details">Martes 29 de Septiembre, 21:10 Hrs - Cancha Loma del Aire</p>
+                    <p class="res-match-time">22 de Septiembre - 7:40 p.m.</p>
                 </div>
-
-                <!- Partido 6 ->
-                <div class="match-card-hero">
-                    <div class="hero-match-teams">
-                        <div class="hero-team">
-                            <img src="assets/logos/Diablos_Gordos.jpg" alt="Diablos Gordos" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Diablos Gordos</span>
+                <div class="res-match-wrapper">
+                    <div class="res-match-row">
+                        <div class="res-side local">
+                            <img src="assets/logos/Tortilleros.png" alt="Tortilleros FC" class="res-logo" onerror="this.style.display='none'">
+                            <span class="res-team-name">Tortilleros FC</span>
                         </div>
-                        <span class="vs-badge">VS</span>
-                        <div class="hero-team">
-                            <img src="assets/logos/Furia_Roja.png" alt="Furia Roja" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Furia Roja</span>
+                        <div class="res-score-badge">
+                            <span class="score-num">1 - 0</span>
+                        </div>
+                        <div class="res-side visita">
+                            <span class="res-team-name">Carnicería Villalobos</span>
+                            <img src="assets/logos/villalobos.jpg" alt="Carnicería Villalobos" class="res-logo" onerror="this.style.display='none'">
                         </div>
                     </div>
-                    <p class="hero-details">Martes 29 de Septiembre, 22:10 Hrs - Cancha Loma del Aire</p>
+                    <p class="res-match-time">22 de Septiembre - 8:10 p.m.</p>
                 </div>
-
-                <!- Partido 7 ->
-                <div class="match-card-hero">
-                    <div class="hero-match-teams">
-                        <div class="hero-team">
-                            <img src="assets/logos/jalisco_FC.png" alt="Jalisco FC" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Jalisco FC</span>
+                <div class="res-match-wrapper">
+                    <div class="res-match-row">
+                        <div class="res-side local">
+                            <img src="assets/logos/Robles.jpg" alt="Robles FC" class="res-logo" onerror="this.style.display='none'">
+                            <span class="res-team-name">Robles FC</span>
                         </div>
-                        <span class="vs-badge">VS</span>
-                        <div class="hero-team">
-                            <img src="assets/logos/Robles.jpg" alt="Robles FC" class="hero-team-logo" onerror="this.style.display='none'">
-                            <span class="hero-team-name">Robles FC</span>
+                        <div class="res-score-badge">
+                            <span class="score-num">1 - 4</span>
+                        </div>
+                        <div class="res-side visita">
+                            <span class="res-team-name">Diablos Gordos</span>
+                            <img src="assets/logos/Diablos_Gordos.jpg" alt="Diablos Gordos" class="res-logo" onerror="this.style.display='none'">
                         </div>
                     </div>
-                    <p class="hero-details">Miercóles 30 de Septiembre, 19:40 Hrs - Cancha Loma del Aire</p>
+                    <p class="res-match-time">22 de Septiembre - 9:10 p.m.</p>
+                </div>
+                <div class="res-match-wrapper">
+                    <div class="res-match-row">
+                        <div class="res-side local">
+                            <img src="assets/logos/Rayados.jpg" alt="Rayados FC" class="res-logo" onerror="this.style.display='none'">
+                            <span class="res-team-name">Rayados FC</span>
+                        </div>
+                        <div class="res-score-badge">
+                            <span class="score-num">3 - 1</span>
+                        </div>
+                        <div class="res-side visita">
+                            <span class="res-team-name">7 Mares</span>
+                            <img src="assets/logos/7_Mares.jpg" alt="7 Mares" class="res-logo" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <p class="res-match-time">22 de Septiembre - 10:10 p.m.</p>
+                </div>
+                <div class="res-match-wrapper">
+                    <div class="res-match-row">
+                        <div class="res-side local">
+                            <img src="assets/logos/Cruz_Azul_mezquitan.png" alt="Cruz Azul" class="res-logo" onerror="this.style.display='none'">
+                            <span class="res-team-name">Cruz Azul</span>
+                        </div>
+                        <div class="res-score-badge">
+                            <span class="score-num">5 - 0</span>
+                        </div>
+                        <div class="res-side visita">
+                            <span class="res-team-name">Jalisco FC</span>
+                            <img src="assets/logos/jalisco_FC.png" alt="Jalisco FC" class="res-logo" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <p class="res-match-time">Pendiente J1 - 23 de Septiembre - 7:40 p.m.</p>
                 </div>
             </div>
         </section>
--->
-        
-        
-        <!-- SECCIÓN RESULTADOS -->
-<section class="resultados-section">
-    <div class="resultados-header">
-        <h2 class="res-title-main">Liga Municipal FUT 7 de Barrios</h2>
-        <div class="res-badge-jornada">
-            <span class="jornada-txt">JORNADA 3</span>
-            <span class="sub-jornada">RESULTADOS</span>
-        </div>
-        <p class="res-dates">21, 22 y 23 de Septiembre</p>
-        <p class="res-venue">Cancha: Loma del Aire</p>
-    </div>
 
-    <div class="resultados-list">
-        <!-- Partido 1 -->
-        <div class="res-match-wrapper">
-            <div class="res-match-row">
-                <div class="res-side local">
-                    <img src="assets/logos/Cruz_Azul_mezquitan.png" alt="Chuper amigos" class="res-logo" onerror="this.style.display='none'">
-                    <span class="res-team-name">Cruz Azul Mezquitán</span>
-                </div>
-                <div class="res-score-badge">
-                    <span class="score-num">1 - 0</span>
-                    <span class="score-penal"></span>
-                </div>
-                <div class="res-side visita">
-                    <span class="res-team-name">Titanes L.A.</span>
-                    <img src="assets/logos/Titanes.jpg" alt="Titanes L.A." class="res-logo" onerror="this.style.display='none'">
-                </div>
+        <!-- TABLA GENERAL -->
+        <section class="standings-container">
+            <h2 class="section-title">Tabla General de Posiciones</h2>
+            <div class="table-wrapper">
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th class="team-col">Equipo</th>
+                            <th>PJ</th>
+                            <th>PG</th>
+                            <th>PE</th>
+                            <th>PP</th>
+                            <th>Puntos</th>
+                            <th>GF</th>
+                            <th>GC</th>
+                            <th>Dif. Goles</th>
+                            <th>%</th>
+                            <th>PE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-cuerpo">
+                        <!-- Generado por app.js -->
+                    </tbody>
+                </table>
             </div>
-            <p class="res-match-time">21 de Septiembre - 8:10 p.m.</p>
-        </div>
-
-        <!-- Partido 2 -->
-        <div class="res-match-wrapper">
-            <div class="res-match-row">
-                <div class="res-side local">
-                    <img src="assets/logos/belicones.png" alt="Gordos Belicones" class="res-logo" onerror="this.style.display='none'">
-                    <span class="res-team-name">Gordos Belicones</span>
-                </div>
-                <div class="res-score-badge">
-                    <span class="score-num">8 - 0</span>
-                    <span class="score-penal"></span>
-                </div>
-                <div class="res-side visita">
-                    <span class="res-team-name">Chuper Amigos</span>
-                    <img src="assets/logos/chuperamigos.png" alt="Chuper Amigos" class="res-logo" onerror="this.style.display='none'">
-                </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Información</h4>
+                <p>&copy; 2026 Liga Municipal de Fut7 de Barrios.</p>
+                <p>Fundada en 2024.</p>
             </div>
-            <p class="res-match-time">21 de Septiembre - 9:10 p.m.</p>
-        </div>
-
-        <!-- Partido 3 -->
-        <div class="res-match-wrapper">
-            <div class="res-match-row">
-                <div class="res-side local">
-                    <img src="assets/logos/Pansa_Brava.jpg" alt="Pansa Brava" class="res-logo" onerror="this.style.display='none'">
-                    <span class="res-team-name">Pansa Brava</span>
-                </div>
-                <div class="res-score-badge">
-                    <span class="score-num">5 - 0</span>
-                    <span class="score-penal"></span>
-                </div>
-                <div class="res-side visita">
-                    <span class="res-team-name">Jalisco FC</span>
-                    <img src="assets/logos/jalisco_FC.png" alt="Jalisco FC" class="res-logo" onerror="this.style.display='none'">
-                </div>
+            <div class="footer-col">
+                <h4>Dirección</h4>
+                <p>Cancha Loma del Aire</p>
+                <p>Autlán de Navarro, Jalisco, México.</p>
             </div>
-            <p class="res-match-time">21 de Septiembre - 10:10 p.m.</p>
-        </div>
-
-        <!-- Partido 4 -->
-        <div class="res-match-wrapper">
-            <div class="res-match-row">
-                <div class="res-side local">
-                    <img src="assets/logos/Furia_Roja.png" alt="Furia Roja" class="res-logo" onerror="this.style.display='none'">
-                    <span class="res-team-name">Furia Roja</span>
-                </div>
-                <div class="res-score-badge">
-                    <span class="score-num">0 - 5</span>
-                    <span class="score-penal"></span>
-                </div>
-                <div class="res-side visita">
-                    <span class="res-team-name">JR Transmisiones</span>
-                    <img src="assets/logos/JR Transmisiones.png" alt="JR Transmisiones" class="res-logo" onerror="this.style.display='none'">
-                </div>
+            <div class="footer-col contact-col">
+                <h4>Contacto</h4>
+                <a href="https://wa.me/5213171078158" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+                </a>
             </div>
-            <p class="res-match-time">22 de Septiembre - 7:40 p.m.</p>
         </div>
-
-        <!-- Partido 5 -->
-        <div class="res-match-wrapper">
-            <div class="res-match-row">
-                <div class="res-side local">
-                    <img src="assets/logos/Tortilleros.png" alt="Tortilleros FC" class="res-logo" onerror="this.style.display='none'">
-                    <span class="res-team-name">Tortilleros FC</span>
-                </div>
-                <div class="res-score-badge">
-                    <span class="score-num">1 - 0</span>
-                    <span class="score-penal"></span>
-                </div>
-                <div class="res-side visita">
-                    <span class="res-team-name">Carnicería Villalobos</span>
-                    <img src="assets/logos/villalobos.jpg" alt="Carnicería Villalobos" class="res-logo" onerror="this.style.display='none'">
-                </div>
-            </div>
-            <p class="res-match-time">22 de Septiembre - 8:10 p.m.</p>
+        <div class="footer-bottom">
+            <a href="/admin-login">Inicio de sesión de Administrador</a>
         </div>
-
-        <!-- Partido 6 -->
-        <div class="res-match-wrapper">
-            <div class="res-match-row">
-                <div class="res-side local">
-                    <img src="assets/logos/Robles.jpg" alt="Robles FC" class="res-logo" onerror="this.style.display='none'">
-                    <span class="res-team-name">Robles FC</span>
-                </div>
-                <div class="res-score-badge">
-                    <span class="score-num">1 - 4</span>
-                    <span class="score-penal"></span>
-                </div>
-                <div class="res-side visita">
-                    <span class="res-team-name">Diablos Gordos</span>
-                    <img src="assets/logos/Diablos_Gordos.jpg" alt="Diablos Gordos" class="res-logo" onerror="this.style.display='none'">
-                </div>
-            </div>
-            <p class="res-match-time">22 de Septiembre - 9:10 p.m.</p>
-        </div>
-
-        <!-- Partido 7 -->
-        <div class="res-match-wrapper">
-            <div class="res-match-row">
-                <div class="res-side local">
-                    <img src="assets/logos/Rayados.jpg" alt="Rayados FC" class="res-logo" onerror="this.style.display='none'">
-                    <span class="res-team-name">Rayados FC</span>
-                </div>
-                <div class="res-score-badge">
-                    <span class="score-num">3 - 1</span>
-                    <span class="score-penal"></span>
-                </div>
-                <div class="res-side visita">
-                    <span class="res-team-name">7 Mares</span>
-                    <img src="assets/logos/7_Mares.jpg" alt="7 Mares" class="res-logo" onerror="this.style.display='none'">
-                </div>
-            </div>
-            <p class="res-match-time">22 de Septiembre - 10:10 p.m.<p class="m"></p></p>
-        </div>
-
-        <!-- Partido 8  -->
-        <div class="res-match-wrapper">
-            <div class="res-match-row">
-                <div class="res-side local">
-                    <img src="assets/logos/Cruz_Azul_mezquitan.png" alt="Cruz Azul" class="res-logo" onerror="this.style.display='none'">
-                    <span class="res-team-name">Cruz Azul</span>
-                </div>
-                <div class="res-score-badge">
-                    <span class="score-num">5 - 0</span>
-                    <span class="score-penal"></span>
-                </div>
-                <div class="res-side visita">
-                    <span class="res-team-name">Jalisco FC</span>
-                    <img src="assets/logos/jalisco_FC.png" alt="Jalisco FC" class="res-logo" onerror="this.style.display='none'">
-                </div>
-            </div>
-            <p class="res-match-time">Pendiente J1- 23 de Septiembre - 7:40 p.m.<p class="m"></p></p>
-        </div>
-    </div>
-</section>
-
-        <section class="standings-container">             
-            <h2 class="section-title">Tabla General de Posiciones</h2>             
-            <div class="table-wrapper">                 
-                <table class="standings-table">                     
-                    <thead>                         
-                        <tr>                             
-                            <th>Pos</th>                             
-                            <th class="team-col">Equipo</th>                             
-                            <th>PJ</th>                             
-                            <th>PG</th>                             
-                            <th>PE</th>                             
-                            <th>PP</th>                             
-                            <th>Puntos</th>                             
-                            <th>GF</th>                             
-                            <th>GC</th>                             
-                            <th>Dif. Goles</th>                             
-                            <th>%</th>                             
-                            <th>PE</th>                         
-                        </tr>                     
-                    </thead>                     
-                    <tbody id="tabla-cuerpo">                         
-                        <!-- Los datos se inyectan con JavaScript -->                     
-                    </tbody>                 
-                </table>             
-            </div>         
-        </section>     
-    </main>     
-
-    <footer class="site-footer">         
-        <div class="footer-grid">             
-            <div class="footer-col">                 
-                <h4>Información</h4>                 
-                <p>&copy; 2026 Liga Municipal de Fut7 de Barrios.</p>                 
-                <p>Fundada en 2024.</p>             
-            </div>     
-            <div class="footer-col">                 
-                <h4>Dirección</h4>                 
-                <p>Cancha Loma del Aire</p>                 
-                <p>Autlán de Navarro, Jalisco, México.</p>             
-            </div>             
-            <div class="footer-col contact-col">                 
-                <h4>Contacto</h4>                 
-                <a href="https://wa.me/5213171078158" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">                     
-                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp                 
-                </a>             
-            </div>         
-        </div>                  
-        <div class="footer-bottom">             
-            <a href="/admin-login">Inicio de sesión de Administrador</a>         
-        </div>     
-    </footer>     
-    <script src="app.js"></script> 
-</body> 
+    </footer>
+    <script src="app.js"></script>
+</body>
 </html>
