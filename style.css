@@ -530,28 +530,40 @@ body {
 
 .team-dashboard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 25px;
     padding: 25px 4%;
     max-width: 1200px;
     margin: 0 auto 40px;
     width: 100%;
+    align-items: start;
+}
+
+.dashboard-left, .dashboard-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
 }
 
 .card {
     background: var(--color-blanco);
     border-top: 4px solid #003366;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    min-width: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    overflow: hidden;
+    width: 100%;
 }
 
 .card-title {
     padding: 12px 16px;
     font-size: 1rem;
+    font-weight: 700;
     color: var(--color-gris-oscuro);
     border-bottom: 1px solid #eee;
     background: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 #calendario-cuerpo td {
@@ -561,7 +573,7 @@ body {
 #calendario-cuerpo td:nth-child(5) {
     font-weight: 700;
     color: var(--color-rojo);
-    min-width: 90px;
+    min-width: 80px;
 }
 
 /* =========================================
@@ -665,7 +677,7 @@ body {
 }
 
 /* =========================================
-   MEDIA QUERIES MÓVILES (OPTIMIZADO)
+   OPTIMIZACIÓN RESPONSIVA Y MÓVIL
    ========================================= */
 @media (max-width: 900px) {
     .navbar {
@@ -695,7 +707,6 @@ body {
         padding: 4px 6px;
     }
 
-    /* Menú desplegable adaptado a pantallas táctiles y móviles */
     .dropdown-menu {
         position: static !important;
         box-shadow: none !important;
@@ -713,12 +724,57 @@ body {
     }
 
     .dropdown-menu a:hover {
-        padding-left: 10px; /* Evita desplazamiento lateral raro en móviles */
+        padding-left: 10px;
     }
 
+    /* Adaptación del Dashboard del Equipo */
     .team-dashboard {
         grid-template-columns: 1fr;
-        padding: 15px 3%;
+        padding: 15px 12px;
+        gap: 16px;
+    }
+
+    .team-hero {
+        min-height: 140px;
+        padding: 20px 10px;
+    }
+
+    .detail-logo {
+        width: 60px;
+        height: 60px;
+        padding: 4px;
+    }
+
+    .detail-name {
+        font-size: 1.35rem;
+    }
+
+    /* Tablas con scroll horizontal suave y limpio en móviles */
+    .card-table-wrapper {
+        border-radius: 0 0 8px 8px;
+        box-shadow: none;
+        max-width: 100%;
+    }
+
+    .card-table th {
+        padding: 8px 6px;
+        font-size: 0.75rem;
+    }
+
+    .card-table td {
+        padding: 8px 6px;
+        font-size: 0.78rem;
+    }
+
+    /* Permite que los nombres de los jugadores no se rompan bruscamente */
+    #plantilla-cuerpo td:nth-child(3) {
+        text-align: left;
+        min-width: 160px;
+        white-space: normal;
+    }
+
+    #calendario-cuerpo td:nth-child(2) {
+        white-space: nowrap;
     }
 
     .resultados-section {
@@ -740,20 +796,35 @@ body {
         gap: 6px 10px;
     }
 
+    .card-title {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+
+    .card-table th {
+        font-size: 0.7rem;
+        padding: 6px 4px;
+    }
+
+    .card-table td {
+        font-size: 0.75rem;
+        padding: 6px 4px;
+    }
+
     .res-side.local {
-        padding-right: 26px;
+        padding-right: 24px;
     }
 
     .res-side.visita {
-        padding-left: 26px;
+        padding-left: 24px;
     }
 
     .res-score-badge {
-        min-width: 44px;
-        height: 34px;
+        min-width: 42px;
+        height: 32px;
     }
 
     .score-num {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 }
