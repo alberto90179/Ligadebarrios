@@ -357,7 +357,7 @@ body {
     border-top-left-radius: 22px;
     border-bottom-left-radius: 22px;
     justify-content: flex-start;
-    padding-right: 30px;
+    padding-right: 36px;
 }
 
 .res-side.visita {
@@ -366,7 +366,7 @@ body {
     border-top-right-radius: 22px;
     border-bottom-right-radius: 22px;
     justify-content: flex-end;
-    padding-left: 30px;
+    padding-left: 36px;
 }
 
 .res-logo {
@@ -392,20 +392,33 @@ body {
     color: #ffffff;
     border: 2px solid #ffee00;
     border-radius: 14px;
-    min-width: 50px;
-    height: 38px;
+    min-width: 60px;
+    min-height: 38px;
+    padding: 3px 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 5;
-    padding: 0 4px;
     flex-shrink: 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .score-num {
     font-size: 1.05rem;
     font-weight: 900;
+    line-height: 1.1;
+}
+
+.score-penales {
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: #ffee00;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+    margin-top: 1px;
+    text-transform: uppercase;
 }
 
 .res-match-time {
@@ -727,7 +740,6 @@ body {
         padding-left: 10px;
     }
 
-    /* Adaptación del Dashboard del Equipo */
     .team-dashboard {
         grid-template-columns: 1fr;
         padding: 15px 12px;
@@ -749,7 +761,6 @@ body {
         font-size: 1.35rem;
     }
 
-    /* Tablas con scroll horizontal suave y limpio en móviles */
     .card-table-wrapper {
         border-radius: 0 0 8px 8px;
         box-shadow: none;
@@ -766,7 +777,6 @@ body {
         font-size: 0.78rem;
     }
 
-    /* Permite que los nombres de los jugadores no se rompan bruscamente */
     #plantilla-cuerpo td:nth-child(3) {
         text-align: left;
         min-width: 160px;
@@ -812,19 +822,26 @@ body {
     }
 
     .res-side.local {
-        padding-right: 24px;
+        padding-right: 32px;
     }
 
     .res-side.visita {
-        padding-left: 24px;
+        padding-left: 32px;
     }
 
     .res-score-badge {
-        min-width: 42px;
-        height: 32px;
+        min-width: 52px;
+        min-height: 34px;
+        padding: 2px 6px;
     }
 
     .score-num {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .score-penales {
+        font-size: 0.62rem;
+        font-weight: 900;
+        color: #ffee00;
     }
 }

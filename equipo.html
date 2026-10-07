@@ -6,6 +6,33 @@
     <title>Detalle del Equipo - Liga Municipal de Fut7 de Barrios</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos para las insignias de tarjetas en la tabla */
+        .badge-card {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 24px;
+            height: 24px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        .badge-amarilla {
+            background-color: #ffe600;
+            color: #111;
+            border: 1px solid #d4be00;
+        }
+        .badge-roja {
+            background-color: #e53935;
+            color: #ffffff;
+            border: 1px solid #b71c1c;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -58,6 +85,8 @@
                                 <th>EDAD</th>
                                 <th>JUGADOR</th>
                                 <th>J. JUGADOS</th>
+                                <th class="text-center" title="Tarjetas Amarillas">🟨 T.A.</th>
+                                <th class="text-center" title="Tarjetas Rojas">🟥 T.R.</th>
                             </tr>
                         </thead>
                         <tbody id="plantilla-cuerpo"></tbody>
