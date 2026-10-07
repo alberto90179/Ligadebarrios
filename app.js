@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { nombre: "Rayados FC", logo: "assets/logos/Rayados.jpg", pj: 4, g: 1, e: 1, p: 2, pts: 4, gf: 9, gc: 15, pe: 0, dg: "-6" },
         { nombre: "Robles FC", logo: "assets/logos/Robles.jpg", pj: 4, g: 2, e: 1, p: 1, pts: 7, gf: 11, gc: 7, pe: 0, dg: "+4" },
         { nombre: "Titanes L.A.", logo: "assets/logos/Titanes.jpg", pj: 4, g: 1, e: 1, p: 2, pts: 5, gf: 6, gc: 7, pe: 1, dg: "-1" },
-        { nombre: "Tortilleros FC", logo: "assets/logos/Tortilleros.png", pj: 3, g: 2, e: 1, p: 0, pts: 8, gf: 7, gc: 5, pe: 1, dg: "+2" }
+        { nombre: "Tortilleros FC", logo: "assets/logos/Tortilleros.png", pj: 4, g: 2, e: 1, p: 1, pts: 8, gf: 7, gc: 9, pe: 1, dg: "-2" }
     ];
 
     // ==========================================
