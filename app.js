@@ -44,13 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
         { nombre: "Tortilleros FC", logo: "assets/logos/Tortilleros.png", pj: 4, g: 2, e: 1, p: 1, pts: 8, gf: 7, gc: 9, pe: 1, dg: "-2" }
     ];
 
-    // ==========================================
+   // ==========================================
     // 3. TABLA GENERAL DE POSICIONES
     // ==========================================
     const tablaCuerpo = document.getElementById("tabla-cuerpo");
     if (tablaCuerpo) {
         tablaCuerpo.innerHTML = "";
-
         equipos.sort((a, b) => {
             if (b.pts !== a.pts) return b.pts - a.pts;
             const difA = parseInt(a.dg);
@@ -63,9 +62,30 @@ document.addEventListener("DOMContentLoaded", () => {
             const fila = document.createElement("tr");
             const logoImg = equipo.logo || "";
             const porcentaje = equipo.pj > 0 ? (equipo.pts / equipo.pj).toFixed(2) : "0.00";
+            const pos = index + 1;
+
+            // Determinar zona según la posición
+            let zonaClase = "";
+            let zonaBadge = "";
+
+            if (pos <= 8) {
+                zonaClase = "fila-liguilla";
+                zonaBadge = '<span class="badge-zona badge-liguilla" title="Zona de Liguilla">Liguilla</span>';
+            } else if (pos <= 12) {
+                zonaClase = "fila-consolacion";
+                zonaBadge = '<span class="badge-zona badge-consolacion" title="Copa de Consolación">Consolación</span>';
+            } else {
+                zonaClase = "fila-eliminado";
+                zonaBadge = '<span class="badge-zona badge-eliminado" title="Eliminado">Eliminado</span>';
+            }
+
+            fila.className = zonaClase;
 
             fila.innerHTML = `
-                <td>${index + 1}</td>
+                <td class="pos-col">
+                    <span class="pos-num">${pos}</span>
+                    ${zonaBadge}
+                </td>
                 <td class="team-name">
                     <a href="equipo.html?id=${index}" style="text-decoration: none; color: inherit;">
                         <div class="team-info" style="cursor: pointer;">

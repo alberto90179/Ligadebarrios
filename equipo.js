@@ -176,7 +176,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ]
         },
         "5": { // Pansa Brava
-            plantilla: [],
+            plantilla: [
+                { num: 137, pos: "28 años", nombre: "Adán García Paz", cat: "-", amarilla: "-", roja: "-" }
+            ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
                 { j: "J1", fecha: "Mar 08/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg", res: "2 - 3", visita: "assets/logos/JR Transmisiones.png" },
