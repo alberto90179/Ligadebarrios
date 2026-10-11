@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 86, pos: "19 años", nombre: "Hector Javier Guerrero Naranjo", cat: "1", amarilla: "-", roja: "-" },
                 { num: 76, pos: "23 años", nombre: "Jairo Adan Gonzalez Alaniz", cat: "1", amarilla: "-", roja: "-" },
                 { num: 74, pos: "22 años", nombre: "Jonathan Misael Tapia Santana", cat: "1", amarilla: "-", roja: "-" },
-                { num: 82, pos: "- años", nombre: "Jorge Alberto Guerrero", cat: "1", amarilla: "-", roja: "-" },
+                { num: 82, pos: "- años", nombre:  "Jorge Alberto Guerrero", cat: "1", amarilla: "-", roja: "-" },
                 { num: 73, pos: "33 años", nombre: "Jose Norberto Ramos Zamora", cat: "1", amarilla: "-", roja: "-" },
                 { num: 83, pos: "22 años", nombre: "Juan Carlos Navarro Robles", cat: "1", amarilla: "-", roja: "-" },
                 { num: 88, pos: "39 años", nombre: "Juan Chavez", cat: "-", amarilla: "-", roja: "-" },
@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 85, pos: "30 años", nombre: "Manuel López Mundo", cat: "1", amarilla: "-", roja: "-" },
                 { num: 77, pos: "29 años", nombre: "Salvador Ochoa Guerrero", cat: "-", amarilla: "-", roja: "-" }
             ],
-            cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
+            cuerpoTecnico: [{ cargo: "Equipero", nombre: "Jorge Alberto Guerrero" }],
             calendario: [
                 { j: "J1", fecha: "Lun 07/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg", res: "1 (10) - (9) 1", visita: "assets/logos/Diablos_Gordos.jpg" },
                 { j: "J2", fecha: "Lun 28/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg", res: "1 - 5", visita: "assets/logos/Pansa_Brava.jpg" },
