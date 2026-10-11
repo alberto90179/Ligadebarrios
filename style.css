@@ -156,13 +156,13 @@ body {
 }
 
 /* =========================================
-   BANNER Y CARRUSEL
+   BANNER Y CARRUSEL DE PRÓXIMOS PARTIDOS
    ========================================= */
 .hero-banner {
     background: linear-gradient(135deg, var(--color-gris-oscuro) 60%, var(--color-rojo) 100%);
     color: var(--color-blanco);
     text-align: center;
-    padding: 40px 15px;
+    padding: 35px 15px;
     margin-bottom: 30px;
 }
 
@@ -178,8 +178,8 @@ body {
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    padding: 15px 5px;
-    margin-bottom: 20px;
+    padding: 10px 5px 20px;
+    margin-bottom: 10px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 }
@@ -195,12 +195,13 @@ body {
 
 .match-card-hero {
     flex: 0 0 auto;
-    width: 320px;
+    width: 310px;
     max-width: 85vw;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px 15px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+    padding: 18px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
@@ -211,7 +212,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 12px;
 }
 
@@ -226,12 +227,13 @@ body {
 }
 
 .hero-team-logo {
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
     object-fit: contain;
     background: #ffffff;
     border-radius: 50%;
     padding: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .hero-team-name {
@@ -253,12 +255,13 @@ body {
 }
 
 .hero-details {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: #e0e0e0;
+    line-height: 1.3;
 }
 
 /* =========================================
-   RESULTADOS (ESTILO AFICHE)
+   SECCIÓN DE RESULTADOS (ESTILO AFICHE)
    ========================================= */
 .resultados-section {
     max-width: 650px;
@@ -429,7 +432,7 @@ body {
 }
 
 /* =========================================
-   TABLAS GENERALES Y DETALLES
+   TABLA GENERAL DE POSICIONES
    ========================================= */
 .standings-container {
     max-width: 1000px;
@@ -519,6 +522,7 @@ body {
 
 .card-tabla-secundaria {
     background: transparent;
+    width: 100%;
 }
 
 .section-title-tabla {
@@ -546,6 +550,30 @@ body {
 .font-bold {
     font-weight: bold;
     color: var(--color-gris-oscuro);
+}
+
+.badge-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 22px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.82rem;
+}
+
+.badge-amarilla {
+    background-color: #ffe600;
+    color: #111;
+    border: 1px solid #d4be00;
+}
+
+.badge-roja {
+    background-color: #e53935;
+    color: #ffffff;
+    border: 1px solid #b71c1c;
 }
 
 .badge-castigo-alerta {
@@ -615,9 +643,7 @@ body {
     word-break: break-word;
 }
 
-/* =========================================
-   PANEL DE ESTADÍSTICAS Y RESULTADOS (IMAGEN)
-   ========================================= */
+/* Panel Estadísticas y Resultados */
 .team-stats-container {
     max-width: 580px;
     width: 94%;
@@ -700,17 +726,9 @@ body {
     line-height: 1.1;
 }
 
-.val-green {
-    color: #00d084;
-}
-
-.val-red {
-    color: #ff334b;
-}
-
-.val-white {
-    color: #ffffff;
-}
+.val-green { color: #00d084; }
+.val-red { color: #ff334b; }
+.val-white { color: #ffffff; }
 
 .stat-tarjetas {
     display: flex;
@@ -732,7 +750,7 @@ body {
     margin-top: 2px;
 }
 
-/* Racha de Últimos Resultados */
+/* Racha de Resultados */
 .racha-section {
     display: flex;
     flex-direction: column;
@@ -768,20 +786,9 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
-.racha-g {
-    background-color: #00b368;
-    color: #ffffff;
-}
-
-.racha-e {
-    background-color: #f5b800;
-    color: #111827;
-}
-
-.racha-p {
-    background-color: #e51a42;
-    color: #ffffff;
-}
+.racha-g { background-color: #00b368; color: #ffffff; }
+.racha-e { background-color: #f5b800; color: #111827; }
+.racha-p { background-color: #e51a42; color: #ffffff; }
 
 .racha-legend {
     display: flex;
@@ -808,7 +815,7 @@ body {
     box-shadow: none;
 }
 
-/* Estructura del Dashboard */
+/* Dashboard general del equipo */
 .team-dashboard {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -958,195 +965,6 @@ body {
 }
 
 /* =========================================
-   OPTIMIZACIÓN RESPONSIVA Y MÓVIL
-   ========================================= */
-@media (max-width: 900px) {
-    .navbar {
-        flex-direction: column;
-        gap: 14px;
-        padding: 12px 15px;
-        text-align: center;
-    }
-    .logo-container {
-        flex-direction: column;
-        gap: 8px;
-    }
-    .site-title {
-        font-size: 1rem;
-    }
-    .nav-links > ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px 14px;
-    }
-    .nav-links a {
-        font-size: 0.9rem;
-        padding: 4px 6px;
-    }
-    .dropdown-menu {
-        position: static !important;
-        box-shadow: none !important;
-        background-color: #f7f7f7 !important;
-        margin-top: 6px;
-        width: 100%;
-        max-height: 250px;
-        overflow-y: auto;
-        border: 1px solid #ddd;
-    }
-    .dropdown-menu a {
-        text-align: center;
-        padding: 10px;
-    }
-    .dropdown-menu a:hover {
-        padding-left: 10px;
-    }
-    .team-dashboard {
-        grid-template-columns: 1fr;
-        padding: 15px 12px;
-        gap: 16px;
-    }
-    .team-hero {
-        min-height: 140px;
-        padding: 20px 10px;
-    }
-    .detail-logo {
-        width: 60px;
-        height: 60px;
-        padding: 4px;
-    }
-    .detail-name {
-        font-size: 1.35rem;
-    }
-    .card-table-wrapper {
-        border-radius: 0 0 8px 8px;
-        box-shadow: none;
-        max-width: 100%;
-    }
-    .card-table th {
-        padding: 8px 6px;
-        font-size: 0.75rem;
-    }
-    .card-table td {
-        padding: 8px 6px;
-        font-size: 0.78rem;
-    }
-    #plantilla-cuerpo td:nth-child(3) {
-        text-align: left;
-        min-width: 160px;
-        white-space: normal;
-    }
-    #calendario-cuerpo td:nth-child(2) {
-        white-space: nowrap;
-    }
-    .resultados-section {
-        width: 96%;
-        padding: 18px 10px;
-    }
-    .res-team-name {
-        font-size: 0.85rem;
-    }
-    .tablas-secundarias-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* OPTIMIZACIÓN EXCLUSIVA PARA SMARTPHONES */
-@media (max-width: 480px) {
-    .site-title {
-        font-size: 0.9rem;
-    }
-    .nav-links > ul {
-        gap: 6px 10px;
-    }
-    .card-title {
-        font-size: 0.9rem;
-        padding: 10px 12px;
-    }
-    .card-table th {
-        font-size: 0.7rem;
-        padding: 6px 4px;
-    }
-    .card-table td {
-        font-size: 0.75rem;
-        padding: 6px 4px;
-    }
-    .res-side.local {
-        padding-right: 32px;
-    }
-    .res-side.visita {
-        padding-left: 32px;
-    }
-    .res-score-badge {
-        min-width: 52px;
-        min-height: 34px;
-        padding: 2px 6px;
-    }
-    .score-num {
-        font-size: 0.95rem;
-    }
-    .score-penales {
-        font-size: 0.62rem;
-        font-weight: 900;
-        color: #ffee00;
-    }
-
-    /* Ajustes móviles para el bloque estadístico de la imagen */
-    .team-stats-container {
-        width: 100%;
-        padding: 0 10px;
-        margin: 15px auto 10px;
-        gap: 12px;
-    }
-    .stats-dark-card {
-        padding: 14px 6px;
-        border-radius: 14px;
-    }
-    .stat-label {
-        font-size: 0.62rem;
-        letter-spacing: 0.3px;
-        margin-bottom: 2px;
-    }
-    .stat-val {
-        font-size: 1.45rem;
-    }
-    .tarjetas-total {
-        font-size: 1.25rem;
-    }
-    .tarjetas-sub {
-        font-size: 0.62rem;
-    }
-    .stats-grid-2x2 {
-        row-gap: 14px;
-    }
-    .stats-grid-2x2 .stat-col:nth-child(1),
-    .stats-grid-2x2 .stat-col:nth-child(2) {
-        padding-bottom: 12px;
-    }
-    .racha-title {
-        font-size: 0.95rem;
-        margin-bottom: 8px;
-    }
-    .racha-badges {
-        gap: 6px;
-    }
-    .badge-racha {
-        height: 38px;
-        font-size: 0.95rem;
-        border-radius: 8px;
-    }
-    .racha-legend {
-        font-size: 0.78rem;
-        gap: 12px;
-        margin-top: 10px;
-    }
-    .racha-legend-item .badge-racha {
-        width: 20px;
-        height: 20px;
-        font-size: 0.65rem;
-    }
-}
-
-/* =========================================
    INDICADORES DE ZONA EN TABLA GENERAL
    ========================================= */
 .fila-liguilla {
@@ -1227,3 +1045,365 @@ body {
 .color-liguilla { background-color: #2e7d32; }
 .color-consolacion { background-color: #f57c00; }
 .color-eliminado { background-color: #d32f2f; }
+
+/* =======================================================
+   OPTIMIZACIÓN RESPONSIVA TABLETS Y MÓVILES (max-width: 900px)
+   ======================================================= */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 14px;
+        padding: 12px 15px;
+        text-align: center;
+    }
+    .logo-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .site-title {
+        font-size: 1rem;
+    }
+    .nav-links > ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 14px;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 4px 6px;
+    }
+    .dropdown-menu {
+        position: static !important;
+        box-shadow: none !important;
+        background-color: #f7f7f7 !important;
+        margin-top: 6px;
+        width: 100%;
+        max-height: 250px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+    }
+    .dropdown-menu a {
+        text-align: center;
+        padding: 10px;
+    }
+    .dropdown-menu a:hover {
+        padding-left: 10px;
+    }
+    .team-dashboard {
+        grid-template-columns: 1fr;
+        padding: 15px 12px;
+        gap: 16px;
+    }
+    .team-hero {
+        min-height: 140px;
+        padding: 20px 10px;
+    }
+    .detail-logo {
+        width: 60px;
+        height: 60px;
+        padding: 4px;
+    }
+    .detail-name {
+        font-size: 1.35rem;
+    }
+    .card-table-wrapper {
+        border-radius: 0 0 8px 8px;
+        box-shadow: none;
+        max-width: 100%;
+    }
+    .card-table th {
+        padding: 8px 6px;
+        font-size: 0.75rem;
+    }
+    .card-table td {
+        padding: 8px 6px;
+        font-size: 0.78rem;
+    }
+    #plantilla-cuerpo td:nth-child(3) {
+        text-align: left;
+        min-width: 160px;
+        white-space: normal;
+    }
+    #calendario-cuerpo td:nth-child(2) {
+        white-space: nowrap;
+    }
+    .resultados-section {
+        width: 96%;
+        padding: 20px 10px;
+    }
+    .res-team-name {
+        font-size: 0.85rem;
+    }
+    .tablas-secundarias-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* =======================================================
+   OPTIMIZACIÓN RESPONSIVA MÓVIL EXACTA (max-width: 480px)
+   ======================================================= */
+@media (max-width: 480px) {
+    /* Navbar móvil */
+    .navbar {
+        padding: 10px;
+        gap: 10px;
+    }
+    .logo-img {
+        height: 52px;
+    }
+    .site-title {
+        font-size: 0.88rem;
+    }
+    .site-title span {
+        font-size: 1.15rem;
+    }
+    .nav-links > ul {
+        gap: 4px 10px;
+    }
+    .nav-links a {
+        font-size: 0.82rem;
+        padding: 3px 5px;
+    }
+
+    /* Banner y Carrusel en celular */
+    .hero-banner {
+        padding: 24px 10px 15px;
+        margin-bottom: 20px;
+    }
+    .hero-subtitle {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    .matches-carousel {
+        padding: 5px 2px 14px;
+        gap: 10px;
+    }
+    .match-card-hero {
+        width: 270px;
+        max-width: 82vw;
+        padding: 14px 10px;
+        border-radius: 12px;
+    }
+    .hero-team-logo {
+        width: 38px;
+        height: 38px;
+        padding: 3px;
+    }
+    .hero-team-name {
+        font-size: 0.76rem;
+    }
+    .vs-badge {
+        font-size: 0.72rem;
+        padding: 3px 5px;
+    }
+    .hero-details {
+        font-size: 0.74rem;
+    }
+
+    /* Afiche de Resultados de Jornada en Celular */
+    .resultados-section {
+        width: 96%;
+        margin: 15px auto 30px;
+        padding: 18px 8px;
+        border-radius: 12px;
+    }
+    .res-title-main {
+        font-size: 1.35rem;
+        margin-bottom: 6px;
+    }
+    .res-badge-jornada {
+        padding: 3px 14px;
+        margin-bottom: 6px;
+    }
+    .jornada-txt {
+        font-size: 1rem;
+    }
+    .sub-jornada {
+        font-size: 0.75rem;
+    }
+    .res-dates {
+        font-size: 0.95rem;
+    }
+    .res-venue {
+        font-size: 0.85rem;
+    }
+    .resultados-list {
+        gap: 10px;
+    }
+    .res-match-row {
+        min-height: 40px;
+        border-radius: 20px;
+    }
+    .res-side {
+        padding: 4px 6px;
+        gap: 6px;
+    }
+    .res-side.local {
+        padding-right: 28px;
+    }
+    .res-side.visita {
+        padding-left: 28px;
+    }
+    .res-logo {
+        width: 20px;
+        height: 20px;
+    }
+    .res-team-name {
+        font-size: 0.76rem;
+        font-weight: 700;
+    }
+    .res-score-badge {
+        min-width: 48px;
+        min-height: 32px;
+        padding: 2px 4px;
+        border-radius: 10px;
+        border-width: 1.5px;
+    }
+    .score-num {
+        font-size: 0.9rem;
+    }
+    .score-penales {
+        font-size: 0.58rem;
+    }
+    .res-match-time {
+        font-size: 0.72rem;
+        margin-top: 3px;
+    }
+
+    /* Tabla General de Posiciones en Celular */
+    .standings-container {
+        padding: 0 8px;
+        margin-bottom: 35px;
+    }
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 14px;
+    }
+    .standings-table th {
+        font-size: 0.72rem;
+        padding: 8px 4px;
+    }
+    .standings-table td {
+        font-size: 0.75rem;
+        padding: 7px 4px;
+    }
+    .standings-table td.team-name {
+        min-width: 130px; /* Asegura que el nombre del equipo no se aplaste al scrollear */
+    }
+    .team-info {
+        gap: 6px;
+    }
+    .team-logo {
+        width: 18px;
+        height: 18px;
+    }
+    .pos-num {
+        font-size: 0.85rem;
+    }
+    .badge-zona {
+        font-size: 0.55rem;
+        padding: 1px 4px;
+    }
+
+    /* Leyenda inferior */
+    .tabla-leyenda {
+        gap: 10px 14px;
+        font-size: 0.75rem;
+        justify-content: flex-start;
+        padding: 0 4px;
+    }
+
+    /* Tablas Secundarias en Celular */
+    .tablas-secundarias-container {
+        padding: 0 8px;
+        margin-bottom: 40px;
+    }
+    .section-title-tabla {
+        font-size: 1.05rem;
+        margin-bottom: 8px;
+    }
+    .custom-info-table th {
+        font-size: 0.7rem;
+        padding: 8px 5px;
+    }
+    .custom-info-table td {
+        font-size: 0.74rem;
+        padding: 7px 5px;
+    }
+    .badge-card {
+        min-width: 18px;
+        height: 18px;
+        font-size: 0.72rem;
+        padding: 1px 4px;
+    }
+    .badge-castigo-alerta,
+    .badge-castigo-rojo {
+        font-size: 0.65rem;
+        padding: 2px 6px;
+    }
+
+    /* Panel de Estadísticas del Equipo (equipo.html) */
+    .team-stats-container {
+        width: 100%;
+        padding: 0 8px;
+        margin: 15px auto 10px;
+        gap: 12px;
+    }
+    .stats-dark-card {
+        padding: 12px 6px;
+        border-radius: 12px;
+    }
+    .stat-label {
+        font-size: 0.62rem;
+        letter-spacing: 0.3px;
+        margin-bottom: 2px;
+    }
+    .stat-val {
+        font-size: 1.45rem;
+    }
+    .tarjetas-total {
+        font-size: 1.25rem;
+    }
+    .tarjetas-sub {
+        font-size: 0.62rem;
+    }
+    .stats-grid-2x2 {
+        row-gap: 12px;
+    }
+    .stats-grid-2x2 .stat-col:nth-child(1),
+    .stats-grid-2x2 .stat-col:nth-child(2) {
+        padding-bottom: 10px;
+    }
+    .racha-title {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+    .racha-badges {
+        gap: 6px;
+    }
+    .badge-racha {
+        height: 38px;
+        font-size: 0.95rem;
+        border-radius: 8px;
+    }
+    .racha-legend {
+        font-size: 0.78rem;
+        gap: 12px;
+        margin-top: 10px;
+    }
+    .racha-legend-item .badge-racha {
+        width: 20px;
+        height: 20px;
+        font-size: 0.65rem;
+    }
+
+    /* Footer en celular */
+    .site-footer {
+        padding: 25px 4% 15px;
+    }
+    .footer-grid {
+        gap: 20px;
+    }
+}
