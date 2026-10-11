@@ -175,7 +175,7 @@ body {
 }
 
 /* =========================================
-   CARRUSEL - UN SOLO PARTIDO VISIBLE
+   CARRUSEL - UN SOLO PARTIDO VISIBLE CON AUTOPLAY
    ========================================= */
 .matches-carousel {
     display: flex;
@@ -190,6 +190,7 @@ body {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    scroll-behavior: smooth;
 }
 
 .matches-carousel::-webkit-scrollbar {
@@ -279,6 +280,27 @@ body {
     color: #e0e0e0;
     line-height: 1.4;
     text-align: center;
+}
+
+/* Indicadores de puntos (opcional, si los añades en HTML) */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-dots .dot.active {
+    background-color: #ffee00;
 }
 
 /* =========================================
@@ -524,7 +546,7 @@ body {
 }
 
 /* =========================================
-   TABLAS SECUNDARIAS (DISCIPLINARIA Y MULTAS) - CORREGIDO
+   TABLAS SECUNDARIAS (DISCIPLINARIA Y MULTAS)
    ========================================= */
 .tablas-secundarias-container {
     max-width: 1100px;
@@ -563,7 +585,6 @@ body {
     color: var(--color-rojo);
 }
 
-/* Tabla con layout auto para que no se corte la info */
 .card-table {
     width: 100%;
     border-collapse: collapse;
@@ -590,14 +611,12 @@ body {
     word-break: break-word;
 }
 
-/* Columna de tarjetas (última) centrada y con ancho fijo */
 .card-table th:last-child,
 .card-table td:last-child {
     text-align: center;
     width: 70px;
 }
 
-/* Columnas con espacio mínimo garantizado */
 .card-table td:nth-child(1),
 .card-table td:nth-child(2) {
     min-width: 100px;

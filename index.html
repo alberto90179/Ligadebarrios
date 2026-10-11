@@ -455,7 +455,91 @@
             <a href="/admin-login">Inicio de sesión de Administrador</a>
         </div>
     </footer>
+    <script>
+(function() {
+    const carousel = document.querySelector('.matches-carousel');
+    if (!carousel) return;
 
+    const cards = carousel.querySelectorAll('.match-card-hero');
+    if (cards.length <= 1) return;
+
+    let currentIndex = 0;
+    let autoplayInterval = null;
+    const AUTOPLAY_DELAY = 10000; // 5 segundos
+    const RESUME_DELAY = 8000;    // Reanudar 3s después de interacción manual
+
+    // Función para ir a una tarjeta específica
+    function goToSlide(index) {
+        if (index >= cards.length) index = 0;
+        if (index < 0) index = cards.length - 1;
+        currentIndex = index;
+        const cardWidth = cards[0].offsetWidth;
+        carousel.scrollTo({
+            left: cardWidth * currentIndex,
+            behavior: 'smooth'
+        });
+    }
+
+    // Siguiente slide
+    function nextSlide() {
+        goToSlide(currentIndex + 1);
+    }
+
+    // Iniciar autoplay
+    function startAutoplay() {
+        stopAutoplay();
+        autoplayInterval = setInterval(nextSlide, AUTOPLAY_DELAY);
+    }
+
+    // Detener autoplay
+    function stopAutoplay() {
+        if (autoplayInterval) {
+            clearInterval(autoplayInterval);
+            autoplayInterval = null;
+        }
+    }
+
+    // Detectar interacción manual del usuario para pausar y reanudar
+    let resumeTimeout = null;
+    function handleUserInteraction() {
+        stopAutoplay();
+        if (resumeTimeout) clearTimeout(resumeTimeout);
+        resumeTimeout = setTimeout(startAutoplay, RESUME_DELAY);
+    }
+
+    // Actualizar el índice cuando el usuario hace scroll manual
+    function updateIndexOnScroll() {
+        const cardWidth = cards[0].offsetWidth;
+        const newIndex = Math.round(carousel.scrollLeft / cardWidth);
+        if (newIndex !== currentIndex) {
+            currentIndex = newIndex;
+        }
+    }
+
+    // Event listeners
+    carousel.addEventListener('scroll', updateIndexOnScroll, { passive: true });
+    carousel.addEventListener('touchstart', handleUserInteraction, { passive: true });
+    carousel.addEventListener('mousedown', handleUserInteraction);
+    carousel.addEventListener('wheel', handleUserInteraction, { passive: true });
+
+    // Pausar cuando la pestaña no está visible (ahorra recursos)
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            stopAutoplay();
+        } else {
+            startAutoplay();
+        }
+    });
+
+    // Iniciar autoplay al cargar
+    startAutoplay();
+
+    // Recalcular al redimensionar la ventana
+    window.addEventListener('resize', function() {
+        goToSlide(currentIndex);
+    });
+})();
+</script>
     <script src="app.js"></script>
 </body>
 </html>
