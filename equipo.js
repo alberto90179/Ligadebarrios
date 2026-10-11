@@ -149,8 +149,22 @@ document.addEventListener("DOMContentLoaded", () => {
             ]
         },
         "3": { // Robles FC
-            plantilla: [],
-            cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
+            plantilla: [
+                { num: 143, pos: "20 años", nombre: "Alexis de la Torre", cat: "1", amarilla: "-", roja: "-" },
+                { num: 147, pos: "27 años", nombre: "Eduardo Reyes", cat: "1", amarilla: "-", roja: "-" },
+                { num: 140, pos: "23 años", nombre: "Eloy López Rivera", cat: "1", amarilla: "-", roja: "-" },
+                { num: 145, pos: "28 años", nombre: "Iván Suarez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 148, pos: "30 años", nombre: "Jesus Jaime Arechiga", cat: "1", amarilla: "-", roja: "-" },
+                { num: 133, pos: "27 años", nombre: "Jorge Luis Delgado Palacios", cat: "1", amarilla: "-", roja: "-" },
+                { num: 134, pos: "27 años", nombre: "Jose Armando Muñoz Silva", cat: "1", amarilla: "-", roja: "-" },
+                { num: 141, pos: "22 años", nombre: "Jose Ignacio Ortega", cat: "1", amarilla: "-", roja: "-" },
+                { num: 144, pos: "25 años", nombre: "Jose Ramón Avalos", cat: "1", amarilla: "-", roja: "-" },
+                { num: 142, pos: "25 años", nombre: "Leonardo Raul Esparza", cat: "1", amarilla: "-", roja: "-" },
+                { num: 146, pos: "29 años", nombre: "Manuel Ezequiel Macías", cat: "1", amarilla: "-", roja: "-" },
+                { num: 149, pos: "44 años", nombre: "Noe Andrey Juarez Diaz", cat: "1", amarilla: "-", roja: "-" },
+                { num: 150, pos: "20 años", nombre: "Pablo Martín Ramírez", cat: "1", amarilla: "-", roja: "-" }
+            ],
+            cuerpoTecnico: [{ cargo: "Equipero", nombre: "Iván Suarez" }],
             calendario: [
                 { j: "J1", fecha: "Mar 08/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg", res: "4 - 2", visita: "assets/logos/Rayados.jpg" },
                 { j: "J2", fecha: "Lun 28/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "0 - 0", visita: "assets/logos/Robles.jpg" },
