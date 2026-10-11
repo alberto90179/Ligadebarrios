@@ -193,7 +193,25 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "5": { // Pansa Brava
             plantilla: [
-                { num: 137, pos: "28 años", nombre: "Adán García Paz", cat: "-", amarilla: "-", roja: "-" }
+                { num: 268, pos: " años", nombre: "Armando Guadalupe Amézquita Barbarin", cat: "1", amarilla: "-", roja: "-" },
+                { num: 216, pos: " años", nombre: "Brayan Osvaldo Hernandez Ventura", cat: "1", amarilla: "-", roja: "-" },
+                { num: 210, pos: " años", nombre: "Cesar Lara", cat: "1", amarilla: "-", roja: "-" },
+                { num: 248, pos: " años", nombre: "David Omar Benitez Gomez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 226, pos: " años", nombre: "Edgar Gerardo Salazar", cat: "1", amarilla: "-", roja: "-" },
+                { num: 271, pos: " años", nombre: "Edwin Alejandro Ruiz Mejía", cat: "1", amarilla: "-", roja: "-" },
+                { num: 209, pos: " años", nombre: "Emanuel Ventura Ramirez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 228, pos: " años", nombre: "Francisco Javier Verduzco Arechiga ", cat: "1", amarilla: "-", roja: "-" },
+                { num: 217, pos: " años", nombre: "Issac Pelayo Santana", cat: "1", amarilla: "-", roja: "-" },
+                { num: 215, pos: " años", nombre: "Javier Alejandro Salazar", cat: "1", amarilla: "-", roja: "-" },
+                { num: 272, pos: " años", nombre: "Jonatan Antonio Lopez Santos", cat: "1", amarilla: "-", roja: "-" },
+                { num: 211, pos: " años", nombre: "Jonatan Josue Ruiz Rosales", cat: "1", amarilla: "-", roja: "-" },
+                { num: 247, pos: " años", nombre: "Juan Carlos Gonzalez Paz", cat: "1", amarilla: "-", roja: "-" },
+                { num: 227, pos: " años", nombre: "Juan Carlos Rico Lopez", cat: "-", amarilla: "-", roja: "-" },
+                { num: 213, pos: " años", nombre: "Juan Roman Sanchez Villavazo", cat: "-", amarilla: "-", roja: "-" },
+                { num: 270, pos: " años", nombre: "Marco Vizcarra Diaz", cat: "1", amarilla: "-", roja: "-" },
+                { num: 269, pos: " años", nombre: "Raul Vizcarra Diaz", cat: "1", amarilla: "-", roja: "-" },
+                { num: 214, pos: " años", nombre: "Victor Hugo Flores Bartolo", cat: "-", amarilla: "-", roja: "-" },
+
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
