@@ -67,12 +67,80 @@
             </ul>
         </nav>
     </header>
+
     <section class="team-hero">
         <div class="team-hero-content">
             <img id="detail-logo" src="" alt="Logo Equipo" class="detail-logo" onerror="this.style.display='none'">
             <h1 id="detail-name" class="detail-name">Cargando Equipo...</h1>
         </div>
     </section>
+
+    <!-- BLOQUE DE RESUMEN Y ESTADÍSTICAS DEL EQUIPO -->
+    <section class="team-stats-container">
+        <!-- Tarjeta Superior: Posición, Puntos, Jugados, Cociente -->
+        <div class="stats-dark-card stats-row-4">
+            <div class="stat-col">
+                <span class="stat-label">POSICIÓN</span>
+                <span class="stat-val val-green" id="stat-pos">-</span>
+            </div>
+            <div class="stat-col">
+                <span class="stat-label">PUNTOS</span>
+                <span class="stat-val val-white" id="stat-pts">-</span>
+            </div>
+            <div class="stat-col">
+                <span class="stat-label">JUGADOS</span>
+                <span class="stat-val val-white" id="stat-pj">-</span>
+            </div>
+            <div class="stat-col">
+                <span class="stat-label">COCIENTE</span>
+                <span class="stat-val val-white" id="stat-cociente">-</span>
+            </div>
+        </div>
+
+        <!-- Tarjeta Central: Goles a favor/contra, Diferencia y Tarjetas -->
+        <div class="stats-dark-card stats-grid-2x2">
+            <div class="stat-col">
+                <span class="stat-label">GOLES A FAVOR</span>
+                <span class="stat-val val-green" id="stat-gf">-</span>
+            </div>
+            <div class="stat-col">
+                <span class="stat-label">GOLES EN CONTRA</span>
+                <span class="stat-val val-red" id="stat-gc">-</span>
+            </div>
+            <div class="stat-col">
+                <span class="stat-label">DIFERENCIA</span>
+                <span class="stat-val val-white" id="stat-dg">-</span>
+            </div>
+            <div class="stat-col">
+                <span class="stat-label">TARJETAS</span>
+                <div class="stat-tarjetas">
+                    <span class="tarjetas-total" id="stat-tarjetas">-</span>
+                    <span class="tarjetas-sub">Amarillas / Rojas</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Racha: Últimos resultados -->
+        <div class="racha-section">
+            <h3 class="racha-title">Últimos resultados</h3>
+            <div class="racha-badges" id="racha-contenedor"></div>
+            <div class="racha-legend">
+                <div class="racha-legend-item">
+                    <span class="badge-racha racha-g">G</span>
+                    <span>Ganado</span>
+                </div>
+                <div class="racha-legend-item">
+                    <span class="badge-racha racha-e">E</span>
+                    <span>Empatado</span>
+                </div>
+                <div class="racha-legend-item">
+                    <span class="badge-racha racha-p">P</span>
+                    <span>Perdido</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <main class="team-dashboard">
         <div class="dashboard-left">
             <div class="card">
@@ -85,8 +153,8 @@
                                 <th>EDAD</th>
                                 <th>JUGADOR</th>
                                 <th>J. JUGADOS</th>
-                                <th class="text-center" title="Tarjetas Amarillas">🟨 T.A.</th>
-                                <th class="text-center" title="Tarjetas Rojas">🟥 T.R.</th>
+                                <th class="text-center" title="Tarjetas Amarillas">T.A.</th>
+                                <th class="text-center" title="Tarjetas Rojas">T.R.</th>
                             </tr>
                         </thead>
                         <tbody id="plantilla-cuerpo"></tbody>
@@ -129,6 +197,7 @@
             </div>
         </div>
     </main>
+
     <footer class="site-footer">
         <div class="footer-grid">
             <div class="footer-col">

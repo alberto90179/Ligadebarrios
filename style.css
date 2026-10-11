@@ -502,7 +502,7 @@ body {
 }
 
 /* =========================================
-   ESTILOS NUEVOS: TABLAS SECUNDARIAS (DISCIPLINARIA Y MULTAS)
+   TABLAS SECUNDARIAS (DISCIPLINARIA Y MULTAS)
    ========================================= */
 .tablas-secundarias-container {
     max-width: 1100px;
@@ -546,30 +546,6 @@ body {
 .font-bold {
     font-weight: bold;
     color: var(--color-gris-oscuro);
-}
-
-.badge-card {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 22px;
-    height: 22px;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 0.82rem;
-}
-
-.badge-amarilla {
-    background-color: #ffe600;
-    color: #111;
-    border: 1px solid #d4be00;
-}
-
-.badge-roja {
-    background-color: #e53935;
-    color: #ffffff;
-    border: 1px solid #b71c1c;
 }
 
 .badge-castigo-alerta {
@@ -639,6 +615,200 @@ body {
     word-break: break-word;
 }
 
+/* =========================================
+   PANEL DE ESTADÍSTICAS Y RESULTADOS (IMAGEN)
+   ========================================= */
+.team-stats-container {
+    max-width: 580px;
+    width: 94%;
+    margin: 22px auto 10px;
+    padding: 0 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stats-dark-card {
+    background-color: #121820;
+    border: 1px solid #222d3b;
+    border-radius: 16px;
+    padding: 18px 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.stats-row-4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stats-grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 8px;
+}
+
+.stat-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 2px 4px;
+}
+
+.stats-row-4 .stat-col:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background-color: #263342;
+}
+
+.stats-grid-2x2 .stat-col:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background-color: #263342;
+}
+
+.stats-grid-2x2 .stat-col:nth-child(1),
+.stats-grid-2x2 .stat-col:nth-child(2) {
+    border-bottom: 1px solid #1e2936;
+    padding-bottom: 16px;
+}
+
+.stat-label {
+    color: #90a0b5;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.stat-val {
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.val-green {
+    color: #00d084;
+}
+
+.val-red {
+    color: #ff334b;
+}
+
+.val-white {
+    color: #ffffff;
+}
+
+.stat-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetas-total {
+    color: #ffc400;
+    font-size: 1.45rem;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.tarjetas-sub {
+    color: #7b8b9f;
+    font-size: 0.68rem;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+/* Racha de Últimos Resultados */
+.racha-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 2px 10px;
+    width: 100%;
+}
+
+.racha-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.racha-badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+
+.badge-racha {
+    flex: 1;
+    height: 48px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.15rem;
+    color: #111827;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.racha-g {
+    background-color: #00b368;
+    color: #ffffff;
+}
+
+.racha-e {
+    background-color: #f5b800;
+    color: #111827;
+}
+
+.racha-p {
+    background-color: #e51a42;
+    color: #ffffff;
+}
+
+.racha-legend {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4b5563;
+    flex-wrap: wrap;
+}
+
+.racha-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.racha-legend-item .badge-racha {
+    width: 22px;
+    height: 22px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+/* Estructura del Dashboard */
 .team-dashboard {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -880,6 +1050,7 @@ body {
     }
 }
 
+/* OPTIMIZACIÓN EXCLUSIVA PARA SMARTPHONES */
 @media (max-width: 480px) {
     .site-title {
         font-size: 0.9rem;
@@ -918,6 +1089,61 @@ body {
         font-weight: 900;
         color: #ffee00;
     }
+
+    /* Ajustes móviles para el bloque estadístico de la imagen */
+    .team-stats-container {
+        width: 100%;
+        padding: 0 10px;
+        margin: 15px auto 10px;
+        gap: 12px;
+    }
+    .stats-dark-card {
+        padding: 14px 6px;
+        border-radius: 14px;
+    }
+    .stat-label {
+        font-size: 0.62rem;
+        letter-spacing: 0.3px;
+        margin-bottom: 2px;
+    }
+    .stat-val {
+        font-size: 1.45rem;
+    }
+    .tarjetas-total {
+        font-size: 1.25rem;
+    }
+    .tarjetas-sub {
+        font-size: 0.62rem;
+    }
+    .stats-grid-2x2 {
+        row-gap: 14px;
+    }
+    .stats-grid-2x2 .stat-col:nth-child(1),
+    .stats-grid-2x2 .stat-col:nth-child(2) {
+        padding-bottom: 12px;
+    }
+    .racha-title {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+    .racha-badges {
+        gap: 6px;
+    }
+    .badge-racha {
+        height: 38px;
+        font-size: 0.95rem;
+        border-radius: 8px;
+    }
+    .racha-legend {
+        font-size: 0.78rem;
+        gap: 12px;
+        margin-top: 10px;
+    }
+    .racha-legend-item .badge-racha {
+        width: 20px;
+        height: 20px;
+        font-size: 0.65rem;
+    }
 }
 
 /* =========================================
@@ -926,9 +1152,11 @@ body {
 .fila-liguilla {
     border-left: 4px solid #2e7d32;
 }
+
 .fila-consolacion {
     border-left: 4px solid #f57c00;
 }
+
 .fila-eliminado {
     border-left: 4px solid #d32f2f;
 }
@@ -974,7 +1202,6 @@ body {
     border: 1px solid #e57373;
 }
 
-/* Leyenda inferior para la tabla */
 .tabla-leyenda {
     display: flex;
     justify-content: center;
