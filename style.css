@@ -502,6 +502,104 @@ body {
 }
 
 /* =========================================
+   ESTILOS NUEVOS: TABLAS SECUNDARIAS (DISCIPLINARIA Y MULTAS)
+   ========================================= */
+.tablas-secundarias-container {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 15px;
+}
+
+.tablas-secundarias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 25px;
+    align-items: start;
+}
+
+.card-tabla-secundaria {
+    background: transparent;
+}
+
+.section-title-tabla {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-gris-oscuro);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-title-tabla i {
+    color: var(--color-rojo);
+}
+
+.custom-info-table td {
+    vertical-align: middle;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.font-bold {
+    font-weight: bold;
+    color: var(--color-gris-oscuro);
+}
+
+.badge-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 22px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.82rem;
+}
+
+.badge-amarilla {
+    background-color: #ffe600;
+    color: #111;
+    border: 1px solid #d4be00;
+}
+
+.badge-roja {
+    background-color: #e53935;
+    color: #ffffff;
+    border: 1px solid #b71c1c;
+}
+
+.badge-castigo-alerta {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background-color: #fff8e1;
+    color: #b78103;
+    border: 1px solid #ffe082;
+}
+
+.badge-castigo-rojo {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.multa-total {
+    color: var(--color-rojo) !important;
+    font-size: 0.95rem !important;
+}
+
+/* =========================================
    PÁGINA DE EQUIPO (equipo.html)
    ========================================= */
 .team-hero {
@@ -699,27 +797,22 @@ body {
         padding: 12px 15px;
         text-align: center;
     }
-
     .logo-container {
         flex-direction: column;
         gap: 8px;
     }
-
     .site-title {
         font-size: 1rem;
     }
-
     .nav-links > ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px 14px;
     }
-
     .nav-links a {
         font-size: 0.9rem;
         padding: 4px 6px;
     }
-
     .dropdown-menu {
         position: static !important;
         box-shadow: none !important;
@@ -730,70 +823,60 @@ body {
         overflow-y: auto;
         border: 1px solid #ddd;
     }
-
     .dropdown-menu a {
         text-align: center;
         padding: 10px;
     }
-
     .dropdown-menu a:hover {
         padding-left: 10px;
     }
-
     .team-dashboard {
         grid-template-columns: 1fr;
         padding: 15px 12px;
         gap: 16px;
     }
-
     .team-hero {
         min-height: 140px;
         padding: 20px 10px;
     }
-
     .detail-logo {
         width: 60px;
         height: 60px;
         padding: 4px;
     }
-
     .detail-name {
         font-size: 1.35rem;
     }
-
     .card-table-wrapper {
         border-radius: 0 0 8px 8px;
         box-shadow: none;
         max-width: 100%;
     }
-
     .card-table th {
         padding: 8px 6px;
         font-size: 0.75rem;
     }
-
     .card-table td {
         padding: 8px 6px;
         font-size: 0.78rem;
     }
-
     #plantilla-cuerpo td:nth-child(3) {
         text-align: left;
         min-width: 160px;
         white-space: normal;
     }
-
     #calendario-cuerpo td:nth-child(2) {
         white-space: nowrap;
     }
-
     .resultados-section {
         width: 96%;
         padding: 18px 10px;
     }
-
     .res-team-name {
         font-size: 0.85rem;
+    }
+    .tablas-secundarias-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -801,61 +884,51 @@ body {
     .site-title {
         font-size: 0.9rem;
     }
-
     .nav-links > ul {
         gap: 6px 10px;
     }
-
     .card-title {
         font-size: 0.9rem;
         padding: 10px 12px;
     }
-
     .card-table th {
         font-size: 0.7rem;
         padding: 6px 4px;
     }
-
     .card-table td {
         font-size: 0.75rem;
         padding: 6px 4px;
     }
-
     .res-side.local {
         padding-right: 32px;
     }
-
     .res-side.visita {
         padding-left: 32px;
     }
-
     .res-score-badge {
         min-width: 52px;
         min-height: 34px;
         padding: 2px 6px;
     }
-
     .score-num {
         font-size: 0.95rem;
     }
-
     .score-penales {
         font-size: 0.62rem;
         font-weight: 900;
         color: #ffee00;
     }
 }
+
 /* =========================================
    INDICADORES DE ZONA EN TABLA GENERAL
    ========================================= */
 .fila-liguilla {
     border-left: 4px solid #2e7d32;
 }
-
 .fila-consolacion {
     border-left: 4px solid #f57c00;
 }
-
 .fila-eliminado {
     border-left: 4px solid #d32f2f;
 }
