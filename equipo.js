@@ -277,8 +277,22 @@ document.addEventListener("DOMContentLoaded", () => {
             ]
         },
         "8": { // Tortilleros FC
-            plantilla: [],
-            cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
+            plantilla: [
+                { num: 1, pos: " años", nombre: "Antonio Perez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 2, pos: " años", nombre: "Daniel Flores", cat: "1", amarilla: "-", roja: "-" },
+                { num: 3, pos: " años", nombre: "Diego Avalos", cat: "1", amarilla: "-", roja: "-" },
+                { num: 4, pos: " años", nombre: "Efraín López", cat: "1", amarilla: "-", roja: "-" },
+                { num: 5, pos: " años", nombre: "Gustavo Gomez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 6, pos: " años", nombre: "Hugo Cisneros", cat: "1", amarilla: "-", roja: "-" },
+                { num: 7, pos: " años", nombre: "Jafeth Gónzalez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 8, pos: " años", nombre: "Jareth Gónzalez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 9, pos: " años", nombre: "Juan Olague", cat: "1", amarilla: "-", roja: "-" },
+                { num: 10, pos: " años", nombre: "Julian Cisneros", cat: "1", amarilla: "1", roja: "-" },
+                { num: 11, pos: " años", nombre: "Luis Gaspar", cat: "1", amarilla: "-", roja: "-" },
+                { num: 12, pos: " años", nombre: "Oswaldo Cisneros", cat: "1", amarilla: "-", roja: "-" },
+                { num: 13, pos: " años", nombre: "Ruben Gaspar", cat: "1", amarilla: "-", roja: "-" }
+            ],
+            cuerpoTecnico: [{ cargo: "Equipero", nombre: "Oswaldo Cisneros" }],
             calendario: [
                 { j: "J1", fecha: "Mar 08/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png", res: "2 (3) - (1) 2", visita: "assets/logos/Furia_Roja.png" },
                 { j: "J2", fecha: "Lun 28/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg", res: "3 - 4", visita: "assets/logos/Tortilleros.png" },
