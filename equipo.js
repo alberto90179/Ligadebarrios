@@ -126,7 +126,18 @@ document.addEventListener("DOMContentLoaded", () => {
             ]
         },
         "2": {// Titanes L.A.
-            plantilla: [],
+            plantilla: [
+                { num: 1, pos: " años", nombre: "Abisay Billalobos", cat: "1", amarilla: "-", roja: "-" },
+                { num: 2, pos: " años", nombre: "Alberto Sandoval", cat: "1", amarilla: "-", roja: "-" },
+                { num: 3, pos: " años", nombre: "Alfredo García", cat: "1", amarilla: "-", roja: "-" },
+                { num: 4, pos: " años", nombre: "Edy Gomez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 5, pos: " años", nombre: "Gerardo Sandoval", cat: "1", amarilla: "-", roja: "-" },
+                { num: 6, pos: " años", nombre: "Jerzon Villa", cat: "1", amarilla: "-", roja: "-" },
+                { num: 7, pos: " años", nombre: "Jose Gutierrez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 8, pos: " años", nombre: "Julian Bucio", cat: "1", amarilla: "-", roja: "-" },
+                { num: 9, pos: " años", nombre: "Omar Reyes Bucio", cat: "1", amarilla: "-", roja: "-" },
+                { num: 10, pos: " años", nombre: "Victor Bonal", cat: "1", amarilla: "-", roja: "-" }
+            ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
                 { j: "J1", fecha: "Lun 07/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg", res: "1 (10) - (9) 1", visita: "assets/logos/Diablos_Gordos.jpg" },
