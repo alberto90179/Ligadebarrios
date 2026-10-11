@@ -195,7 +195,25 @@ document.addEventListener("DOMContentLoaded", () => {
             ]
         },
         "6": { // Diablos Gordos
-            plantilla: [],
+            plantilla: [
+                { num: 80, pos: "34 años", nombre: "Abraham Barreto Robles", cat: "-", amarilla: "-", roja: "-" }, 
+                { num: 89, pos: "25 años", nombre: "Alan Chavez", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 87, pos: "46 años", nombre: "Andres Chavez Tovar", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 84, pos: "25 años", nombre: "Carlos Jair Meza Nava", cat: "-", amarilla: "-", roja: "-" }, 
+                { num: 90, pos: "23 años", nombre: "Edgar Alfredo Rodriguez Virgen", cat: "1", amarilla: "-", roja: "-" },
+                { num: 86, pos: "19 años", nombre: "Hector Javier Guerrero Naranjo", cat: "1", amarilla: "-", roja: "-" },
+                { num: 76, pos: "23 años", nombre: "Jairo Adan Gonzalez Alaniz", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 74, pos: "22 años", nombre: "Jonathan Misael Tapia Santana", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 82, pos: "- años", nombre: "Jorge Alberto Guerrero", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 73, pos: "33 años", nombre: "Jose Norberto Ramos Zamora", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 83, pos: "22 años", nombre: "Juan Carlos Navarro Robles", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 88, pos: "39 años", nombre: "Juan Chavez", cat: "-", amarilla: "-", roja: "-" }, 
+                { num: 79, pos: "30 años", nombre: "Justo Manuel Covarrubias", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 78, pos: "20 años", nombre: "Luis Fernando Guerrero Delgadillo", cat: "1", amarilla: "-", roja: "-" },
+                { num: 81, pos: "46 años", nombre: "Luis Jorge Guerrero", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 85, pos: "30 años", nombre: "Manuel López Mundo", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 77, pos: "29 años", nombre: "Salvador Ochoa Guerrero", cat: "-", amarilla: "-", roja: "-" } 
+            ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
                 { j: "J1", fecha: "Lun 07/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg", res: "1 (10) - (9) 1", visita: "assets/logos/Diablos_Gordos.jpg" },
