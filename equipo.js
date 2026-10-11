@@ -207,7 +207,18 @@ document.addEventListener("DOMContentLoaded", () => {
             ]
         },
         "7": { // Rayados FC
-            plantilla: [],
+            plantilla: [
+                { num: 0, pos: "- años", nombre: "Carlos Huerta", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 0, pos: "- años", nombre: "Elvis de la Rosa", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 0, pos: "- años", nombre: "Felipe Castellón", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 0, pos: "- años", nombre: "Joel Castañeda", cat: "1", amarilla: "1", roja: "-" }, 
+                { num: 0, pos: "- años", nombre: "Juan Velazquez", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 0, pos: "- años", nombre: "Leonel de la Rosa", cat: "1", amarilla: "-", roja: "-" },
+                { num: 7, pos: "- años", nombre: "Octavio Ponce", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 8, pos: "- años", nombre: "Pablo Santana", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 9, pos: "- años", nombre: "Pedro Paez", cat: "1", amarilla: "-", roja: "-" }, 
+                { num: 10, pos: "- años", nombre: "Ulises Huerta", cat: "1", amarilla: "-", roja: "-" }
+            ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
                 { j: "J1", fecha: "Mar 08/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg", res: "4 - 2", visita: "assets/logos/Rayados.jpg" },
