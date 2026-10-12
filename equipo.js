@@ -86,11 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "1": { // 7 Mares
             plantilla: [
-                { num: 108, pos: "33 años", nombre: "Abel Aguilar Andrade", cat: "1" },
+                { num: 108, pos: "33 años", nombre: "Abel Alejandro Aguilar Andrade", cat: "1" },
                 { num: 92, pos: "25 años", nombre: "Carlos Daniel Jiménez Camacho", cat: "1", amarilla: "-", roja: "-" },
                 { num: 106, pos: "38 años", nombre: "Carlos Iván Jiménez Ruiz", cat: "1", amarilla: "-", roja: "-" },
                 { num: 103, pos: "38 años", nombre: "César Daniel Aguilar García", cat: "1", amarilla: "-", roja: "-" },
-                { num: 93, pos: "28 años", nombre: "Diego Adolfo Rosales Peñaloza", cat: "1", amarilla: "-", roja: "-" },
+                { num: 93, pos: "28 años", nombre: "Diego Adolfo Raudales Peñaloza", cat: "1", amarilla: "-", roja: "-" },
                 { num: 98, pos: "27 años", nombre: "Diego Iván Mejía Vizcarra", cat: "1", amarilla: "-", roja: "-" },
                 { num: 101, pos: "41 años", nombre: "Ernesto Iván Herrera Ibarra", cat: "-", amarilla: "-", roja: "-" },
                 { num: 100, pos: "42 años", nombre: "Hector Alonso García Magaña", cat: "1", amarilla: "-", roja: "-" },
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 104, pos: "24 años", nombre: "Leopoldo de Jesús De la Torre Rodríguez", cat: "1", amarilla: "-", roja: "-" },
                 { num: 107, pos: "39 años", nombre: "Oscar Iván Campos Mejía", cat: "-", amarilla: "-", roja: "-" },
                 { num: 99, pos: "31 años", nombre: "Oswaldo Daniel Landeros Bartolo", cat: "1", amarilla: "1", roja: "-" },
-                { num: 96, pos: "36 años", nombre: "Pedro Alberto Perez Amezquita", cat: "1", amarilla: "-", roja: "-" },
+                { num: 96, pos: "28 años", nombre: "Pedro Alberto Perez Amezquita", cat: "1", amarilla: "-", roja: "-" },
                 { num: 105, pos: "29 años", nombre: "Rubén Alberto Salcedo Ortega", cat: "-", amarilla: "-", roja: "-" },
                 { num: 94, pos: "40 años", nombre: "Rubén Castillo Elías", cat: "1" },
                 { num: 95, pos: "28 años", nombre: "Ulises Posadas Mejia", cat: "1" }
