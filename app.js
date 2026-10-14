@@ -25,23 +25,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ==========================================
-    // 2. DATOS DE LOS EQUIPOS
+    // 2. DATOS DE LOS EQUIPOS (CON ID FIJO AÑADIDO)
     // ==========================================
     const equipos = [
-        { nombre: "7 Mares", logo: "assets/logos/7_Mares.jpg", pj: 4, g: 1, e: 0, p: 3, pts: 3, gf: 10, gc: 12, pe: 0, dg: "-2" },
-        { nombre: "Carnicería Villalobos", logo: "assets/logos/villalobos.jpg", pj: 4, g: 1, e: 2, p: 1, pts: 7, gf: 7, gc: 7, pe: 2, dg: "0" },
-        { nombre: "Chuper Amigos", logo: "assets/logos/chuperamigos.png", pj: 4, g: 1, e: 0, p: 3, pts: 3, gf: 8, gc: 14, pe: 0, dg: "-6" },
-        { nombre: "Cruz Azul Mezquitán", logo: "assets/logos/Cruz_Azul_mezquitan.png", pj: 4, g: 3, e: 1, p: 0, pts:11, gf: 12, gc: 5, pe: 1, dg: "+7" },
-        { nombre: "Diablos Gordos", logo: "assets/logos/Diablos_Gordos.jpg", pj: 4, g: 2, e: 1, p: 1, pts: 7, gf: 7, gc: 7, pe: 0, dg: "0" },
-        { nombre: "Furia Roja", logo: "assets/logos/Furia_Roja.png", pj: 4, g: 1, e: 1, p: 2, pts: 4, gf: 10, gc: 10, pe: 0, dg: "0" },
-        { nombre: "Gordos Belicones", logo: "assets/logos/belicones.png", pj: 4, g: 2, e: 2, p: 0, pts: 8, gf: 16, gc: 7, pe: 0, dg: "+9" },
-        { nombre: "Jalisco FC", logo: "assets/logos/jalisco_FC.png", pj: 4, g: 0, e: 0, p: 4, pts: 0, gf: 0, gc: 20, pe: 0, dg: "-20" },
-        { nombre: "JR Transmisiones", logo: "assets/logos/JR Transmisiones.png", pj: 4, g: 2, e: 1, p: 1, pts: 7, gf: 10, gc: 6, pe: 0, dg: "+4" },
-        { nombre: "Pansa Brava", logo: "assets/logos/Pansa_Brava.jpg", pj: 4, g: 3, e: 0, p: 1, pts: 9, gf: 17, gc: 4, pe: 0, dg: "+13" },
-        { nombre: "Rayados FC", logo: "assets/logos/Rayados.jpg", pj: 4, g: 1, e: 1, p: 2, pts: 4, gf: 9, gc: 15, pe: 0, dg: "-6" },
-        { nombre: "Robles FC", logo: "assets/logos/Robles.jpg", pj: 4, g: 2, e: 1, p: 1, pts: 7, gf: 10, gc: 6, pe: 0, dg: "+4" },
-        { nombre: "Titanes L.A.", logo: "assets/logos/Titanes.jpg", pj: 4, g: 1, e: 1, p: 2, pts: 5, gf: 6, gc: 7, pe: 1, dg: "-1" },
-        { nombre: "Tortilleros FC", logo: "assets/logos/Tortilleros.png", pj: 4, g: 2, e: 1, p: 1, pts: 8, gf: 7, gc: 9, pe: 1, dg: "-2" }
+        { id: 1, nombre: "7 Mares", logo: "assets/logos/7_Mares.jpg", pj: 5, g: 2, e: 0, p: 3, pts: 6, gf: 16, gc: 15, pe: 0, dg: "+1" },
+        { id: 9, nombre: "Carnicería Villalobos", logo: "assets/logos/villalobos.jpg", pj: 4, g: 1, e: 2, p: 1, pts: 7, gf: 7, gc: 7, pe: 2, dg: "0" },
+        { id: 12, nombre: "Chuper Amigos", logo: "assets/logos/chuperamigos.png", pj: 4, g: 1, e: 0, p: 3, pts: 3, gf: 8, gc: 14, pe: 0, dg: "-6" },
+        { id: 4, nombre: "Cruz Azul Mezquitán", logo: "assets/logos/Cruz_Azul_mezquitan.png", pj: 5, g: 3, e: 1, p: 1, pts:11, gf: 14, gc: 10, pe: 1, dg: "+4" },
+        { id: 6, nombre: "Diablos Gordos", logo: "assets/logos/Diablos_Gordos.jpg", pj: 5, g: 2, e: 1, p: 2, pts: 7, gf: 10, gc: 13, pe: 0, dg: "-3" },
+        { id: 0, nombre: "Furia Roja", logo: "assets/logos/Furia_Roja.png", pj: 5, g: 2, e: 1, p: 2, pts: 7, gf: 15, gc: 10, pe: 0, dg: "+5" },
+        { id: 10, nombre: "Gordos Belicones", logo: "assets/logos/belicones.png", pj: 5, g: 3, e: 2, p: 0, pts: 11, gf: 20, gc: 8, pe: 0, dg: "+12" },
+        { id: 13, nombre: "Jalisco FC", logo: "assets/logos/jalisco_FC.png", pj: 5, g: 0, e: 0, p: 5, pts: 0, gf: 0, gc: 25, pe: 0, dg: "-25" },
+        { id: 11, nombre: "JR Transmisiones", logo: "assets/logos/JR Transmisiones.png", pj: 4, g: 2, e: 1, p: 1, pts: 7, gf: 10, gc: 6, pe: 0, dg: "+4" },
+        { id: 5, nombre: "Pansa Brava", logo: "assets/logos/Pansa_Brava.jpg", pj: 5, g: 4, e: 0, p: 1, pts: 12, gf: 22, gc: 6, pe: 0, dg: "+16" },
+        { id: 7, nombre: "Rayados FC", logo: "assets/logos/Rayados.jpg", pj: 4, g: 1, e: 1, p: 2, pts: 4, gf: 9, gc: 15, pe: 0, dg: "-6" },
+        { id: 3, nombre: "Robles FC", logo: "assets/logos/Robles.jpg", pj: 4, g: 2, e: 1, p: 1, pts: 7, gf: 10, gc: 6, pe: 0, dg: "+4" },
+        { id: 2, nombre: "Titanes L.A.", logo: "assets/logos/Titanes.jpg", pj: 4, g: 1, e: 1, p: 2, pts: 5, gf: 6, gc: 7, pe: 1, dg: "-1" },
+        { id: 8, nombre: "Tortilleros FC", logo: "assets/logos/Tortilleros.png", pj: 5, g: 2, e: 1, p: 2, pts: 8, gf: 8, gc: 13, pe: 1, dg: "-5" }
     ];
 
    // ==========================================
@@ -50,6 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const tablaCuerpo = document.getElementById("tabla-cuerpo");
     if (tablaCuerpo) {
         tablaCuerpo.innerHTML = "";
+        
+        // Ordenamos los equipos según los puntos y la diferencia de goles
         equipos.sort((a, b) => {
             if (b.pts !== a.pts) return b.pts - a.pts;
             const difA = parseInt(a.dg);
@@ -81,13 +83,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             fila.className = zonaClase;
 
+            // En el enlace <a> ahora usamos equipo.id en lugar del index del sort
             fila.innerHTML = `
                 <td class="pos-col">
                     <span class="pos-num">${pos}</span>
                     ${zonaBadge}
                 </td>
                 <td class="team-name">
-                    <a href="equipo.html?id=${index}" style="text-decoration: none; color: inherit;">
+                    <a href="equipo.html?id=${equipo.id}" style="text-decoration: none; color: inherit;">
                         <div class="team-info" style="cursor: pointer;">
                             <img src="${logoImg}" alt="Escudo ${equipo.nombre}" class="team-logo" onerror="this.style.display='none'">
                             <span>${equipo.nombre}</span>
