@@ -23,12 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const parametros = new URLSearchParams(window.location.search);
     const equipoId = parseInt(parametros.get('id'));
 
-    // Datos base de los equipos (con id añadido para coincidir con app.js)
     const equipos = [
         { id: 1, nombre: "7 Mares", logo: "assets/logos/7_Mares.jpg", pj: 6, g: 3, e: 0, p: 3, pts: 9, gf: 21, gc: 15, pe: 0, dg: "+6" },
         { id: 9, nombre: "Carnicería Villalobos", logo: "assets/logos/villalobos.jpg", pj: 6, g: 1, e: 4, p: 1, pts: 9, gf: 11, gc: 11, pe: 2, dg: "0" },
         { id: 12, nombre: "Chuper Amigos", logo: "assets/logos/chuperamigos.png", pj: 6, g: 2, e: 0, p: 4, pts: 6, gf: 14, gc: 20, pe: 0, dg: "-6" },
-        { id: 4, nombre: "Cruz Azul Mezquitán", logo: "assets/logos/Cruz_Azul_mezquitan.png", pj: 6, g: 4, e: 1, p: 1, pts:14, gf: 16, gc: 11, pe: 1, dg: "+5" },
+        { id: 4, nombre: "Cruz Azul Mezquitán", logo: "assets/logos/Cruz_Azul_mezquitan.png", pj: 6, g: 4, e: 1, p: 1, pts: 14, gf: 16, gc: 11, pe: 1, dg: "+5" },
         { id: 6, nombre: "Diablos Gordos", logo: "assets/logos/Diablos_Gordos.jpg", pj: 6, g: 2, e: 2, p: 2, pts: 9, gf: 11, gc: 14, pe: 1, dg: "-3" },
         { id: 0, nombre: "Furia Roja", logo: "assets/logos/Furia_Roja.png", pj: 6, g: 3, e: 1, p: 2, pts: 10, gf: 17, gc: 11, pe: 0, dg: "+6" },
         { id: 10, nombre: "Gordos Belicones", logo: "assets/logos/belicones.png", pj: 6, g: 3, e: 2, p: 1, pts: 11, gf: 22, gc: 12, pe: 0, dg: "+10" },
@@ -37,11 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 5, nombre: "Pansa Brava", logo: "assets/logos/Pansa_Brava.jpg", pj: 6, g: 5, e: 0, p: 1, pts: 15, gf: 24, gc: 7, pe: 0, dg: "+17" },
         { id: 7, nombre: "Rayados FC", logo: "assets/logos/Rayados.jpg", pj: 6, g: 2, e: 1, p: 3, pts: 7, gf: 15, gc: 20, pe: 0, dg: "-5" },
         { id: 3, nombre: "Robles FC", logo: "assets/logos/Robles.jpg", pj: 6, g: 2, e: 2, p: 2, pts: 9, gf: 14, gc: 11, pe: 1, dg: "+3" },
-        { id: 2, nombre: "Titanes L.A.", logo: "assets/logos/Titanes.jpg", pj: 6, g: 1, 2: 1, p: 3, pts: 6, gf: 10, gc: 12, pe: 1, dg: "-2" },
+        { id: 2, nombre: "Titanes L.A.", logo: "assets/logos/Titanes.jpg", pj: 6, g: 1, e: 2, p: 3, pts: 6, gf: 10, gc: 12, pe: 1, dg: "-2" },
         { id: 8, nombre: "Tortilleros FC", logo: "assets/logos/Tortilleros.png", pj: 6, g: 2, e: 1, p: 3, pts: 8, gf: 9, gc: 15, pe: 1, dg: "-6" }
     ];
 
-    // Clasificación ordenada
     const clasificacion = [...equipos].sort((a, b) => {
         if (b.pts !== a.pts) return b.pts - a.pts;
         const difA = parseInt(a.dg);
@@ -88,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "1": { // 7 Mares
             plantilla: [
-                { num: 108, pos: "33 años", nombre: "Abel Alejandro Aguilar Andrade", cat: "3", amarilla: "1", roja: "-"  },
+                { num: 108, pos: "33 años", nombre: "Abel Alejandro Aguilar Andrade", cat: "3", amarilla: "1", roja: "-" },
                 { num: 92, pos: "25 años", nombre: "Carlos Daniel Jiménez Camacho", cat: "3", amarilla: "-", roja: "-" },
                 { num: 106, pos: "38 años", nombre: "Carlos Iván Jiménez Ruiz", cat: "3", amarilla: "-", roja: "-" },
                 { num: 103, pos: "38 años", nombre: "César Daniel Aguilar García", cat: "3", amarilla: "-", roja: "-" },
@@ -170,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 137, pos: "28 años", nombre: "Martín Rosas Jimenez", cat: "2", amarilla: "-", roja: "-" },
                 { num: 149, pos: "44 años", nombre: "Noe Andrey Juarez Diaz", cat: "3", amarilla: "-", roja: "-" },
                 { num: 150, pos: "20 años", nombre: "Pablo Martín Ramírez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 139, pos: "34 años", nombre: "Paulo Eduardo Cisneros", cat: "1", amarilla: "-", roja: "-" },
+                { num: 139, pos: "34 años", nombre: "Paulo Eduardo Cisneros", cat: "1", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Iván Suarez" }],
             calendario: [
@@ -217,24 +215,24 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "5": { // Pansa Brava
             plantilla: [
-                { num: 268, pos: " años", nombre: "Armando Guadalupe Amézquita Barbarin", cat: "3", amarilla: "-", roja: "-" },
-                { num: 216, pos: " años", nombre: "Brayan Osvaldo Hernandez Ventura", cat: "2", amarilla: "-", roja: "-" },
-                { num: 210, pos: " años", nombre: "Cesar Lara", cat: "3", amarilla: "-", roja: "-" },
-                { num: 248, pos: " años", nombre: "David Omar Benitez Gomez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 226, pos: " años", nombre: "Edgar Gerardo Salazar", cat: "3", amarilla: "-", roja: "-" },
-                { num: 271, pos: " años", nombre: "Edwin Alejandro Ruiz Mejía", cat: "2", amarilla: "-", roja: "-" },
-                { num: 209, pos: " años", nombre: "Emanuel Ventura Ramirez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 228, pos: " años", nombre: "Francisco Javier Verduzco Arechiga", cat: "3", amarilla: "-", roja: "-" },
-                { num: 217, pos: " años", nombre: "Francisco Mondragon Valenzuela ", cat: "2", amarilla: "-", roja: "-" },
-                { num: 215, pos: " años", nombre: "Issac Pelayo Santana", cat: "3", amarilla: "-", roja: "-" },
-                { num: 272, pos: " años", nombre: "Jonatan Antonio Lopez Santos", cat: "3", amarilla: "-", roja: "-" },
-                { num: 211, pos: " años", nombre: "Jonatan Josue Ruiz Rosales", cat: "3", amarilla: "-", roja: "-" },
-                { num: 247, pos: " años", nombre: "Juan Carlos Gonzalez Paz", cat: "1", amarilla: "-", roja: "-" },
-                { num: 227, pos: " años", nombre: "Juan Carlos Rico Lopez", cat: "1", amarilla: "-", roja: "-" },
-                { num: 213, pos: " años", nombre: "Juan Roman Sanchez Villavazo", cat: "1", amarilla: "-", roja: "-" },
-                { num: 270, pos: " años", nombre: "Marco Vizcarra Diaz", cat: "3", amarilla: "-", roja: "-" },
-                { num: 269, pos: " años", nombre: "Raul Vizcarra Diaz", cat: "3", amarilla: "-", roja: "-" },
-                { num: 214, pos: " años", nombre: "Victor Hugo Flores Bartolo", cat: "-", amarilla: "-", roja: "-" }
+                { num: 268, pos: "- años", nombre: "Armando Guadalupe Amézquita Barbarin", cat: "3", amarilla: "-", roja: "-" },
+                { num: 216, pos: "- años", nombre: "Brayan Osvaldo Hernandez Ventura", cat: "2", amarilla: "-", roja: "-" },
+                { num: 210, pos: "- años", nombre: "Cesar Lara", cat: "3", amarilla: "-", roja: "-" },
+                { num: 248, pos: "- años", nombre: "David Omar Benitez Gomez", cat: "3", amarilla: "-", roja: "-" },
+                { num: 226, pos: "- años", nombre: "Edgar Gerardo Salazar", cat: "3", amarilla: "-", roja: "-" },
+                { num: 271, pos: "- años", nombre: "Edwin Alejandro Ruiz Mejía", cat: "2", amarilla: "-", roja: "-" },
+                { num: 209, pos: "- años", nombre: "Emanuel Ventura Ramirez", cat: "3", amarilla: "-", roja: "-" },
+                { num: 228, pos: "- años", nombre: "Francisco Javier Verduzco Arechiga", cat: "3", amarilla: "-", roja: "-" },
+                { num: 217, pos: "- años", nombre: "Francisco Mondragon Valenzuela ", cat: "2", amarilla: "-", roja: "-" },
+                { num: 215, pos: "- años", nombre: "Issac Pelayo Santana", cat: "3", amarilla: "-", roja: "-" },
+                { num: 272, pos: "- años", nombre: "Jonatan Antonio Lopez Santos", cat: "3", amarilla: "-", roja: "-" },
+                { num: 211, pos: "- años", nombre: "Jonatan Josue Ruiz Rosales", cat: "3", amarilla: "-", roja: "-" },
+                { num: 247, pos: "- años", nombre: "Juan Carlos Gonzalez Paz", cat: "1", amarilla: "-", roja: "-" },
+                { num: 227, pos: "- años", nombre: "Juan Carlos Rico Lopez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 213, pos: "- años", nombre: "Juan Roman Sanchez Villavazo", cat: "1", amarilla: "-", roja: "-" },
+                { num: 270, pos: "- años", nombre: "Marco Vizcarra Diaz", cat: "3", amarilla: "-", roja: "-" },
+                { num: 269, pos: "- años", nombre: "Raul Vizcarra Diaz", cat: "3", amarilla: "-", roja: "-" },
+                { num: 214, pos: "- años", nombre: "Victor Hugo Flores Bartolo", cat: "-", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
@@ -258,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 86, pos: "19 años", nombre: "Hector Javier Guerrero Naranjo", cat: "2", amarilla: "-", roja: "-" },
                 { num: 76, pos: "23 años", nombre: "Jairo Adan Gonzalez Alaniz", cat: "3", amarilla: "-", roja: "-" },
                 { num: 74, pos: "22 años", nombre: "Jonathan Misael Tapia Santana", cat: "3", amarilla: "-", roja: "-" },
-                { num: 82, pos: "- años", nombre:  "Jorge Alberto Guerrero", cat: "2", amarilla: "-", roja: "-" },
+                { num: 82, pos: "- años", nombre: "Jorge Alberto Guerrero", cat: "2", amarilla: "-", roja: "-" },
                 { num: 73, pos: "33 años", nombre: "Jose Norberto Ramos Zamora", cat: "2", amarilla: "-", roja: "-" },
                 { num: 83, pos: "22 años", nombre: "Juan Carlos Navarro Robles", cat: "3", amarilla: "-", roja: "-" },
                 { num: 88, pos: "39 años", nombre: "Juan Chavez", cat: "3", amarilla: "-", roja: "-" },
@@ -308,11 +306,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 220, pos: "30 años", nombre: "Daniel Salvador Flores Olague", cat: "3", amarilla: "-", roja: "-" },
                 { num: 225, pos: "21 años", nombre: "Diego De Jesus Avalos Salgado", cat: "3", amarilla: "1", roja: "-" },
                 { num: 223, pos: "33 años", nombre: "Efraín López", cat: "1", amarilla: "-", roja: "-" },
-                { num: 164, pos: " años", nombre: "Gustavo Gomez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 0, pos: " años", nombre: "Hugo Cisneros", cat: "2", amarilla: "-", roja: "-" },
-                { num: 219, pos: "29 años", nombre: "Jesus Jafeth Gónzalez Ventura", cat: "3", amarilla: "-", roja: "-" },
+                { num: 164, pos: "- años", nombre: "Gustavo Gomez", cat: "3", amarilla: "-", roja: "-" },
+                { num: 0, pos: "- años", nombre: "Hugo Cisneros", cat: "2", amarilla: "-", roja: "-" },
+                { num: 219, pos: "29 años", nombre: "Jesus Jafeth González Ventura", cat: "3", amarilla: "-", roja: "-" },
                 { num: 221, pos: "33 años", nombre: "Jose Antonio Perez Peña", cat: "3", amarilla: "-", roja: "-" },
-                { num: 190, pos: "29 años", nombre: "Jose Jareth Gónzalez Ventura", cat: "3", amarilla: "-", roja: "-" },
+                { num: 190, pos: "29 años", nombre: "Jose Jareth González Ventura", cat: "3", amarilla: "-", roja: "-" },
                 { num: 218, pos: "29 años", nombre: "Jose Julian Cisneros C.", cat: "2", amarilla: "2", roja: "-" },
                 { num: 224, pos: "36 años", nombre: "Juan Manuel Olague", cat: "1", amarilla: "-", roja: "-" },
                 { num: 222, pos: "29 años", nombre: "Luis Gaspar Aguila", cat: "1", amarilla: "-", roja: "-" },
@@ -400,7 +398,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 43, pos: "46 años", nombre: "Adán Mercado Ballardo", cat: "2", amarilla: "-", roja: "-" },
                 { num: 49, pos: "19 años", nombre: "Alexis Orlando Mercado Rodríguez", cat: "3", amarilla: "-", roja: "-" },
                 { num: 51, pos: "25 años", nombre: "Bernardo Antonio Peña García", cat: "3", amarilla: "-", roja: "-" },
-                { num: 238, pos:"42 años", nombre: "Edgar Roberto Contreras Roque", cat: "1", amarilla: "-", roja: "-" },
+                { num: 238, pos: "42 años", nombre: "Edgar Roberto Contreras Roque", cat: "1", amarilla: "-", roja: "-" },
                 { num: 45, pos: "28 años", nombre: "Félix Cuevas Sánchez", cat: "1", amarilla: "-", roja: "1" },
                 { num: 48, pos: "27 años", nombre: "Jesús Emmanuel Cortés Navarro", cat: "-", amarilla: "-", roja: "-" },
                 { num: 52, pos: "44 años", nombre: "Jorge Román Ortega Tapia", cat: "2", amarilla: "-", roja: "-" },
@@ -413,7 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 40, pos: "27 años", nombre: "Miguel Ángel Gutierrez Ortega", cat: "-", amarilla: "-", roja: "-" },
                 { num: 44, pos: "46 años", nombre: "Omar Alejandro Tapia Nájera", cat: "3", amarilla: "-", roja: "-" },
                 { num: 50, pos: "25 años", nombre: "Osmand Cabain Ortega Cárdenas", cat: "2", amarilla: "-", roja: "-" },
-                { num: 53, pos: "37 años", nombre: "Pedro Gónzalez Pérez", cat: "3", amarilla: "-", roja: "-" },
+                { num: 53, pos: "37 años", nombre: "Pedro González Pérez", cat: "3", amarilla: "-", roja: "-" },
                 { num: 37, pos: "28 años", nombre: "Rodolfo Alejandro Tapia Casillas", cat: "2", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Omar Alejandro Tapia Nájera" }],
@@ -454,7 +452,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J2", fecha: "Lun 14/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/chuperamigos.png", res: "3 - 4", visita: "assets/logos/Cruz_Azul_mezquitan.png" },
                 { j: "J3", fecha: "Lun 21/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png", res: "8 - 0", visita: "assets/logos/chuperamigos.png" },
                 { j: "J4", fecha: "Mar 06/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/chuperamigos.png", res: "4 - 0", visita: "assets/logos/Tortilleros.png" },
-                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Rayados.jpg", res: "2 -3", visita: "assets/logos/chuperamigos.png" },
+                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Rayados.jpg", res: "2 - 3", visita: "assets/logos/chuperamigos.png" },
                 { j: "J6", fecha: "Mar 20/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/chuperamigos.png", res: "3 - 4", visita: "assets/logos/JR Transmisiones.png" },
                 { j: "J7", fecha: "Mar 27/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg", res: "vs", visita: "assets/logos/chuperamigos.png" }
             ]
@@ -475,7 +473,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // ==========================================
-    // 4. FUNCIÓN PARA CALCULAR LA RACHA AUTOMÁTICAMENTE
+    // 4. FUNCIÓN PARA CALCULAR LA RACHA
     // ==========================================
     function calcularRacha(equipoObj, calendarioPartidos) {
         if (!calendarioPartidos || calendarioPartidos.length === 0) return [];
@@ -484,25 +482,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         calendarioPartidos.forEach(p => {
             if (!p.res || p.res.toLowerCase() === "vs" || p.res.includes("Por definir")) return;
-
-            // Extraer goles del marcador regular ignorando penales: "2 (3) - (4) 2" -> 2 y 2
             const partes = p.res.split("-");
             if (partes.length !== 2) return;
 
-            // Tomar el primer dígito numérico antes de cualquier paréntesis o espacio
             const numLocalMatch = partes[0].trim().match(/^(\d+)/);
-            // Tomar el último dígito numérico después de cualquier paréntesis
             const numVisitaMatch = partes[1].trim().match(/(\d+)$/);
-
             if (!numLocalMatch || !numVisitaMatch) return;
 
             const golesLoc = parseInt(numLocalMatch[1], 10);
             const golesVis = parseInt(numVisitaMatch[1], 10);
-
-            // Saber si el equipo actual fue local o visitante
             const esLocal = (p.local === logoActual);
 
-            // Regla oficial: si en tiempo reglamentario quedaron iguales, es Empate ("E")
             if (golesLoc === golesVis) {
                 racha.push("E");
             } else if (esLocal) {
@@ -511,17 +501,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 racha.push(golesVis > golesLoc ? "G" : "P");
             }
         });
-
         return racha;
     }
 
     // ==========================================
     // 5. RENDER DINÁMICO EN PÁGINA
     // ==========================================
-    
-    // Buscar el equipo correcto por su ID en lugar del índice del arreglo
     const equipo = equipos.find(e => e.id === equipoId);
-
     if (equipoId !== null && !isNaN(equipoId) && equipo) {
         const nameElement = document.getElementById('detail-name');
         const logoElement = document.getElementById('detail-logo');
@@ -537,8 +523,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const datosCalendario = detallesPorEquipo[equipoId]?.calendario || [];
         const rachaCalculada = calcularRacha(equipo, datosCalendario);
-        
-        // Calcular tarjetas dinámicamente desde la plantilla
+
         const datosDelEquipo = detallesPorEquipo[equipoId] || { plantilla: [] };
         let ta = 0, tr = 0;
         datosDelEquipo.plantilla.forEach(j => {
@@ -567,7 +552,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (statDg) statDg.innerText = equipo.dg;
         if (statTarjetas) statTarjetas.innerText = `${ta} / ${tr}`;
 
-        // Racha últimos resultados
         const rachaContenedor = document.getElementById("racha-contenedor");
         if (rachaContenedor) {
             rachaContenedor.innerHTML = "";
@@ -584,7 +568,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 6. RENDER DE TABLAS (PLANTILLA, TÉCNICO, CALENDARIO)
     // ==========================================
     const datosDelEquipo = detallesPorEquipo[equipoId] || {
-        plantilla: [{ num: "-", pos: "-", nombre: "Sin jugadores registrados", cat: "-" }],
+        plantilla: [{ num: "-", pos: "-", nombre: "Sin jugadores registrados", cat: "-", amarilla: "-", roja: "-" }],
         cuerpoTecnico: [{ cargo: "-", nombre: "Sin cuerpo técnico registrado" }],
         calendario: [{ j: "-", fecha: "Por definir", hora: "-", local: "", res: "-", visita: "" }]
     };
@@ -595,13 +579,26 @@ document.addEventListener("DOMContentLoaded", () => {
         tbodyPlantilla.innerHTML = "";
         const listaJugadores = datosDelEquipo.plantilla.length > 0
             ? datosDelEquipo.plantilla
-            : [{ num: "-", pos: "-", nombre: "Sin jugadores registrados", cat: "-" }];
+            : [{ num: "-", pos: "-", nombre: "Sin jugadores registrados", cat: "-", amarilla: "-", roja: "-" }];
+
         listaJugadores.forEach(j => {
+            const esValido = (j.num !== "-" && j.nombre !== "Sin jugadores registrados");
+            const filaClass = esValido ? 'class="fila-jugador-click"' : '';
+            const nombreHtml = esValido 
+                ? `<span class="nombre-jugador-link">${j.nombre} <i class="fas fa-id-card" title="Ver credencial"></i></span>`
+                : j.nombre;
+
             tbodyPlantilla.innerHTML += `
-                <tr>
-                    <td>${j.num}</td>
+                <tr ${filaClass} 
+                    data-num="${j.num}" 
+                    data-nombre="${j.nombre}" 
+                    data-edad="${j.pos}" 
+                    data-cat="${j.cat}" 
+                    data-amarilla="${j.amarilla || '-'}" 
+                    data-roja="${j.roja || '-'}">
+                    <td><strong>${j.num}</strong></td>
                     <td>${j.pos}</td>
-                    <td>${j.nombre}</td>
+                    <td>${nombreHtml}</td>
                     <td>${j.cat}</td>
                     <td>${j.amarilla || "-"}</td>
                     <td>${j.roja || "-"}</td>
@@ -640,4 +637,108 @@ document.addEventListener("DOMContentLoaded", () => {
                 </tr>`;
         });
     }
+
+    // ==========================================
+    // 7. GESTIÓN DEL MODAL DE CREDENCIAL E INFORMACIÓN
+    // ==========================================
+    const modal = document.getElementById("modal-credencial");
+    const btnCerrar = document.getElementById("btn-cerrar-modal");
+    const modalBody = document.getElementById("modal-credencial-contenido");
+    const modalTitulo = document.getElementById("modal-titulo-jugador");
+
+    function cerrarModal() {
+        if (!modal) return;
+        modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
+        if (modalBody) modalBody.innerHTML = "";
+    }
+
+    function abrirModalCredencial(num, nombre, edad, cat, amarilla, roja) {
+        if (!modal || !modalBody || !modalTitulo) return;
+
+        modalTitulo.innerHTML = `<i class="fas fa-id-card"></i> #${num} - Credencial de Jugador`;
+
+        const rutaPng = `assets/credenciales/${num}.png`;
+        const rutaJpg = `assets/credenciales/${num}.jpg`;
+
+        const taBadge = (amarilla && amarilla !== "-") 
+            ? `<span class="modal-badge-amarilla">${amarilla}</span>` 
+            : `<span>-</span>`;
+
+        const trBadge = (roja && roja !== "-") 
+            ? `<span class="modal-badge-roja">${roja}</span>` 
+            : `<span>-</span>`;
+
+        modalBody.innerHTML = `
+            <img src="${rutaPng}" alt="Credencial de ${nombre}" class="modal-credencial-img" 
+                 onerror="if (!this.dataset.triedJpg) { this.dataset.triedJpg = true; this.src = '${rutaJpg}'; } else { this.style.display='none'; document.getElementById('credencial-fallback').style.display='block'; }">
+            
+            <div id="credencial-fallback" class="modal-credencial-fallback" style="display: none;">
+                <i class="fas fa-user-circle" style="font-size: 3.5rem; color: #003366; margin-bottom: 10px;"></i>
+                <p style="font-size: 0.82rem; color: #718096; margin: 0;">(Sin imagen registrada en <code>assets/credenciales/${num}.png</code>)</p>
+            </div>
+
+            <!-- FICHA DETALLADA DE INFORMACIÓN DEL JUGADOR -->
+            <div class="modal-jugador-info-card">
+                <div class="modal-jugador-nombre">${nombre}</div>
+                <div class="modal-jugador-grid">
+                    <div class="modal-stat-item">
+                        <span class="modal-stat-label"><i class="fas fa-hashtag"></i> Número</span>
+                        <span class="modal-stat-valor">#${num}</span>
+                    </div>
+                    <div class="modal-stat-item">
+                        <span class="modal-stat-label"><i class="fas fa-birthday-cake"></i> Edad</span>
+                        <span class="modal-stat-valor">${edad}</span>
+                    </div>
+                    <div class="modal-stat-item">
+                        <span class="modal-stat-label"><i class="fas fa-futbol"></i> J. Jugados</span>
+                        <span class="modal-stat-valor">${cat}</span>
+                    </div>
+                    <div class="modal-stat-item">
+                        <span class="modal-stat-label"><i class="fas fa-clone"></i> Tarjetas</span>
+                        <span class="modal-stat-valor" style="display: inline-flex; gap: 6px; align-items: center;">
+                            ${taBadge} ${trBadge}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
+    }
+
+    if (tbodyPlantilla) {
+        tbodyPlantilla.addEventListener("click", (e) => {
+            const fila = e.target.closest("tr.fila-jugador-click");
+            if (!fila) return;
+
+            const num = fila.getAttribute("data-num");
+            const nombre = fila.getAttribute("data-nombre");
+            const edad = fila.getAttribute("data-edad");
+            const cat = fila.getAttribute("data-cat");
+            const amarilla = fila.getAttribute("data-amarilla");
+            const roja = fila.getAttribute("data-roja");
+
+            if (num && num !== "-") {
+                abrirModalCredencial(num, nombre, edad, cat, amarilla, roja);
+            }
+        });
+    }
+
+    if (btnCerrar) {
+        btnCerrar.addEventListener("click", cerrarModal);
+    }
+    if (modal) {
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                cerrarModal();
+            }
+        });
+    }
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal && modal.classList.contains("active")) {
+            cerrarModal();
+        }
+    });
 });

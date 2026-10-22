@@ -156,7 +156,7 @@ body {
 }
 
 /* =========================================
-   BANNER Y CARRUSEL DE PRÓXIMOS PARTIDOS
+   BANNER Y CARRUSEL
    ========================================= */
 .hero-banner {
     background: linear-gradient(135deg, var(--color-gris-oscuro) 60%, var(--color-rojo) 100%);
@@ -174,9 +174,6 @@ body {
     text-transform: uppercase;
 }
 
-/* =========================================
-   CARRUSEL - UN SOLO PARTIDO VISIBLE CON AUTOPLAY
-   ========================================= */
 .matches-carousel {
     display: flex;
     gap: 0;
@@ -280,27 +277,6 @@ body {
     color: #e0e0e0;
     line-height: 1.4;
     text-align: center;
-}
-
-/* Indicadores de puntos (opcional, si los añades en HTML) */
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 10px;
-}
-
-.carousel-dots .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.4);
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.carousel-dots .dot.active {
-    background-color: #ffee00;
 }
 
 /* =========================================
@@ -585,49 +561,16 @@ body {
     color: var(--color-rojo);
 }
 
-.card-table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: auto;
-    text-align: left;
-}
-
-.card-table th {
-    background-color: var(--color-gris-oscuro);
-    color: var(--color-blanco);
-    padding: 12px 10px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-.card-table td {
-    padding: 12px 10px;
-    border-bottom: 1px solid #eee;
-    color: var(--color-gris-medio);
-    font-size: 0.85rem;
-    vertical-align: middle;
-    word-break: break-word;
-}
-
-.card-table th:last-child,
-.card-table td:last-child {
-    text-align: center;
-    width: 70px;
-}
-
-.card-table td:nth-child(1),
-.card-table td:nth-child(2) {
-    min-width: 100px;
-}
-
 .custom-info-table td {
     vertical-align: middle;
 }
 
 .text-left {
     text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 .font-bold {
@@ -787,7 +730,8 @@ body {
     background-color: #263342;
 }
 
-.stats-grid-2x2 .stat-col:nth-child(1), .stats-grid-2x2 .stat-col:nth-child(2) {
+.stats-grid-2x2 .stat-col:nth-child(1), 
+.stats-grid-2x2 .stat-col:nth-child(2) {
     border-bottom: 1px solid #1e2936;
     padding-bottom: 16px;
 }
@@ -945,6 +889,151 @@ body {
     min-width: 80px;
 }
 
+/* Estilos de Jugador Click y Credencial en Plantilla */
+.fila-jugador-click {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.fila-jugador-click:hover {
+    background-color: rgba(0, 51, 102, 0.08);
+}
+
+.nombre-jugador-link {
+    color: #003366;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nombre-jugador-link i {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* =========================================
+   VENTANA EMERGENTE (MODAL CREDENCIAL)
+   ========================================= */
+.modal-credencial-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 15px;
+    box-sizing: border-box;
+    animation: fadeInModal 0.25s ease-out;
+}
+
+.modal-credencial-overlay.active {
+    display: flex;
+}
+
+.modal-credencial-card {
+    background: #ffffff;
+    border-radius: 14px;
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: zoomInModal 0.25s ease-out;
+}
+
+.modal-credencial-header {
+    background: #003366;
+    color: #ffffff;
+    padding: 12px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-credencial-header h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal-btn-cerrar {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.modal-btn-cerrar:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.modal-credencial-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.modal-credencial-img {
+    max-width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background: #fff;
+}
+
+.modal-credencial-fallback {
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    padding: 24px 16px;
+    text-align: center;
+    background: #ffffff;
+    width: 100%;
+}
+
+.modal-credencial-fallback h4 {
+    margin: 0 0 8px 0;
+    color: #003366;
+    font-size: 1.15rem;
+}
+
+.modal-credencial-fallback p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeInModal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomInModal {
+    from { transform: scale(0.92); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
 /* =========================================
    PÁGINAS REGLAMENTOS Y DIRECTIVA
    ========================================= */
@@ -967,7 +1056,8 @@ body {
     padding-bottom: 4px;
 }
 
-.reglamentos-container ol, .reglamentos-container ul {
+.reglamentos-container ol, 
+.reglamentos-container ul {
     margin-left: 20px;
     margin-bottom: 15px;
 }
@@ -1128,7 +1218,7 @@ body {
 .color-eliminado { background-color: #d32f2f; }
 
 /* =======================================================
-   OPTIMIZACIÓN RESPONSIVA TABLETS (max-width: 900px)
+   RESPONSIVO
    ======================================================= */
 @media (max-width: 900px) {
     .navbar {
@@ -1167,260 +1257,121 @@ body {
     }
 }
 
-/* =======================================================
-   OPTIMIZACIÓN RESPONSIVA MÓVIL EXACTA (max-width: 480px)
-   ======================================================= */
 @media (max-width: 480px) {
-    /* Navbar móvil */
-    .navbar {
-        padding: 10px 8px;
-    }
-    .logo-img {
-        height: 50px;
-    }
-    .site-title {
-        font-size: 0.85rem;
-    }
-    .site-title span {
-        font-size: 1.1rem;
-    }
-    .nav-links > ul {
-        gap: 4px 8px;
-    }
-    .nav-links a {
-        font-size: 0.8rem;
-        padding: 4px 6px;
-    }
+    .navbar { padding: 10px 8px; }
+    .logo-img { height: 50px; }
+    .site-title { font-size: 0.85rem; }
+    .site-title span { font-size: 1.1rem; }
+    .nav-links > ul { gap: 4px 8px; }
+    .nav-links a { font-size: 0.8rem; padding: 4px 6px; }
+    .hero-banner { padding: 20px 8px 15px; margin-bottom: 20px; }
+    .hero-subtitle { font-size: 0.95rem; margin-bottom: 10px; }
+    .matches-carousel { padding: 4px 0 14px; gap: 0; max-width: 100%; }
+    .match-card-hero { flex: 0 0 100%; max-width: 100%; padding: 16px 10px; border-radius: 12px; }
+    .hero-match-teams { gap: 8px; margin-bottom: 12px; }
+    .hero-team-logo { width: 48px; height: 48px; padding: 4px; }
+    .hero-team-name { font-size: 0.82rem; }
+    .vs-badge { font-size: 0.8rem; padding: 5px 8px; }
+    .hero-details { font-size: 0.78rem; }
+    .standings-container { padding: 0 8px; margin-bottom: 35px; }
+    .section-title { font-size: 1.2rem; margin-bottom: 14px; }
+    .standings-table th, .card-table th { font-size: 0.72rem; padding: 8px 5px; }
+    .standings-table td, .card-table td { font-size: 0.75rem; padding: 7px 5px; }
+    .standings-table td.team-name { min-width: 135px; }
+    .team-info { gap: 5px; }
+    .team-logo { width: 18px; height: 18px; }
+    .pos-num { font-size: 0.82rem; }
+    .badge-zona { font-size: 0.55rem; padding: 1px 4px; }
+    .tabla-leyenda { gap: 8px 12px; font-size: 0.75rem; justify-content: flex-start; padding: 0 4px; }
+    .tablas-secundarias-container { padding: 0 8px; margin-bottom: 35px; }
+    .section-title-tabla { font-size: 1.05rem; margin-bottom: 8px; }
+    .custom-info-table th { font-size: 0.7rem; padding: 8px 5px; }
+    .custom-info-table td { font-size: 0.72rem; padding: 6px 5px; }
+    .team-stats-container { width: 100%; padding: 0 8px; margin: 15px auto 10px; gap: 12px; }
+    .stats-dark-card { padding: 12px 6px; border-radius: 12px; }
+    .stat-label { font-size: 0.6rem; margin-bottom: 2px; }
+    .stat-val { font-size: 1.45rem; }
+    .tarjetas-total { font-size: 1.25rem; }
+    .tarjetas-sub { font-size: 0.6rem; }
+    .stats-grid-2x2 { row-gap: 12px; }
+    .racha-title { font-size: 0.95rem; margin-bottom: 8px; }
+    .racha-badges { gap: 5px; }
+    .badge-racha { height: 38px; font-size: 0.95rem; border-radius: 8px; }
+    .racha-legend { font-size: 0.75rem; gap: 10px; margin-top: 10px; }
+    .site-footer { padding: 25px 4% 15px; }
+    .footer-grid { gap: 20px; }
+}
+/* =========================================
+   ESTILOS DE INFORMACIÓN DETALLADA EN EL MODAL
+   ========================================= */
+.modal-jugador-info-card {
+    width: 100%;
+    margin-top: 14px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
 
-    /* Carrusel de partidos en móvil - un solo partido */
-    .hero-banner {
-        padding: 20px 8px 15px;
-        margin-bottom: 20px;
-    }
-    .hero-subtitle {
-        font-size: 0.95rem;
-        margin-bottom: 10px;
-    }
-    .matches-carousel {
-        padding: 4px 0 14px;
-        gap: 0;
-        max-width: 100%;
-    }
-    .match-card-hero {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 16px 10px;
-        border-radius: 12px;
-    }
-    .hero-match-teams {
-        gap: 8px;
-        margin-bottom: 12px;
-    }
-    .hero-team-logo {
-        width: 48px;
-        height: 48px;
-        padding: 4px;
-    }
-    .hero-team-name {
-        font-size: 0.82rem;
-    }
-    .vs-badge {
-        font-size: 0.8rem;
-        padding: 5px 8px;
-    }
-    .hero-details {
-        font-size: 0.78rem;
-    }
+.modal-jugador-nombre {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #111827;
+    text-align: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #edf2f7;
+}
 
-    /* Resultados de Jornada en móvil */
-    .resultados-section {
-        width: 96%;
-        margin: 15px auto 30px;
-        padding: 16px 8px;
-        border-radius: 12px;
-    }
-    .res-title-main {
-        font-size: 1.25rem;
-        margin-bottom: 6px;
-    }
-    .res-badge-jornada {
-        padding: 3px 14px;
-        margin-bottom: 6px;
-    }
-    .jornada-txt {
-        font-size: 0.95rem;
-    }
-    .sub-jornada {
-        font-size: 0.7rem;
-    }
-    .res-dates {
-        font-size: 0.9rem;
-    }
-    .res-venue {
-        font-size: 0.8rem;
-    }
-    .res-match-row {
-        min-height: 40px;
-        border-radius: 20px;
-    }
-    .res-side {
-        padding: 4px 6px;
-        gap: 5px;
-    }
-    .res-side.local {
-        padding-right: 28px;
-    }
-    .res-side.visita {
-        padding-left: 28px;
-    }
-    .res-logo {
-        width: 20px;
-        height: 20px;
-    }
-    .res-team-name {
-        font-size: 0.74rem;
-    }
-    .res-score-badge {
-        min-width: 48px;
-        min-height: 32px;
-        padding: 2px 4px;
-        border-radius: 10px;
-    }
-    .score-num {
-        font-size: 0.88rem;
-    }
-    .score-penales {
-        font-size: 0.55rem;
-    }
-    .res-match-time {
-        font-size: 0.7rem;
-    }
+.modal-jugador-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 
-    /* Tabla de Posiciones y Contenedor */
-    .standings-container {
-        padding: 0 8px;
-        margin-bottom: 35px;
-    }
-    .section-title {
-        font-size: 1.2rem;
-        margin-bottom: 14px;
-    }
-    .standings-table th, .card-table th {
-        font-size: 0.72rem;
-        padding: 8px 5px;
-    }
-    .standings-table td, .card-table td {
-        font-size: 0.75rem;
-        padding: 7px 5px;
-    }
-    .standings-table td.team-name {
-        min-width: 135px;
-    }
-    .team-info {
-        gap: 5px;
-    }
-    .team-logo {
-        width: 18px;
-        height: 18px;
-    }
-    .pos-num {
-        font-size: 0.82rem;
-    }
-    .badge-zona {
-        font-size: 0.55rem;
-        padding: 1px 4px;
-    }
-    .tabla-leyenda {
-        gap: 8px 12px;
-        font-size: 0.75rem;
-        justify-content: flex-start;
-        padding: 0 4px;
-    }
+.modal-stat-item {
+    background: #f8fafc;
+    padding: 8px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #f1f5f9;
+}
 
-    /* Tablas Secundarias en Móvil (Disciplinaria y Multas) */
-    .tablas-secundarias-container {
-        padding: 0 8px;
-        margin-bottom: 35px;
-    }
-    .section-title-tabla {
-        font-size: 1.05rem;
-        margin-bottom: 8px;
-    }
-    .custom-info-table th {
-        font-size: 0.7rem;
-        padding: 8px 5px;
-    }
-    .custom-info-table td {
-        font-size: 0.72rem;
-        padding: 6px 5px;
-    }
-    .badge-card {
-        min-width: 18px;
-        height: 18px;
-        font-size: 0.7rem;
-        padding: 1px 4px;
-    }
-    .badge-castigo-alerta,
-    .badge-castigo-rojo {
-        font-size: 0.62rem;
-        padding: 2px 5px;
-    }
+.modal-stat-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+}
 
-    /* Vista de Equipo (equipo.html) */
-    .team-stats-container {
-        width: 100%;
-        padding: 0 8px;
-        margin: 15px auto 10px;
-        gap: 12px;
-    }
-    .stats-dark-card {
-        padding: 12px 6px;
-        border-radius: 12px;
-    }
-    .stat-label {
-        font-size: 0.6rem;
-        margin-bottom: 2px;
-    }
-    .stat-val {
-        font-size: 1.45rem;
-    }
-    .tarjetas-total {
-        font-size: 1.25rem;
-    }
-    .tarjetas-sub {
-        font-size: 0.6rem;
-    }
-    .stats-grid-2x2 {
-        row-gap: 12px;
-    }
-    .racha-title {
-        font-size: 0.95rem;
-        margin-bottom: 8px;
-    }
-    .racha-badges {
-        gap: 5px;
-    }
-    .badge-racha {
-        height: 38px;
-        font-size: 0.95rem;
-        border-radius: 8px;
-    }
-    .racha-legend {
-        font-size: 0.75rem;
-        gap: 10px;
-        margin-top: 10px;
-    }
-    .racha-legend-item .badge-racha {
-        width: 18px;
-        height: 18px;
-        font-size: 0.65rem;
-    }
+.modal-stat-valor {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #1e293b;
+}
 
-    /* Footer */
-    .site-footer {
-        padding: 25px 4% 15px;
-    }
-    .footer-grid {
-        gap: 20px;
-    }
+.modal-badge-amarilla {
+    background-color: #ffe600;
+    color: #111;
+    border: 1px solid #d4be00;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.modal-badge-roja {
+    background-color: #e53935;
+    color: #ffffff;
+    border: 1px solid #b71c1c;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-weight: 800;
+    font-size: 0.9rem;
 }

@@ -7,33 +7,6 @@
     <link rel="icon" type="image/png" href="logo_liga.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Estilos para las insignias de tarjetas en la tabla */
-        .badge-card {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 24px;
-            height: 24px;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 0.85rem;
-        }
-        .badge-amarilla {
-            background-color: #ffe600;
-            color: #111;
-            border: 1px solid #d4be00;
-        }
-        .badge-roja {
-            background-color: #e53935;
-            color: #ffffff;
-            border: 1px solid #b71c1c;
-        }
-        .text-center {
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header class="navbar">
@@ -78,7 +51,7 @@
 
     <!-- BLOQUE DE RESUMEN Y ESTADÍSTICAS DEL EQUIPO -->
     <section class="team-stats-container">
-        <!-- Tarjeta Superior: Posición, Puntos, Jugados, Cociente -->
+        <!-- Posición, Puntos, Jugados, Cociente -->
         <div class="stats-dark-card stats-row-4">
             <div class="stat-col">
                 <span class="stat-label">POSICIÓN</span>
@@ -98,7 +71,7 @@
             </div>
         </div>
 
-        <!-- Tarjeta Central: Goles a favor/contra, Diferencia y Tarjetas -->
+        <!-- Goles a favor/contra, Diferencia y Tarjetas -->
         <div class="stats-dark-card stats-grid-2x2">
             <div class="stat-col">
                 <span class="stat-label">GOLES A FAVOR</span>
@@ -121,7 +94,7 @@
             </div>
         </div>
 
-        <!-- Sección Racha: Últimos resultados -->
+        <!-- Últimos resultados -->
         <div class="racha-section">
             <h3 class="racha-title">Últimos resultados</h3>
             <div class="racha-badges" id="racha-contenedor"></div>
@@ -162,6 +135,7 @@
                     </table>
                 </div>
             </div>
+
             <div class="card">
                 <h2 class="card-title">CUERPO TÉCNICO</h2>
                 <div class="card-table-wrapper">
@@ -177,6 +151,7 @@
                 </div>
             </div>
         </div>
+
         <div class="dashboard-right">
             <div class="card">
                 <h2 class="card-title">CALENDARIO</h2>
@@ -198,6 +173,17 @@
             </div>
         </div>
     </main>
+
+    <!-- VENTANA EMERGENTE (MODAL) PARA MOSTRAR LA CREDENCIAL -->
+    <div id="modal-credencial" class="modal-credencial-overlay" aria-hidden="true">
+        <div class="modal-credencial-card" role="dialog" aria-modal="true" aria-labelledby="modal-titulo-jugador">
+            <div class="modal-credencial-header">
+                <h3 id="modal-titulo-jugador"><i class="fas fa-id-card"></i> Credencial de Jugador</h3>
+                <button type="button" class="modal-btn-cerrar" id="btn-cerrar-modal" title="Cerrar ventana">&times;</button>
+            </div>
+            <div class="modal-credencial-body" id="modal-credencial-contenido"></div>
+        </div>
+    </div>
 
     <footer class="site-footer">
         <div class="footer-grid">
@@ -222,6 +208,7 @@
             <a href="/admin-login">Inicio de sesión de Administrador</a>
         </div>
     </footer>
+
     <script src="equipo.js"></script>
 </body>
 </html>
