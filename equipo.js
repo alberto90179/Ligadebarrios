@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 79, pos: "30 años", nombre: "Justo Manuel Covarrubias", cat: "3", amarilla: "-", roja: "-" },
                 { num: 78, pos: "20 años", nombre: "Luis Fernando Guerrero Delgadillo", cat: "3", amarilla: "-", roja: "-" },
                 { num: 81, pos: "46 años", nombre: "Luis Jorge Guerrero", cat: "3", amarilla: "-", roja: "-" },
-                { num: 85, pos: "30 años", nombre: "Manuel López Mundo", cat: "3", amarilla: "-", roja: "-" },
+                { num: 85, pos: "40 años", nombre: "Manuel López Mundo", cat: "3", amarilla: "-", roja: "-" },
                 { num: 77, pos: "29 años", nombre: "Salvador Ochoa Guerrero", cat: "2", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Jorge Alberto Guerrero" }],
