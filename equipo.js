@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 200, pos: "24 años", nombre: "Leobardo Leonel de la Rosa H.", cat: "3", amarilla: "-", roja: "-" },
                 { num: 197, pos: "25 años", nombre: "Oscar Ulises Guerrero Huerta", cat: "3", amarilla: "-", roja: "1" },
                 { num: 198, pos: "33 años", nombre: "Pablo Misael Santana Pelayo", cat: "3", amarilla: "1", roja: "-" },
-                { num: 196, pos: "27 años", nombre: "Pedro Paez", cat: "3", amarilla: "1", roja: "-" }
+                { num: 196, pos: "27 años", nombre: "Pedro Alejandro Paez", cat: "3", amarilla: "1", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
