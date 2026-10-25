@@ -280,26 +280,8 @@ body {
 }
 
 /* =========================================
-   SECCIÓN DE RESULTADOS
+   ELEMENTOS DE RESULTADOS DE PARTIDOS
    ========================================= */
-.resultados-section {
-    max-width: 650px;
-    width: 94%;
-    margin: 20px auto 40px;
-    padding: 25px 15px;
-    background: radial-gradient(circle at center top, rgba(20, 55, 30, 0.1), rgba(8, 20, 12, 0.88)),
-                url('assets/estadio.png') center/cover no-repeat;
-    background-color: #0d1e13;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-}
-
-.resultados-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .res-title-main {
     font-size: 1.6rem;
     font-weight: 900;
@@ -339,12 +321,6 @@ body {
 .res-venue {
     font-size: 0.95rem;
     color: #e0e0e0;
-}
-
-.resultados-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
 
 .res-match-wrapper {
@@ -1092,50 +1068,6 @@ body {
 }
 
 /* =========================================
-   PIE DE PÁGINA
-   ========================================= */
-.site-footer {
-    background-color: var(--color-gris-oscuro);
-    color: #ccc;
-    padding: 35px 5% 15px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-    margin-bottom: 25px;
-}
-
-.footer-col h4 {
-    color: var(--color-blanco);
-    margin-bottom: 10px;
-}
-
-.btn-whatsapp {
-    display: inline-block;
-    background-color: var(--color-verde-wa);
-    color: var(--color-blanco);
-    padding: 8px 16px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-.footer-bottom {
-    text-align: center;
-    border-top: 1px solid #444;
-    padding-top: 15px;
-    font-size: 0.85rem;
-}
-
-.footer-bottom a {
-    color: #888;
-    text-decoration: none;
-}
-
-/* =========================================
    INDICADORES DE ZONA EN TABLA GENERAL
    ========================================= */
 .fila-liguilla {
@@ -1216,6 +1148,163 @@ body {
 .color-liguilla { background-color: #2e7d32; }
 .color-consolacion { background-color: #f57c00; }
 .color-eliminado { background-color: #d32f2f; }
+
+/* =========================================
+   PATROCINADORES
+   ========================================= */
+.sponsors-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: var(--color-blanco);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.sponsors-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-gris-oscuro);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.sponsors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.sponsor-card {
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+.sponsor-card:hover {
+    transform: scale(1.05);
+}
+.sponsor-card img {
+    max-width: 160px;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.sponsor-card img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* =========================================
+   ACORDEÓN RESULTADOS J1-J13 (INDEX)
+   ========================================= */
+.resultados-jornadas-container {
+    max-width: 700px;
+    width: 94%;
+    margin: 20px auto 40px;
+    padding: 0;
+}
+.resultados-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-gris-oscuro);
+}
+.accordion-jornadas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.jornada-item {
+    background: #0d1e13;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+.jornada-summary {
+    background: linear-gradient(135deg, rgba(20, 55, 30, 1) 0%, rgba(8, 20, 12, 1) 100%);
+    padding: 16px 20px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    transition: border-radius 0.2s ease;
+}
+.jornada-item[open] .jornada-summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.jornada-summary::-webkit-details-marker {
+    display: none; 
+}
+.jornada-summary::after {
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    transition: transform 0.3s ease;
+    color: #ffee00;
+}
+.jornada-item[open] .jornada-summary::after {
+    transform: rotate(180deg);
+}
+.jornada-content {
+    padding: 20px 15px;
+    background: radial-gradient(circle at center top, rgba(20, 55, 30, 0.1), rgba(8, 20, 12, 0.88)), url('assets/estadio.png') center/cover no-repeat;
+    background-color: #0d1e13;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+.site-footer {
+    background-color: var(--color-gris-oscuro);
+    color: #ccc;
+    padding: 35px 5% 15px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.footer-col h4 {
+    color: var(--color-blanco);
+    margin-bottom: 10px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: var(--color-verde-wa);
+    color: var(--color-blanco);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-size: 0.85rem;
+}
+
+.footer-bottom a {
+    color: #888;
+    text-decoration: none;
+}
 
 /* =======================================================
    RESPONSIVO
@@ -1374,4 +1463,117 @@ body {
     padding: 2px 8px;
     font-weight: 800;
     font-size: 0.9rem;
+}
+
+/* =========================================
+   BOTÓN Y SECCIÓN TRIGGER PARA RESULTADOS
+   ========================================= */
+.resultados-trigger-section {
+    max-width: 700px;
+    width: 94%;
+    margin: 30px auto;
+    padding: 30px 20px;
+    background: radial-gradient(circle at center top, rgba(20, 55, 30, 0.1), rgba(8, 20, 12, 0.88)), url('assets/estadio.png') center/cover no-repeat;
+    background-color: #0d1e13;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #ffffff;
+}
+.resultados-trigger-content p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    color: #e2e8f0;
+}
+.btn-ver-resultados {
+    background: linear-gradient(135deg, var(--color-rojo) 0%, #a00d12 100%);
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(211, 17, 24, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+}
+.btn-ver-resultados:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(211, 17, 24, 0.5);
+}
+
+/* =========================================
+   MODAL RESULTADOS
+   ========================================= */
+.modal-resultados-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 15px;
+    box-sizing: border-box;
+    animation: fadeInModal 0.25s ease-out;
+}
+.modal-resultados-overlay.active {
+    display: flex;
+}
+.modal-resultados-card {
+    background: #0d1e13; 
+    border-radius: 14px;
+    max-width: 700px;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: zoomInModal 0.25s ease-out;
+}
+.modal-resultados-header {
+    background: linear-gradient(135deg, rgba(20, 55, 30, 1) 0%, rgba(8, 20, 12, 1) 100%);
+    color: #ffee00;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.modal-resultados-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.modal-resultados-body {
+    padding: 20px 15px;
+    overflow-y: auto;
+    background: radial-gradient(circle at center top, rgba(20, 55, 30, 0.1), rgba(8, 20, 12, 0.88)), url('assets/estadio.png') center/cover no-repeat;
+    /* Ajuste para el scrollbar del modal */
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-rojo) rgba(255, 255, 255, 0.1);
+}
+.modal-resultados-body::-webkit-scrollbar {
+    width: 8px;
+}
+.modal-resultados-body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+.modal-resultados-body::-webkit-scrollbar-thumb {
+    background-color: var(--color-rojo);
+    border-radius: 4px;
 }
