@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J4", fecha: "Lun 05/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/7_Mares.jpg", res: "4 - 2", visita: "assets/logos/JR Transmisiones.png"},
                 { j: "J5", fecha: "Lun 12/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg", res: "6 - 3", visita: "assets/logos/Diablos_Gordos.jpg" },
                 { j: "J6", fecha: "Mar 20/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png", res: "0 - 5", visita: "assets/logos/7_Mares.jpg" },
-                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg", res: "PIERDEN AMBOS POR: PRESENTAR CREDENCIALES INCOMPLETAS", visita: "assets/logos/Titanes.jpg" }
+                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg", res: " ", visita: "assets/logos/Titanes.jpg" }
             ]
         },
         "2": { // Titanes L.A.
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J4", fecha: "Lun 05/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Titanes.jpg", res: "0 - 5", visita: "assets/logos/Pansa_Brava.jpg" },
                 { j: "J5", fecha: "Mar 13/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Robles.jpg", res: "3 (4) - (3) 3", visita: "assets/logos/Titanes.jpg" },
                 { j: "J6", fecha: "Mar 20/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg", res: "1 - 2", visita: "assets/logos/Furia_Roja.png" },
-                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg", res: " PIERDEN AMBOS POR: PRESENTAR CREDENCIALES INCOMPLETAS", visita: "assets/logos/Titanes.jpg" }
+                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg", res: "  ", visita: "assets/logos/Titanes.jpg" }
             ]
         },
         "3": { // Robles FC
@@ -480,7 +480,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const logoActual = equipoObj.logo;
 
         calendarioPartidos.forEach(p => {
-            if (!p.res || p.res.toLowerCase() === "vs" || p.res.includes("Por definir")) return;
+            // Si el resultado está vacío o sólo tiene espacios en blanco, se marca como Perdido (P)
+            if (!p.res || p.res.trim() === "") {
+                racha.push("P");
+                return;
+            }
+
+            if (p.res.toLowerCase() === "vs" || p.res.includes("Por definir")) return;
+
             const partes = p.res.split("-");
             if (partes.length !== 2) return;
 
