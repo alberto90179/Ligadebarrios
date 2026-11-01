@@ -422,7 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 53, pos: "37 años", nombre: "Pedro González Pérez", cat: "4", amarilla: "-", roja: "-" },
                 { num: 37, pos: "28 años", nombre: "Rodolfo Alejandro Tapia Casillas", cat: "2", amarilla: "-", roja: "-" }
             ],
-            cuerpoTecnico: [{ cargo: "Equipero", nombre: "Omar Alejandro Tapia Nájera" }],
+            cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
                 { j: "J1", fecha: "Mar 08/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg", res: "2 - 3", visita: "assets/logos/JR Transmisiones.png" },
                 { j: "J2", fecha: "Lun 28/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "0 - 0", visita: "assets/logos/Robles.jpg" },
