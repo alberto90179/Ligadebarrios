@@ -418,7 +418,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 47, pos: "34 años", nombre: "Luis Carlos Mercado García", cat: "4", amarilla: "-", roja: "-" },
                 { num: 38, pos: "40 años", nombre: "Luis Jorge López Martínez", cat: "2", amarilla: "-", roja: "-" },
                 { num: 40, pos: "27 años", nombre: "Miguel Ángel Gutierrez Ortega", cat: "-", amarilla: "-", roja: "-" },
-                { num: 44, pos: "46 años", nombre: "Omar Alejandro Tapia Nájera", cat: "4", amarilla: "-", roja: "-" },
                 { num: 50, pos: "25 años", nombre: "Osmand Cabain Ortega Cárdenas", cat: "3", amarilla: "-", roja: "-" },
                 { num: 53, pos: "37 años", nombre: "Pedro González Pérez", cat: "4", amarilla: "-", roja: "-" },
                 { num: 37, pos: "28 años", nombre: "Rodolfo Alejandro Tapia Casillas", cat: "2", amarilla: "-", roja: "-" }
