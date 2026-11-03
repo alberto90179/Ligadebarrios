@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const equipos = [
         { id: 1, nombre: "7 Mares", logo: "assets/logos/7_Mares.jpg", pj: 7, g: 3, e: 0, p: 4, pts: 9, gf: 21, gc: 15, pe: 0, dg: "+6" },
         { id: 9, nombre: "Carnicería Villalobos", logo: "assets/logos/villalobos.jpg", pj: 7, g: 2, e: 4, p: 1, pts: 12, gf: 16, gc: 11, pe: 2, dg: "+5" },
-        { id: 12, nombre: "Chuper Amigos", logo: "assets/logos/chuperamigos.png", pj: 7, g: 2, e: 0, p: 5, pts: 6, gf: 16, gc: 23 , pe: 0, dg: "-7" },
+        { id: 12, nombre: "Chuper Amigos", logo: "assets/logos/chuperamigos.png", pj: 8, g: 3, e: 0, p: 5, pts: 9, gf: 21, gc: 23 , pe: 0, dg: "-2" },
         { id: 4, nombre: "Cruz Azul Mezquitán", logo: "assets/logos/Cruz_Azul_mezquitan.png", pj: 7, g: 5, e: 1, p: 1, pts: 17, gf: 18, gc: 12, pe: 1, dg: "+6" },
         { id: 6, nombre: "Diablos Gordos", logo: "assets/logos/Diablos_Gordos.jpg", pj: 7, g: 3, e: 2, p: 2, pts: 12, gf: 14, gc: 16, pe: 1, dg: "-2" },
         { id: 0, nombre: "Furia Roja", logo: "assets/logos/Furia_Roja.png", pj: 7, g: 4, e: 1, p: 2, pts: 13, gf: 19, gc: 11, pe: 0, dg: "+8" },
         { id: 10, nombre: "Gordos Belicones", logo: "assets/logos/belicones.png", pj: 7, g: 3, e: 2, p: 2, pts: 11, gf: 25, gc: 16, pe: 0, dg: "+9" },
-        { id: 13, nombre: "Jalisco FC", logo: "assets/logos/jalisco_FC.png", pj: 7, g: 0, e: 0, p: 7, pts: 0, gf: 0, gc: 35, pe: 0, dg: "-35" },
+        { id: 13, nombre: "Jalisco FC", logo: "assets/logos/jalisco_FC.png", pj: 8, g: 0, e: 0, p: 8, pts: 0, gf: 0, gc: 40, pe: 0, dg: "-40" },
         { id: 11, nombre: "JR Transmisiones", logo: "assets/logos/JR Transmisiones.png", pj: 7, g: 4, e: 2, p: 1, pts: 15, gf: 21, gc: 15, pe: 1, dg: "+6" },
         { id: 5, nombre: "Pansa Brava", logo: "assets/logos/Pansa_Brava.jpg", pj: 7, g: 5, e: 0, p: 2, pts: 15, gf: 24, gc: 9, pe: 0, dg: "+15" },
         { id: 7, nombre: "Rayados FC", logo: "assets/logos/Rayados.jpg", pj: 7, g: 2, e: 1, p: 4, pts: 7, gf: 15, gc: 23, pe: 0, dg: "-8" },
@@ -292,6 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 199, pos: "34 años", nombre: "Jose Octavio Ponce Fonseca", cat: "3", amarilla: "-", roja: "-" },
                 { num: 0, pos: "- años", nombre: "Juan Velazquez", cat: "2", amarilla: "-", roja: "-" },
                 { num: 200, pos: "24 años", nombre: "Leobardo Leonel de la Rosa H.", cat: "4", amarilla: "-", roja: "-" },
+                { num: 2194, pos: "29 años", nombre: "Marco Antonio Castellón De la Rosa", cat: "-", amarilla: "-", roja: "-" },
                 { num: 197, pos: "25 años", nombre: "Oscar Ulises Guerrero Huerta", cat: "3", amarilla: "-", roja: "1" },
                 { num: 198, pos: "33 años", nombre: "Pablo Misael Santana Pelayo", cat: "4", amarilla: "2", roja: "-" },
                 { num: 196, pos: "27 años", nombre: "Pedro Alejandro Paez", cat: "4", amarilla: "1", roja: "-" }
@@ -314,7 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 225, pos: "21 años", nombre: "Diego De Jesus Avalos Salgado", cat: "4", amarilla: "1", roja: "-" },
                 { num: 223, pos: "33 años", nombre: "Efraín López", cat: "1", amarilla: "-", roja: "-" },
                 { num: 164, pos: "26 años", nombre: "Gustavo Gomez T.", cat: "4", amarilla: "-", roja: "-" },
-                { num: 0, pos: " años", nombre: "Hugo Cisneros", cat: "2", amarilla: "-", roja: "-" },
+                { num: 0, pos: " años", nombre: "Hugo Cisneros", cat: "2", amarilla: "1", roja: "-" },
                 { num: 219, pos: "29 años", nombre: "Jesus Jafeth González Ventura", cat: "4", amarilla: "-", roja: "-" },
                 { num: 221, pos: "33 años", nombre: "Jose Antonio Perez Peña", cat: "4", amarilla: "-", roja: "-" },
                 { num: 190, pos: "29 años", nombre: "Jose Jareth González Ventura", cat: "4", amarilla: "-", roja: "-" },
@@ -436,24 +437,24 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "12": { // Chuper Amigos
             plantilla: [
-                { num: 29, pos: "35 años", nombre: "Alejandro Pelayo G.", cat: "2", amarilla: "1", roja: "-" },
-                { num: 24, pos: "45 años", nombre: "Alejandro Rangel", cat: "4", amarilla: "-", roja: "-" },
-                { num: 20, pos: "43 años", nombre: "Ángel Vazquez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 35, pos: "39 años", nombre: "Christian G. Martell Suárez", cat: "-", amarilla: "-", roja: "-" },
-                { num: 23, pos: "22 años", nombre: "Dionicio de Jesus Avalos Fausto", cat: "3", amarilla: "-", roja: "-" },
-                { num: 31, pos: "42 años", nombre: "Enrique Zúñiga Casillas", cat: "4", amarilla: "2", roja: "-" },
-                { num: 32, pos: "34 años", nombre: "Felipe de Jesus Elizondo M.", cat: "-", amarilla: "-", roja: "-" },
-                { num: 21, pos: "39 años", nombre: "J. Manuel Vizcarra Quintero", cat: "2", amarilla: "-", roja: "-" },
-                { num: 28, pos: "38 años", nombre: "Jesús Bautista Delgado", cat: "4", amarilla: "-", roja: "-" },
-                { num: 19, pos: "36 años", nombre: "José Angel Isidro", cat: "1", amarilla: "-", roja: "-" },
-                { num: 36, pos: "40 años", nombre: "José de Jesús Contreras Aceves", cat: "1", amarilla: "-", roja: "-" },
-                { num: 30, pos: "29 años", nombre: "Jose Eduardo Arcega vera", cat: "2", amarilla: "-", roja: "-" },
-                { num: 22, pos: "40 años", nombre: "Juan Andres Vázquez Guerra", cat: "3", amarilla: "-", roja: "-" },
-                { num: 26, pos: "34 años", nombre: "Juan Antonio Cervantes Díaz", cat: "4", amarilla: "-", roja: "-" },
-                { num: 34, pos: "40 años", nombre: "Luis Javier Fabian Contreras", cat: "1", amarilla: "-", roja: "-" },
-                { num: 27, pos: "-", nombre: "Luis Manuel Avalos Fregoso", cat: "3", amarilla: "-", roja: "-" },
-                { num: 25, pos: "40 años", nombre: "Mario Alberto Torres Suarez", cat: "1", amarilla: "-", roja: "-" },
-                { num: 33, pos: "31 años", nombre: "Victor Alfonso Contreras Gonzalez", cat: "3", amarilla: "-", roja: "-" }
+                { num: 29, pos: "35 años", nombre: "Alejandro Pelayo G.", cat: "3", amarilla: "1", roja: "-" },
+                { num: 24, pos: "45 años", nombre: "Alejandro Rangel", cat: "5", amarilla: "-", roja: "-" },
+                { num: 20, pos: "43 años", nombre: "Ángel Vazquez", cat: "4", amarilla: "-", roja: "-" },
+                { num: 35, pos: "39 años", nombre: "Christian G. Martell Suárez", cat: "1", amarilla: "-", roja: "-" },
+                { num: 23, pos: "22 años", nombre: "Dionicio de Jesus Avalos Fausto", cat: "4", amarilla: "-", roja: "-" },
+                { num: 31, pos: "42 años", nombre: "Enrique Zúñiga Casillas", cat: "5", amarilla: "2", roja: "-" },
+                { num: 32, pos: "34 años", nombre: "Felipe de Jesus Elizondo M.", cat: "1", amarilla: "-", roja: "-" },
+                { num: 21, pos: "39 años", nombre: "J. Manuel Vizcarra Quintero", cat: "3", amarilla: "-", roja: "-" },
+                { num: 28, pos: "38 años", nombre: "Jesús Bautista Delgado", cat: "5", amarilla: "-", roja: "-" },
+                { num: 19, pos: "36 años", nombre: "José Angel Isidro", cat: "2", amarilla: "-", roja: "-" },
+                { num: 36, pos: "40 años", nombre: "José de Jesús Contreras Aceves", cat: "2", amarilla: "-", roja: "-" },
+                { num: 30, pos: "29 años", nombre: "Jose Eduardo Arcega vera", cat: "3", amarilla: "-", roja: "-" },
+                { num: 22, pos: "40 años", nombre: "Juan Andres Vázquez Guerra", cat: "4", amarilla: "-", roja: "-" },
+                { num: 26, pos: "34 años", nombre: "Juan Antonio Cervantes Díaz", cat: "5", amarilla: "-", roja: "-" },
+                { num: 34, pos: "40 años", nombre: "Luis Javier Fabian Contreras", cat: "2", amarilla: "-", roja: "-" },
+                { num: 27, pos: "-", nombre: "Luis Manuel Avalos Fregoso", cat: "4", amarilla: "-", roja: "-" },
+                { num: 25, pos: "40 años", nombre: "Mario Alberto Torres Suarez", cat: "2", amarilla: "-", roja: "-" },
+                { num: 33, pos: "31 años", nombre: "Victor Alfonso Contreras Gonzalez", cat: "4", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Alejandro Rangel" }],
             calendario: [
@@ -464,7 +465,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J5", fecha: "Mar 13/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Rayados.jpg", res: "2 - 3", visita: "assets/logos/chuperamigos.png" },
                 { j: "J6", fecha: "Mar 20/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/chuperamigos.png", res: "3 - 4", visita: "assets/logos/JR Transmisiones.png" },
                 { j: "J7", fecha: "Mar 27/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg", res: "3 - 2", visita: "assets/logos/chuperamigos.png" },
-                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png", res: "vs", visita: "assets/logos/chuperamigos.png" }
+                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png", res: "", visita: "assets/logos/chuperamigos.png" }
             ]
         },
         "13": { // Jalisco FC
@@ -478,7 +479,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J5", fecha: "Mar 13/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/Furia_Roja.png", res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
                 { j: "J6", fecha: "Mar 20/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png", res: "0 - 5", visita: "assets/logos/7_Mares.jpg" },
                 { j: "J7", fecha: "Lun 26/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/villalobos.jpg", res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png", res: "vs", visita: "assets/logos/chuperamigos.png" }
+                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png", res: "0 - 5", visita: "assets/logos/chuperamigos.png" }
             ]
         }
     };
