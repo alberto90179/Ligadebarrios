@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 199, pos: "34 años", nombre: "Jose Octavio Ponce Fonseca", cat: "3", amarilla: "-", roja: "-" },
                 { num: 0, pos: "- años", nombre: "Juan Velazquez", cat: "2", amarilla: "-", roja: "-" },
                 { num: 200, pos: "24 años", nombre: "Leobardo Leonel de la Rosa H.", cat: "4", amarilla: "-", roja: "-" },
-                { num: 2194, pos: "29 años", nombre: "Marco Antonio Castellón De la Rosa", cat: "-", amarilla: "-", roja: "-" },
+                { num: 194, pos: "29 años", nombre: "Marco Antonio Castellón De la Rosa", cat: "-", amarilla: "-", roja: "-" },
                 { num: 197, pos: "25 años", nombre: "Oscar Ulises Guerrero Huerta", cat: "3", amarilla: "-", roja: "1" },
                 { num: 198, pos: "33 años", nombre: "Pablo Misael Santana Pelayo", cat: "4", amarilla: "2", roja: "-" },
                 { num: 196, pos: "27 años", nombre: "Pedro Alejandro Paez", cat: "4", amarilla: "1", roja: "-" }
@@ -357,7 +357,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 13, pos: "- años", nombre: "Rodolfo Aldaco", cat: "4", amarilla: "-", roja: "-" },
                 { num: 8, pos: "24 años", nombre: "Wilber Pelayo Peña", cat: "4", amarilla: "-", roja: "-" }
             ],
-            cuerpoTecnico: [{ cargo: "Equipero", nombre: "Ramiro Arteaga Salas" }],
+            cuerpoTecnico: [{ cargo: "Equipero", nombre: "Ramiro Arteaga Salas" }, { cargo: "Entrenador", nombre: "Jose Luis Padilla Perez" }],
             calendario: [
                 { j: "J1", fecha: "Lun 07/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/chuperamigos.png", res: "1 - 2", visita: "assets/logos/villalobos.jpg" },
                 { j: "J2", fecha: "Lun 14/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/villalobos.jpg", res: "3 (3) - (2) 3", visita: "assets/logos/belicones.png" },
