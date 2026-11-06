@@ -2,27 +2,31 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
     // 1. MENÚ DESPLEGABLE CON ROTACIÓN Y CIERRE
     // ==========================================
-    const btnEquipos = document.getElementById("btn-equipos");
-    const menuEquipos = document.getElementById("menu-equipos");
-    const dropdownLi = btnEquipos ? btnEquipos.closest(".dropdown") : null;
+    const dropdowns = [
+        { btn: document.getElementById("btn-equipos"), menu: document.getElementById("menu-equipos") },
+        { btn: document.getElementById("btn-fase-final"), menu: document.getElementById("menu-fase-final") }
+    ];
 
-    if (btnEquipos && menuEquipos) {
-        btnEquipos.addEventListener("click", (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            const isOpen = menuEquipos.classList.toggle("show");
-            if (dropdownLi) {
-                dropdownLi.classList.toggle("open", isOpen);
-            }
-        });
+    dropdowns.forEach(({ btn, menu }) => {
+        if (btn && menu) {
+            const dropdownLi = btn.closest(".dropdown");
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const isOpen = menu.classList.toggle("show");
+                if (dropdownLi) {
+                    dropdownLi.classList.toggle("open", isOpen);
+                }
+            });
 
-        document.addEventListener("click", (e) => {
-            if (!btnEquipos.contains(e.target) && !menuEquipos.contains(e.target)) {
-                menuEquipos.classList.remove("show");
-                if (dropdownLi) dropdownLi.classList.remove("open");
-            }
-        });
-    }
+            document.addEventListener("click", (e) => {
+                if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                    menu.classList.remove("show");
+                    if (dropdownLi) dropdownLi.classList.remove("open");
+                }
+            });
+        }
+    });
 
     // ==========================================
     // 2. DATOS DE LOS EQUIPOS (CON ID FIJO AÑADIDO)

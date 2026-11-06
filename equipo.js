@@ -2,22 +2,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
     // 1. MENÚ DESPLEGABLE CON CLASE .show
     // ==========================================
-    const btnEquipos = document.getElementById("btn-equipos");
-    const menuEquipos = document.getElementById("menu-equipos");
-    if (btnEquipos && menuEquipos) {
-        btnEquipos.addEventListener("click", (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            menuEquipos.classList.toggle("show");
-        });
-        document.addEventListener("click", (e) => {
-            if (!btnEquipos.contains(e.target) && !menuEquipos.contains(e.target)) {
-                menuEquipos.classList.remove("show");
-            }
-        });
-    }
+    const dropdowns = [
+        { btn: document.getElementById("btn-equipos"), menu: document.getElementById("menu-equipos") },
+        { btn: document.getElementById("btn-fase-final"), menu: document.getElementById("menu-fase-final") }
+    ];
 
-    // ==========================================
+    dropdowns.forEach(({ btn, menu }) => {
+        if (btn && menu) {
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                menu.classList.toggle("show");
+            });
+            document.addEventListener("click", (e) => {
+                if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                    menu.classList.remove("show");
+                }
+            });
+        }
+    });
+
+   // ==========================================
     // 2. PARÁMETROS URL Y LISTA DE EQUIPOS
     // ==========================================
     const parametros = new URLSearchParams(window.location.search);

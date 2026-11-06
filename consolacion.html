@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga Municipal de Fut7 de Barrios</title>
+    <link rel="icon" type="image/png" href="logo_liga.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos para la Cuenta Regresiva -->
+    <style>
+        .countdown-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f4f6f8;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .countdown-section h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.8rem;
+        }
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .time-box {
+            background-color: #1a252f; /* Color oscuro, puedes cambiarlo al de tu liga */
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            min-width: 80px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .time-box span {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+        .time-box p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .evento-iniciado {
+            font-size: 2rem;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+    </style>    
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logo liga de barrios.PNG" alt="Logo de la Liga Municipal de Fut7 de Barrios" class="logo-img">
+            <h1 class="site-title">Liga Municipal de<br><span>Fut7 de Barrios</span></h1>
+        </div>
+        <nav class="nav-links" aria-label="Menú principal">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="directiva.html">Directiva</a></li>
+                <li class="dropdown">
+                    <a href="#" id="btn-equipos">Equipos <i class=""></i></a>
+                    <ul class="dropdown-menu" id="menu-equipos">
+                        <li><a href="equipo.html?id=0">Furia Roja</a></li>
+                        <li><a href="equipo.html?id=1">7 Mares</a></li>
+                        <li><a href="equipo.html?id=2">Titanes L.A.</a></li>
+                        <li><a href="equipo.html?id=3">Robles FC</a></li>
+                        <li><a href="equipo.html?id=4">Cruz Azul Mezquitán</a></li>
+                        <li><a href="equipo.html?id=5">Pansa Brava</a></li>
+                        <li><a href="equipo.html?id=6">Diablos Gordos</a></li>
+                        <li><a href="equipo.html?id=7">Rayados FC</a></li>
+                        <li><a href="equipo.html?id=8">Tortilleros FC</a></li>
+                        <li><a href="equipo.html?id=9">Carnicería Villalobos</a></li>
+                        <li><a href="equipo.html?id=10">Gordos Belicones</a></li>
+                        <li><a href="equipo.html?id=11">JR Transmisiones</a></li>
+                        <li><a href="equipo.html?id=12">Chuper Amigos</a></li>
+                        <li><a href="equipo.html?id=13">Jalisco FC</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" id="btn-fase-final">Fase Final <i class=""</i></a>
+                    <ul class="dropdown-menu" id="menu-fase-final">
+                        <li><a href="liguilla.html">Liguilla</a></li>
+                        <li><a href="consolacion.html">Consolación</a></li>
+                    </ul>
+                </li>
+                <li><a href="reglamentos.html">Reglamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <Main>
+         
+        <!-- SECCIÓN DE CUENTA REGRESIVA -->
+        <section class="countdown-section">
+            <h2>LIGUILLA DE CONSOLACIÓN</h2>
+            <div id="countdown" class="countdown-container">
+                <div class="time-box"><span id="days">00</span><p>Días</p></div>
+                <div class="time-box"><span id="hours">00</span><p>Horas</p></div>
+                <div class="time-box"><span id="minutes">00</span><p>Minutos</p></div>
+                <div class="time-box"><span id="seconds">00</span><p>Segundos</p></div>
+            </div>
+        </section>
+            
+        <!-- SECCIÓN DE PATROCINADORES -->
+        <section class="sponsors-section">
+            <h2 class="sponsors-title">Nuestros Patrocinadores</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <img src="assets/patrocinadores/deportesvictoria.png" alt="Deportes Victoria="Deportes Victoria" onerror="this.src='https://via.placeholder.com/200x100?text=Cultura+Fit'">
+                </div>
+                <div class="sponsor-card">
+                    <img src="assets/patrocinadores/uda.jpg" alt="Uniformes Deportivos Autlán" title="Uniformes Deportivos Autlán" onerror="this.src='https://via.placeholder.com/200x100?text=Uniformes+Autl%C3%A1n'">
+                </div>
+                <div class="sponsor-card">
+                    <img src="assets/patrocinadores/horfi.png" alt="Horfi" title="Horfi" onerror="this.src='https://via.placeholder.com/200x100?text=Tu+Marca+Aquí'">
+                </div>
+                <div class="sponsor-card">
+                    <img src="assets/patrocinadores/el trompo.png" alt="El trompo" title="Tortas Ahogadas el Trompo" onerror="this.src='https://via.placeholder.com/200x100?text=Tu+Marca+Aquí'">
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Información</h4>
+                <p>&copy; 2026 Liga Municipal de Fut7 de Barrios.</p>
+                <p>Fundada en 2024.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Dirección</h4>
+                <p>Cancha Loma del Aire</p>
+                <p>Autlán de Navarro, Jalisco, México.</p>
+            </div>
+            <div class="footer-col contact-col">
+                <h4>Contacto</h4>
+                <a href="https://wa.me/5213171078158" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="/admin-login">Inicio de sesión de Administrador</a>
+        </div>
+    </footer>
+    </Main>
+    <script src="app.js"></script>
+
+     <!-- SCRIPT DE LA CUENTA REGRESIVA -->
+    <script>
+        // Configura la fecha: 14 de diciembre de 2026 a las 20:00:00 (8:00 PM)
+        const countDownDate = new Date("Dec 14, 2026 20:00:00").getTime();
+
+        // Actualiza la cuenta regresiva cada 1 segundo
+        const x = setInterval(function() {
+            // Obtener la fecha y hora actual
+            const now = new Date().getTime();
+
+            // Encontrar la distancia entre ahora y la fecha establecida
+            const distance = countDownDate - now;
+
+            // Cálculos de tiempo para días, horas, minutos y segundos
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Mostrar el resultado con ceros a la izquierda si es menor a 10
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+            // Si la cuenta regresiva termina, mostrar un mensaje
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<div class='evento-iniciado'>¡EL EVENTO HA COMENZADO!</div>";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
