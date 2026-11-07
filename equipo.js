@@ -29,20 +29,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const equipoId = parseInt(parametros.get('id'));
 
     const equipos = [
-        { id: 1, nombre: "7 Mares", logo: "assets/logos/7_Mares.jpg", pj: 8, g: 3, e: 1, p: 4, pts: 11, gf: 23, gc: 17, pe: 1, dg: "+6" },
-        { id: 9, nombre: "Carnicería Villalobos", logo: "assets/logos/villalobos.jpg", pj: 8, g: 2, e: 4, p: 2, pts: 12, gf: 16, gc: 16, pe: 2, dg: "-" },
-        { id: 12, nombre: "Chuper Amigos", logo: "assets/logos/chuperamigos.png", pj: 8, g: 3, e: 0, p: 5, pts: 9, gf: 21, gc: 23 , pe: 0, dg: "-2" },
-        { id: 4, nombre: "Cruz Azul Mezquitán", logo: "assets/logos/Cruz_Azul_mezquitan.png", pj: 8, g: 6, e: 1, p: 1, pts: 20, gf: 23, gc: 12, pe: 1, dg: "+11" },
-        { id: 6, nombre: "Diablos Gordos", logo: "assets/logos/Diablos_Gordos.jpg", pj: 8, g: 4, e: 2, p: 2, pts: 15, gf: 19, gc: 16, pe: 1, dg: "+3" },
-        { id: 0, nombre: "Furia Roja", logo: "assets/logos/Furia_Roja.png", pj: 8, g: 4, e: 1, p: 3, pts: 13, gf: 20, gc: 14, pe: 0, dg: "+6" },
-        { id: 10, nombre: "Gordos Belicones", logo: "assets/logos/belicones.png", pj: 8, g: 3, e: 2, p: 3, pts: 11, gf: 25, gc: 21, pe: 0, dg: "+4" },
-        { id: 13, nombre: "Jalisco FC", logo: "assets/logos/jalisco_FC.png", pj: 8, g: 0, e: 0, p: 8, pts: 0, gf: 0, gc: 40, pe: 0, dg: "-40" },
-        { id: 11, nombre: "JR Transmisiones", logo: "assets/logos/JR Transmisiones.png", pj: 8, g:5, e: 2, p: 1, pts: 18, gf: 24, gc: 15, pe: 1, dg: "+9" },
-        { id: 5, nombre: "Pansa Brava", logo: "assets/logos/Pansa_Brava.jpg", pj: 8, g: 5, e: 1, p: 2, pts: 16, gf: 26, gc: 11, pe: 0, dg: "+15" },
-        { id: 7, nombre: "Rayados FC", logo: "assets/logos/Rayados.jpg", pj: 8, g: 2, e: 1, p: 5, pts: 7, gf: 15, gc: 28, pe: 0, dg: "-13" },
-        { id: 3, nombre: "Robles FC", logo: "assets/logos/Robles.jpg", pj: 8, g: 3, e: 2, p: 3, pts: 12, gf: 18, gc: 14, pe: 1, dg: "+4" },
-        { id: 2, nombre: "Titanes L.A.", logo: "assets/logos/Titanes.jpg", pj: 8, g: 2, e: 2, p: 4, pts: 9, gf: 15, gc: 12, pe: 1, dg: "+3" },
-        { id: 8, nombre: "Tortilleros FC", logo: "assets/logos/Tortilleros.png", pj: 8, g: 3, e: 1, p: 4, pts: 11, gf: 12, gc: 18, pe: 1, dg: "-6" }
+        { id: 1,    nombre: "7 Mares",                  logo: "assets/logos/7_Mares.jpg",               pj: 8, g: 3, e: 1, p: 4, pts: 11,   gf: 23, gc: 17, pe: 1, dg: "+6" },
+        { id: 9,    nombre: "Carnicería Villalobos",    logo: "assets/logos/villalobos.jpg",            pj: 8, g: 2, e: 4, p: 2, pts: 12,   gf: 16, gc: 16, pe: 2, dg: "-"  },
+        { id: 12,   nombre: "Chuper Amigos",            logo: "assets/logos/chuperamigos.png",          pj: 8, g: 3, e: 0, p: 5, pts: 9,    gf: 21, gc: 23, pe: 0, dg: "-2" },
+        { id: 4,    nombre: "Cruz Azul Mezquitán",      logo: "assets/logos/Cruz_Azul_mezquitan.png",   pj: 8, g: 6, e: 1, p: 1, pts: 20,   gf: 23, gc: 12, pe: 1, dg: "+11"},
+        { id: 6,    nombre: "Diablos Gordos",           logo: "assets/logos/Diablos_Gordos.jpg",        pj: 8, g: 4, e: 2, p: 2, pts: 15,   gf: 19, gc: 16, pe: 1, dg: "+3" },
+        { id: 0,    nombre: "Furia Roja",               logo: "assets/logos/Furia_Roja.png",            pj: 8, g: 4, e: 1, p: 3, pts: 13,   gf: 20, gc: 14, pe: 0, dg: "+6" },
+        { id: 10,   nombre: "Gordos Belicones",         logo: "assets/logos/belicones.png",             pj: 8, g: 3, e: 2, p: 3, pts: 11,   gf: 25, gc: 21, pe: 0, dg: "+4" },
+        { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 8, g: 0, e: 0, p: 8, pts: 0,    gf: 0,  gc: 40, pe: 0, dg: "-40"},
+        { id: 11,   nombre: "JR Transmisiones",         logo: "assets/logos/JR Transmisiones.png",      pj: 8, g: 5, e: 2, p: 1, pts: 18,   gf: 24, gc: 15, pe: 1, dg: "+9" },
+        { id: 5,    nombre: "Pansa Brava",              logo: "assets/logos/Pansa_Brava.jpg",           pj: 8, g: 5, e: 1, p: 2, pts: 16,   gf: 26, gc: 11, pe: 0, dg: "+15"},
+        { id: 7,    nombre: "Rayados FC",               logo: "assets/logos/Rayados.jpg",               pj: 8, g: 2, e: 1, p: 5, pts: 7,    gf: 15, gc: 28, pe: 0, dg: "-13"},
+        { id: 3,    nombre: "Robles FC",                logo: "assets/logos/Robles.jpg",                pj: 8, g: 3, e: 2, p: 3, pts: 12,   gf: 18, gc: 14, pe: 1, dg: "+4" },
+        { id: 2,    nombre: "Titanes L.A.",             logo: "assets/logos/Titanes.jpg",               pj: 8, g: 2, e: 2, p: 4, pts: 9,    gf: 15, gc: 12, pe: 1, dg: "+3" },
+        { id: 8,    nombre: "Tortilleros FC",           logo: "assets/logos/Tortilleros.png",           pj: 8, g: 3, e: 1, p: 4, pts: 11,   gf: 12, gc: 18, pe: 1, dg: "-6" }
     ];
 
     const clasificacion = [...equipos].sort((a, b) => {
@@ -59,200 +59,200 @@ document.addEventListener("DOMContentLoaded", () => {
     const detallesPorEquipo = {
         "0": { // Furia Roja
             plantilla: [
-                { num: 184, pos: "27 años", nombre: "Antonio Joel Saldaña Martinez", cat: "2", amarilla: "-", roja: "-" },
-                { num: 171, pos: "37 años", nombre: "Carlos Alberto Ortega Corona", cat: "3", amarilla: "-", roja: "-" },
-                { num: 179, pos: "30 años", nombre: "Carlos Alonso Aguilar Yañez", cat: "2", amarilla: "-", roja: "-" },
-                { num: 172, pos: "25 años", nombre: "Edgar Rigoberto Estrada Llamas", cat: "4", amarilla: "-", roja: "-" },
-                { num: 173, pos: "29 años", nombre: "Francisco Javier Saldaña Martínez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 183, pos: "43 años", nombre: "Gustavo Rodríguez Padilla", cat: "1", amarilla: "-", roja: "-" },
-                { num: 175, pos: "28 años", nombre: "Horacio García Preciado", cat: "3", amarilla: "-", roja: "-" },
-                { num: 176, pos: "45 años", nombre: "Israel Villaseñor Ceballos", cat: "4", amarilla: "-", roja: "-" },
-                { num: 177, pos: "37 años", nombre: "Jhonatan Amaury Estrada Llamas", cat: "4", amarilla: "-", roja: "-" },
-                { num: 182, pos: "24 años", nombre: "José de Jesús Lázaro González", cat: "3", amarilla: "-", roja: "-" },
-                { num: 178, pos: "33 años", nombre: "José Guadalupe Chairez Colmenares", cat: "3", amarilla: "-", roja: "-" },
-                { num: 174, pos: "50 años", nombre: "José Leonel Llamas González", cat: "2", amarilla: "-", roja: "-" },
-                { num: 180, pos: "44 años", nombre: "Juan Carlos Nuñez Vazquez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 187, pos: "44 años", nombre: "Mauricio Ramón Enríquez Rodríguez", cat: "1", amarilla: "-", roja: "-" },
-                { num: 188, pos: "32 años", nombre: "Miguel Ángel Luna Glombitza", cat: "1", amarilla: "-", roja: "-" },
-                { num: 181, pos: "30 años", nombre: "Oscar Eduardo Diaz Muñoz", cat: "3", amarilla: "-", roja: "-" }
+                { num: 171, pos: "27 años", nombre: "Antonio Joel Saldaña Martinez",        cat: "3", amarilla: "-", roja: "-" },
+                { num: 184, pos: "37 años", nombre: "Carlos Alberto Ortega Corona",         cat: "4", amarilla: "-", roja: "-" },
+                { num: 179, pos: "30 años", nombre: "Carlos Alonso Aguilar Yañez",          cat: "3", amarilla: "-", roja: "-" },
+                { num: 172, pos: "25 años", nombre: "Edgar Rigoberto Estrada Llamas",       cat: "5", amarilla: "-", roja: "-" },
+                { num: 173, pos: "29 años", nombre: "Francisco Javier Saldaña Martínez",    cat: "4", amarilla: "-", roja: "-" },
+                { num: 183, pos: "43 años", nombre: "Gustavo Padilla Rodríguez",            cat: "2", amarilla: "-", roja: "-" },
+                { num: 175, pos: "28 años", nombre: "Horacio García Preciado",              cat: "4", amarilla: "-", roja: "-" },
+                { num: 176, pos: "45 años", nombre: "Israel Villaseñor Ceballos",           cat: "5", amarilla: "-", roja: "-" },
+                { num: 177, pos: "37 años", nombre: "Jhonatan Amaury Estrada Llamas",       cat: "5", amarilla: "-", roja: "-" },
+                { num: 182, pos: "24 años", nombre: "José de Jesús Lázaro González",        cat: "4", amarilla: "-", roja: "-" },
+                { num: 178, pos: "33 años", nombre: "José Guadalupe Chairez Colmenares",    cat: "4", amarilla: "-", roja: "-" },
+                { num: 174, pos: "50 años", nombre: "José Leonel Llamas González",          cat: "3", amarilla: "-", roja: "-" },
+                { num: 180, pos: "44 años", nombre: "Juan Carlos Nuñez Vazquez",            cat: "5", amarilla: "-", roja: "-" },
+                { num: 187, pos: "44 años", nombre: "Mauricio Ramón Enríquez Rodríguez",    cat: "2", amarilla: "-", roja: "-" },
+                { num: 188, pos: "32 años", nombre: "Miguel Ángel Luna Glombitza",          cat: "2", amarilla: "-", roja: "-" },
+                { num: 181, pos: "30 años", nombre: "Oscar Eduardo Diaz Muñoz",             cat: "4", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [
                 { cargo: "Equipero", nombre: "Jhonatan Amaury Estrada Llamas" }
             ],
             calendario: [
-                { j: "J1", fecha: "Mar 08/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png", res: "2 (3) - (1) 2", visita: "assets/logos/Furia_Roja.png" },
-                { j: "J2", fecha: "Mie 16/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Furia_Roja.png", res: "8 - 2", visita: "assets/logos/Rayados.jpg" },
-                { j: "J3", fecha: "Mar 22/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Furia_Roja.png", res: "0 - 5", visita: "assets/logos/JR Transmisiones.png" },
-                { j: "J4", fecha: "Mar 06/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg", res: "1 - 0", visita: "assets/logos/Furia_Roja.png" },
-                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/Furia_Roja.png", res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg", res: "1 - 2", visita: "assets/logos/Furia_Roja.png" },
-                { j: "J7", fecha: "Lun 26/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png", res: "2 - 0", visita: "assets/logos/Pansa_Brava.jpg" },
-                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg", res: "3 - 1", visita: "assets/logos/Furia_Roja.png" }
+                { j: "J1", fecha: "Mar 08/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "2 (3) - (1) 2",   visita: "assets/logos/Furia_Roja.png" },
+                { j: "J2", fecha: "Mie 16/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Furia_Roja.png",       res: "8 - 2",           visita: "assets/logos/Rayados.jpg" },
+                { j: "J3", fecha: "Mar 22/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Furia_Roja.png",       res: "0 - 5",           visita: "assets/logos/JR Transmisiones.png" },
+                { j: "J4", fecha: "Mar 06/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "1 - 0",           visita: "assets/logos/Furia_Roja.png" },
+                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/Furia_Roja.png",       res: "5 - 0",           visita: "assets/logos/jalisco_FC.png" },
+                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg",          res: "1 - 2",           visita: "assets/logos/Furia_Roja.png" },
+                { j: "J7", fecha: "Lun 26/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png",       res: "2 - 0",           visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg",           res: "3 - 1",           visita: "assets/logos/Furia_Roja.png" }
             ]
         },
         "1": { // 7 Mares
             plantilla: [
-                { num: 108, pos: "33 años", nombre: "Abel Alejandro Aguilar Andrade", cat: "4", amarilla: "1", roja: "-" },
-                { num: 92, pos: "25 años", nombre: "Carlos Daniel Jiménez Camacho", cat: "4", amarilla: "-", roja: "-" },
-                { num: 106, pos: "38 años", nombre: "Carlos Iván Jiménez Ruiz", cat: "3", amarilla: "-", roja: "-" },
-                { num: 103, pos: "38 años", nombre: "César Daniel Aguilar García", cat: "3", amarilla: "-", roja: "-" },
-                { num: 93, pos: "28 años", nombre: "Diego Adolfo Raudales Peñaloza", cat: "2", amarilla: "-", roja: "-" },
-                { num: 98, pos: "27 años", nombre: "Diego Iván Mejía Vizcarra", cat: "2", amarilla: "-", roja: "-" },
-                { num: 101, pos: "41 años", nombre: "Ernesto Iván Herrera Ibarra", cat: "3", amarilla: "-", roja: "-" },
-                { num: 100, pos: "42 años", nombre: "Hector Alonso García Magaña", cat: "4", amarilla: "-", roja: "-" },
-                { num: 102, pos: "25 años", nombre: "Joel Rafael Sanchez Gomez", cat: "2", amarilla: "-", roja: "-" },
-                { num: 91, pos: "35 años", nombre: "José Alberto Garay Díaz", cat: "4", amarilla: "-", roja: "-" },
-                { num: 104, pos: "24 años", nombre: "Leopoldo de Jesús De la Torre Rodríguez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 107, pos: "39 años", nombre: "Oscar Iván Campos Mejía", cat: "3", amarilla: "-", roja: "-" },
-                { num: 99, pos: "31 años", nombre: "Oswaldo Daniel Landeros Bartolo", cat: "3", amarilla: "2", roja: "-" },
-                { num: 96, pos: "28 años", nombre: "Pedro Alberto Perez Amezquita", cat: "3", amarilla: "-", roja: "-" },
-                { num: 105, pos: "29 años", nombre: "Rubén Alberto Salcedo Ortega", cat: "2", amarilla: "-", roja: "-" },
-                { num: 94, pos: "40 años", nombre: "Rubén Castillo Elías", cat: "3", amarilla: "-", roja: "-" },
-                { num: 95, pos: "28 años", nombre: "Ulises Posadas Mejia", cat: "3", amarilla: "-", roja: "-" }
+                { num: 108, pos: "33 años", nombre: "Abel Aljendro Aguilar Andrade",            cat: "5", amarilla: "1", roja: "-" },
+                { num: 92,  pos: "25 años", nombre: "Carlos Daniel Jiménez Camacho",            cat: "5", amarilla: "-", roja: "-" },
+                { num: 106, pos: "38 años", nombre: "Carlos Iván Jiménez Ruiz",                 cat: "4", amarilla: "-", roja: "-" },
+                { num: 103, pos: "38 años", nombre: "César Daniel Aguilar García",              cat: "4", amarilla: "-", roja: "-" },
+                { num: 93,  pos: "28 años", nombre: "Diego Adolfo Raudales Peñaloza",           cat: "2", amarilla: "-", roja: "-" },
+                { num: 98,  pos: "27 años", nombre: "Diego Iván Mejía Vizcarra",                cat: "2", amarilla: "-", roja: "-" },
+                { num: 101, pos: "41 años", nombre: "Ernesto Iván Herrera Ibarra",              cat: "3", amarilla: "-", roja: "-" },
+                { num: 100, pos: "42 años", nombre: "Hector Alonso García Magaña",              cat: "5", amarilla: "-", roja: "-" },
+                { num: 102, pos: "25 años", nombre: "Joel Rafael Sanchez Gomez",                cat: "3", amarilla: "-", roja: "-" },
+                { num: 91,  pos: "35 años", nombre: "José Alberto Garay Díaz",                  cat: "5", amarilla: "-", roja: "-" },
+                { num: 104, pos: "24 años", nombre: "Leopoldo de Jesús De la Torre Rodríguez",  cat: "5", amarilla: "-", roja: "-" },
+                { num: 107, pos: "39 años", nombre: "Oscar Iván Campos Mejía",                  cat: "4", amarilla: "-", roja: "-" },
+                { num: 99,  pos: "31 años", nombre: "Oswaldo Daniel Landeros Bartolo",          cat: "3", amarilla: "2", roja: "-" },
+                { num: 96,  pos: "28 años", nombre: "Pedro Alberto Perez Amezquita",            cat: "3", amarilla: "-", roja: "-" },
+                { num: 244, pos: "29 años", nombre: "Rubén Alberto Salcedo Ortega",             cat: "2", amarilla: "-", roja: "-" },
+                { num: 94,  pos: "40 años", nombre: "Rubén Castillo Elías",                     cat: "4", amarilla: "-", roja: "-" },
+                { num: 95,  pos: "28 años", nombre: "Ulises Posadas Mejia",                     cat: "4", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [
                 { cargo: "Equipero", nombre: "César Daniel Aguilar García" }
             ],
             calendario: [
-                { j: "J1", fecha: "Lun 07/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/belicones.png", res: "3 - 2", visita: "assets/logos/7_Mares.jpg" },
-                { j: "J2", fecha: "Lun 28/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg", res: "3 - 4", visita: "assets/logos/Tortilleros.png" },
-                { j: "J3", fecha: "Mar 22/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.jpg", res: "3 - 1", visita: "assets/logos/7_Mares.jpg" },
-                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/7_Mares.jpg", res: "4 - 2", visita: "assets/logos/JR Transmisiones.png"},
-                { j: "J5", fecha: "Lun 12/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg", res: "6 - 3", visita: "assets/logos/Diablos_Gordos.jpg" },
-                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png", res: "0 - 5", visita: "assets/logos/7_Mares.jpg" },
-                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg", res: " ", visita: "assets/logos/Titanes.jpg" },
-                { j: "J8", fecha: "Mar 03/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Pansa_Brava.jpg", res: "2 (2) - (3) 2", visita: "assets/logos/7_Mares.jpg" }
+                { j: "J1", fecha: "Lun 07/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/belicones.png",    res: "3 - 2",           visita: "assets/logos/7_Mares.jpg" },
+                { j: "J2", fecha: "Lun 28/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg",      res: "3 - 4",           visita: "assets/logos/Tortilleros.png" },
+                { j: "J3", fecha: "Mar 22/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.jpg",      res: "3 - 1",           visita: "assets/logos/7_Mares.jpg" },
+                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/7_Mares.jpg",      res: "4 - 2",           visita: "assets/logos/JR Transmisiones.png"},
+                { j: "J5", fecha: "Lun 12/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg",      res: "6 - 3",           visita: "assets/logos/Diablos_Gordos.jpg" },
+                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",   res: "0 - 5",           visita: "assets/logos/7_Mares.jpg" },
+                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg",      res: " ",               visita: "assets/logos/Titanes.jpg" },
+                { j: "J8", fecha: "Mar 03/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",  res: "2 (2) - (3) 2",   visita: "assets/logos/7_Mares.jpg" }
             ]
         },
         "2": { // Titanes L.A.
             plantilla: [
-                { num: 68, pos: "35 años", nombre: "Abisai Villalobos", cat: "3", amarilla: "-", roja: "-" },
-                { num: 56, pos: "32 años", nombre: "Alejandro Muñiz Pelayo", cat: "3", amarilla: "-", roja: "-" },
-                { num: 63, pos: "31 años", nombre: "Alexis Jovani Mancilla Castillo", cat: "2", amarilla: "-", roja: "-" },
-                { num: 66, pos: "28 años", nombre: "Cesar Michel Acevedo", cat: "4", amarilla: "-", roja: "-" },
-                { num: 58, pos: "27 años", nombre: "Eddie Gomez García", cat: "4", amarilla: "-", roja: "-" },
-                { num: 59, pos: "37 años", nombre: "Gerardo Sandoval Perez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 61, pos: "32 años", nombre: "Gerson Villa Martínez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 69, pos: "39 años", nombre: "Humberto Leonel Zamora Bucio", cat: "2", amarilla: "-", roja: "-" },
-                { num: 243, pos: "20 años", nombre: "Leonardo Esau Rios Miranda", cat: "1", amarilla: "-", roja: "-" },
-                { num: 71, pos: "15 años", nombre: "Luciano Michel Bucio", cat: "2", amarilla: "-", roja: "-" },
-                { num: 72, pos: "37 años", nombre: "Luis Alberto Sandoval Estrella", cat: "4", amarilla: "-", roja: "-" },
-                { num: 62, pos: "35 años", nombre: "Luis Alfredo García Ortíz", cat: "4", amarilla: "-", roja: "-" },
-                { num: 239, pos: "31 años", nombre: "Marlon Alexis Galindo", cat: "3", amarilla: "-", roja: "-" },
-                { num: 55, pos: "33 años", nombre: "Miguel Angel Garcia Diaz", cat: "3", amarilla: "-", roja: "-" },
-                { num: 67, pos: "33 años", nombre: "Omar Armando Reyes Bucio", cat: "4", amarilla: "-", roja: "-" },
-                { num: 64, pos: "25 años", nombre: "Rogelio Jose Gutierrez Perez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 57, pos: "41 años", nombre: "Victor Alfonso Corona Mendez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 60, pos: "25 años", nombre: "Victor Bonal Vidrio", cat: "2", amarilla: "-", roja: "-" }
+                { num: 68, pos: "35 años", nombre: "Abisai Villalobos",                 cat: "4", amarilla: "-", roja: "-" },
+                { num: 56, pos: "32 años", nombre: "Alejandro Muñiz Pelayo",            cat: "4", amarilla: "-", roja: "-" },
+                { num: 63, pos: "31 años", nombre: "Alexis Jovani Mancilla Castillo",   cat: "3", amarilla: "-", roja: "-" },
+                { num: 66, pos: "28 años", nombre: "Cesar Michel Acevedo",              cat: "4", amarilla: "-", roja: "-" },
+                { num: 58, pos: "27 años", nombre: "Eddie Gomez García",                cat: "5", amarilla: "-", roja: "-" },
+                { num: 59, pos: "37 años", nombre: "Gerardo Sandoval Perez",            cat: "5", amarilla: "-", roja: "-" },
+                { num: 61, pos: "32 años", nombre: "Gerson Villa Martínez",             cat: "5", amarilla: "-", roja: "-" },
+                { num: 69, pos: "39 años", nombre: "Humberto Leonel Zamora Bucio",      cat: "2", amarilla: "-", roja: "-" },
+                { num: 243,pos: "20 años", nombre: "Leonardo Esau Rios Miranda",        cat: "2", amarilla: "-", roja: "-" },
+                { num: 71, pos: "15 años", nombre: "Luciano Michel Bucio",              cat: "3", amarilla: "-", roja: "-" },
+                { num: 72, pos: "37 años", nombre: "Luis Alberto Sandoval Estrella",    cat: "5", amarilla: "-", roja: "-" },
+                { num: 62, pos: "35 años", nombre: "Luis Alfredo García Ortíz",         cat: "5", amarilla: "-", roja: "-" },
+                { num: 239,pos: "31 años", nombre: "Marlon Alexis Galindo",             cat: "4", amarilla: "-", roja: "-" },
+                { num: 55, pos: "33 años", nombre: "Miguel Angel Garcia Diaz",          cat: "4", amarilla: "-", roja: "-" },
+                { num: 67, pos: "33 años", nombre: "Omar Armando Reyes Bucio",          cat: "5", amarilla: "-", roja: "-" },
+                { num: 64, pos: "25 años", nombre: "Rogelio Jose Gutierrez Perez",      cat: "5", amarilla: "-", roja: "-" },
+                { num: 57, pos: "41 años", nombre: "Victor Alfonso Corona Mendez",      cat: "4", amarilla: "-", roja: "-" },
+                { num: 60, pos: "25 años", nombre: "Victor Bonal Vidrio",               cat: "2", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Leonardo Esau Rios Miranda" }],
             calendario: [
-                { j: "J1", fecha: "Lun 07/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg", res: "1 (10) - (9) 1", visita: "assets/logos/Diablos_Gordos.jpg" },
-                { j: "J2", fecha: "Lun 14/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/jalisco_FC.png", res: "0 - 5", visita: "assets/logos/Titanes.jpg" },
-                { j: "J3", fecha: "Lun 21/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png", res: "1 - 0", visita: "assets/logos/Titanes.jpg" },
-                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Titanes.jpg", res: "0 - 5", visita: "assets/logos/Pansa_Brava.jpg" },
-                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Robles.jpg", res: "3 (4) - (3) 3", visita: "assets/logos/Titanes.jpg" },
-                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg", res: "1 - 2", visita: "assets/logos/Furia_Roja.png" },
-                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg", res: "  ", visita: "assets/logos/Titanes.jpg" },
-                { j: "J8", fecha: "Mar 03/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Titanes.jpg", res: "5 - 0", visita: "assets/logos/villalobos.jpg" }
+                { j: "J1", fecha: "Lun 07/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg",              res: "1 (10) - (9) 1",  visita: "assets/logos/Diablos_Gordos.jpg" },
+                { j: "J2", fecha: "Lun 14/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5",           visita: "assets/logos/Titanes.jpg" },
+                { j: "J3", fecha: "Lun 21/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "1 - 0",           visita: "assets/logos/Titanes.jpg" },
+                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Titanes.jpg",              res: "0 - 5",           visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Robles.jpg",               res: "3 (4) - (3) 3",   visita: "assets/logos/Titanes.jpg" },
+                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg",              res: "1 - 2",           visita: "assets/logos/Furia_Roja.png" },
+                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg",              res: "  ",              visita: "assets/logos/Titanes.jpg" },
+                { j: "J8", fecha: "Mar 03/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Titanes.jpg",              res: "5 - 0",           visita: "assets/logos/villalobos.jpg" }
             ]
         },
         "3": { // Robles FC
             plantilla: [
-                { num: 143, pos: "20 años", nombre: "Alexis de la Torre", cat: "4", amarilla: "-", roja: "-" },
-                { num: 135, pos: "19 años", nombre: "Carlos Alexis Delgadillo", cat: "2", amarilla: "-", roja: "-" },
-                { num: 147, pos: "27 años", nombre: "Eduardo Reyes", cat: "1", amarilla: "-", roja: "-" },
-                { num: 140, pos: "23 años", nombre: "Eloy López Rivera", cat: "3", amarilla: "-", roja: "-" },
-                { num: 138, pos: "32 años", nombre: "Elvis Martínez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 145, pos: "28 años", nombre: "Iván Suarez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 148, pos: "30 años", nombre: "Jesus Jaime Arechiga", cat: "3", amarilla: "-", roja: "-" },
-                { num: 133, pos: "27 años", nombre: "Jorge Luis Delgado Palacios", cat: "3", amarilla: "-", roja: "-" },
-                { num: 134, pos: "27 años", nombre: "Jose Armando Muñoz Silva", cat: "3", amarilla: "-", roja: "-" },
-                { num: 141, pos: "22 años", nombre: "Jose Ignacio Ortega", cat: "2", amarilla: "-", roja: "-" },
-                { num: 144, pos: "25 años", nombre: "Jose Ramón Avalos", cat: "4", amarilla: "-", roja: "-" },
-                { num: 142, pos: "25 años", nombre: "Leonardo Raul Esparza", cat: "3", amarilla: "-", roja: "-" },
-                { num: 146, pos: "29 años", nombre: "Manuel Ezequiel Macías", cat: "3", amarilla: "-", roja: "-" },
-                { num: 137, pos: "28 años", nombre: "Martín Rosas Jimenez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 149, pos: "44 años", nombre: "Noe Andrey Juarez Diaz", cat: "4", amarilla: "-", roja: "-" },
-                { num: 150, pos: "20 años", nombre: "Pablo Martín Ramírez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 139, pos: "34 años", nombre: "Paulo Eduardo Cisneros", cat: "2", amarilla: "-", roja: "-" }
+                { num: 143, pos: "20 años", nombre: "Alexis de la Torre",           cat: "4", amarilla: "-", roja: "-" },
+                { num: 135, pos: "19 años", nombre: "Carlos Alexis Delgadillo",     cat: "3", amarilla: "-", roja: "-" },
+                { num: 147, pos: "27 años", nombre: "Eduardo Reyes",                cat: "2", amarilla: "-", roja: "-" },
+                { num: 140, pos: "23 años", nombre: "Eloy López Rivera",            cat: "4", amarilla: "-", roja: "-" },
+                { num: 138, pos: "32 años", nombre: "Elvis Martínez",               cat: "4", amarilla: "-", roja: "-" },
+                { num: 145, pos: "28 años", nombre: "Iván Suarez",                  cat: "5", amarilla: "-", roja: "-" },
+                { num: 148, pos: "30 años", nombre: "Jesus Jaime Arechiga",         cat: "4", amarilla: "-", roja: "-" },
+                { num: 133, pos: "27 años", nombre: "Jorge Luis Delgado Palacios",  cat: "4", amarilla: "-", roja: "-" },
+                { num: 134, pos: "27 años", nombre: "Jose Armando Muñoz Silva",     cat: "4", amarilla: "-", roja: "-" },
+                { num: 141, pos: "22 años", nombre: "Jose Ignacio Ortega",          cat: "3", amarilla: "-", roja: "-" },
+                { num: 144, pos: "25 años", nombre: "Jose Ramón Avalos",            cat: "5", amarilla: "-", roja: "-" },
+                { num: 142, pos: "25 años", nombre: "Leonardo Raul Esparza",        cat: "4", amarilla: "-", roja: "-" },
+                { num: 146, pos: "29 años", nombre: "Manuel Ezequiel Macías",       cat: "4", amarilla: "-", roja: "-" },
+                { num: 137, pos: "28 años", nombre: "Martín Rosas Jimenez",         cat: "4", amarilla: "-", roja: "-" },
+                { num: 149, pos: "44 años", nombre: "Noe Andrey Juarez Diaz",       cat: "5", amarilla: "-", roja: "-" },
+                { num: 150, pos: "20 años", nombre: "Pablo Martín Ramírez",         cat: "5", amarilla: "-", roja: "-" },
+                { num: 139, pos: "34 años", nombre: "Paulo Eduardo Cisneros",       cat: "3", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Iván Suarez" }],
             calendario: [
-                { j: "J1", fecha: "Mar 08/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg", res: "4 - 2", visita: "assets/logos/Rayados.jpg" },
-                { j: "J2", fecha: "Lun 28/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "0 - 0", visita: "assets/logos/Robles.jpg" },
-                { j: "J3", fecha: "Mar 22/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Robles.jpg", res: "1 - 4", visita: "assets/logos/Diablos_Gordos.jpg" },
-                { j: "J4", fecha: "Mar 06/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png", res: "0 - 5", visita: "assets/logos/Robles.jpg" },
-                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Robles.jpg", res: "3 (4) - (3) 3", visita: "assets/logos/Titanes.jpg" },
-                { j: "J6", fecha: "Lun 19/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg", res: "2 - 1", visita: "assets/logos/Robles.jpg" },
-                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png", res: "2 - 1", visita: "assets/logos/Robles.jpg" },
-                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg", res: "3 - 1", visita: "assets/logos/Furia_Roja.png" }
+                { j: "J1", fecha: "Mar 08/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg",               res: "4 - 2",           visita: "assets/logos/Rayados.jpg" },
+                { j: "J2", fecha: "Lun 28/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/JR Transmisiones.png",     res: "0 - 0",           visita: "assets/logos/Robles.jpg" },
+                { j: "J3", fecha: "Mar 22/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Robles.jpg",               res: "1 - 4",           visita: "assets/logos/Diablos_Gordos.jpg" },
+                { j: "J4", fecha: "Mar 06/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5",           visita: "assets/logos/Robles.jpg" },
+                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Robles.jpg",               res: "3 (4) - (3) 3",   visita: "assets/logos/Titanes.jpg" },
+                { j: "J6", fecha: "Lun 19/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "2 - 1",           visita: "assets/logos/Robles.jpg" },
+                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "2 - 1",           visita: "assets/logos/Robles.jpg" },
+                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg",               res: "3 - 1",           visita: "assets/logos/Furia_Roja.png" }
             ]
         },
         "4": { // Cruz Azul Mezquitán
             plantilla: [
-                { num: 254, pos: "25 años", nombre: "Alexis Jovani Perez Perez", cat: "2", amarilla: "-", roja: "-" },
-                { num: 253, pos: "31 años", nombre: "Alvaro Vázquez Guzmán", cat: "-", amarilla: "-", roja: "-" },
-                { num: 234, pos: "20 años", nombre: "Christian Antonio Rodríguez Gabriel", cat: "3", amarilla: "-", roja: "-" },
-                { num: 235, pos: "41 años", nombre: "Christian Rey Rodríguez Contreras", cat: "4", amarilla: "-", roja: "-" },
-                { num: 229, pos: "26 años", nombre: "Emmanuel Gomez H", cat: "3", amarilla: "-", roja: "-" },
-                { num: 257, pos: "21 años", nombre: "Erick Oswaldo Perez Hernandez", cat: "-", amarilla: "-", roja: "-" },
-                { num: 231, pos: "36 años", nombre: "Ernesto Soltero Aguilar", cat: "1", amarilla: "-", roja: "-" },
-                { num: 249, pos: "24 años", nombre: "Francisco Javier Llamas Medina", cat: "4", amarilla: "-", roja: "-" },
-                { num: 233, pos: "48 años", nombre: "Jose Alfredo Gomez Camberos", cat: "2", amarilla: "-", roja: "-" },
-                { num: 255, pos: "43 años", nombre: "Jose de Jesus Estanislao Perez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 258, pos: "23 años", nombre: "Kevin Gabriel García Olague", cat: "3", amarilla: "1", roja: "-" },
-                { num: 232, pos: "23 años", nombre: "Luis Fernando Guerrero Medina", cat: "3", amarilla: "-", roja: "-" },
-                { num: 230, pos: "34 años", nombre: "Marco Antonio López Bernal", cat: "3", amarilla: "-", roja: "-" },
-                { num: 252, pos: "28 años", nombre: "Marcos Alejandro Cárdenas Hernández", cat: "4", amarilla: "-", roja: "-" },
-                { num: 236, pos: "41 años", nombre: "Miguel Estanislao Perez", cat: "3", amarilla: "-", roja: "-" },
-                { num: 256, pos: "36 años", nombre: "Orlando Gómez Ambriz", cat: "1", amarilla: "1", roja: "-" },
-                { num: 251, pos: "25 años", nombre: "Pedro Gabriel Perez Hernandez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 250, pos: "41 años", nombre: "Ulises Medina A", cat: "4", amarilla: "-", roja: "-" }
+                { num: 254, pos: "25 años", nombre: "Alexis Jovani Perez Perez",            cat: "3", amarilla: "-", roja: "-" },
+                { num: 253, pos: "31 años", nombre: "Alvaro Vázquez Guzmán",                cat: "-", amarilla: "-", roja: "-" },
+                { num: 234, pos: "21 años", nombre: "Christian Antonio Rodríguez Gabriel",  cat: "4", amarilla: "-", roja: "-" },
+                { num: 235, pos: "41 años", nombre: "Christian Rey Rodríguez Contreras",    cat: "5", amarilla: "-", roja: "-" },
+                { num: 229, pos: "26 años", nombre: "Emmanuel Gomez H",                     cat: "3", amarilla: "-", roja: "-" },
+                { num: 257, pos: "21 años", nombre: "Erick Oswaldo Perez Hernandez",        cat: "1", amarilla: "-", roja: "-" },
+                { num: 231, pos: "36 años", nombre: "Ernesto Soltero Aguilar",              cat: "2", amarilla: "-", roja: "-" },
+                { num: 249, pos: "24 años", nombre: "Francisco Javier Llamas Medina",       cat: "5", amarilla: "-", roja: "-" },
+                { num: 233, pos: "48 años", nombre: "Jose Alfredo Gomez Camberos",          cat: "3", amarilla: "-", roja: "-" },
+                { num: 255, pos: "43 años", nombre: "Jose de Jesus Estanislao Perez",       cat: "4", amarilla: "-", roja: "-" },
+                { num: 258, pos: "24 años", nombre: "Kevin Gabriel García Olague",          cat: "3", amarilla: "1", roja: "-" },
+                { num: 232, pos: "23 años", nombre: "Luis Fernando Guerrero Medina",        cat: "4", amarilla: "-", roja: "-" },
+                { num: 230, pos: "34 años", nombre: "Marco Antonio López Bernal",           cat: "4", amarilla: "-", roja: "-" },
+                { num: 252, pos: "28 años", nombre: "Marcos Alejandro Cárdenas Hernández",  cat: "5", amarilla: "-", roja: "-" },
+                { num: 236, pos: "41 años", nombre: "Miguel Estanislao Perez",              cat: "4", amarilla: "-", roja: "-" },
+                { num: 256, pos: "36 años", nombre: "Orlando Gómez Ambriz",                 cat: "2", amarilla: "1", roja: "-" },
+                { num: 251, pos: "25 años", nombre: "Pedro Gabriel Perez Hernandez",        cat: "5", amarilla: "-", roja: "-" },
+                { num: 250, pos: "41 años", nombre: "Ulises Medina A",                      cat: "5", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Christian Rey Rodríguez Contreras" }],
             calendario: [
-                { j: "J1", fecha: "Mie 23/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png", res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J2", fecha: "Lun 14/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/chuperamigos.png", res: "3 - 4", visita: "assets/logos/Cruz_Azul_mezquitan.png" },
-                { j: "J3", fecha: "Lun 21/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png", res: "1 - 0", visita: "assets/logos/Titanes.jpg" },
-                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png", res: "2 (3) - (4) 2", visita: "assets/logos/Cruz_Azul_mezquitan.png" },
-                { j: "J5", fecha: "Lun 12/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png", res: "2 - 5", visita: "assets/logos/Pansa_Brava.jpg" },
-                { j: "J6", fecha: "Lun 19/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png", res: "1 - 2", visita: "assets/logos/Cruz_Azul_mezquitan.png" },
-                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png", res: "2 - 1", visita: "assets/logos/Robles.jpg" },
-                { j: "J8", fecha: "Mar 03/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.jpg", res: "0 - 5", visita: "assets/logos/Cruz_Azul_mezquitan.png" }
+                { j: "J1", fecha: "Mie 23/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "5 - 0",           visita: "assets/logos/jalisco_FC.png" },
+                { j: "J2", fecha: "Lun 14/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/chuperamigos.png",                 res: "3 - 4",           visita: "assets/logos/Cruz_Azul_mezquitan.png" },
+                { j: "J3", fecha: "Lun 21/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "1 - 0",           visita: "assets/logos/Titanes.jpg" },
+                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png",                    res: "2 (3) - (4) 2",   visita: "assets/logos/Cruz_Azul_mezquitan.png" },
+                { j: "J5", fecha: "Lun 12/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "2 - 5",           visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J6", fecha: "Lun 19/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",                  res: "1 - 2",           visita: "assets/logos/Cruz_Azul_mezquitan.png" },
+                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "2 - 1",           visita: "assets/logos/Robles.jpg" },
+                { j: "J8", fecha: "Mar 03/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.jpg",                      res: "0 - 5",           visita: "assets/logos/Cruz_Azul_mezquitan.png" }
             ]
         },
         "5": { // Pansa Brava
             plantilla: [
-                { num: 268, pos: "- años", nombre: "Armando Guadalupe Amézquita Barbarin", cat: "4", amarilla: "-", roja: "-" },
-                { num: 216, pos: "- años", nombre: "Brayan Osvaldo Hernandez Ventura", cat: "3", amarilla: "-", roja: "-" },
-                { num: 210, pos: "- años", nombre: "Cesar Lara", cat: "4", amarilla: "-", roja: "-" },
-                { num: 248, pos: "- años", nombre: "David Omar Benitez Gomez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 226, pos: "- años", nombre: "Edgar Gerardo Salazar", cat: "4", amarilla: "-", roja: "-" },
-                { num: 271, pos: "- años", nombre: "Edwin Alejandro Ruiz Mejía", cat: "3", amarilla: "-", roja: "-" },
-                { num: 209, pos: "- años", nombre: "Emanuel Ventura Ramirez", cat: "4", amarilla: "-", roja: "-" },
-                { num: 228, pos: "- años", nombre: "Francisco Javier Verduzco Arechiga", cat: "4", amarilla: "-", roja: "-" },
-                { num: 217, pos: "- años", nombre: "Francisco Mondragon Valenzuela ", cat: "3", amarilla: "-", roja: "-" },
-                { num: 215, pos: "- años", nombre: "Issac Pelayo Santana", cat: "3", amarilla: "-", roja: "-" },
-                { num: 272, pos: "- años", nombre: "Jonatan Antonio Lopez Santos", cat: "4", amarilla: "-", roja: "-" },
-                { num: 211, pos: "- años", nombre: "Jonatan Josue Ruiz Rosales", cat: "4", amarilla: "1", roja: "-" },
-                { num: 247, pos: "- años", nombre: "Juan Carlos Gonzalez Paz", cat: "2", amarilla: "1", roja: "-" },
-                { num: 227, pos: "- años", nombre: "Juan Carlos Rico Lopez", cat: "2", amarilla: "-", roja: "-" },
-                { num: 213, pos: "- años", nombre: "Juan Roman Sanchez Villavazo", cat: "2", amarilla: "-", roja: "-" },
-                { num: 270, pos: "- años", nombre: "Marco Vizcarra Diaz", cat: "3", amarilla: "-", roja: "-" },
-                { num: 269, pos: "- años", nombre: "Raul Vizcarra Diaz", cat: "4", amarilla: "-", roja: "-" },
-                { num: 214, pos: "- años", nombre: "Victor Hugo Flores Bartolo", cat: "1", amarilla: "-", roja: "-" }
+                { num: 268, pos: "- años", nombre: "Armando Guadalupe Amézquita Barbarin",  cat: "5", amarilla: "-", roja: "-" },
+                { num: 216, pos: "- años", nombre: "Brayan Osvaldo Hernandez Ventura",      cat: "4", amarilla: "-", roja: "-" },
+                { num: 210, pos: "- años", nombre: "Cesar Lara",                            cat: "5", amarilla: "-", roja: "-" },
+                { num: 248, pos: "- años", nombre: "David Omar Benitez Gomez",              cat: "5", amarilla: "-", roja: "-" },
+                { num: 226, pos: "- años", nombre: "Edgar Gerardo Salazar",                 cat: "5", amarilla: "-", roja: "-" },
+                { num: 271, pos: "- años", nombre: "Edwin Alejandro Ruiz Mejía",            cat: "3", amarilla: "-", roja: "-" },
+                { num: 209, pos: "- años", nombre: "Emanuel Ventura Ramirez",               cat: "4", amarilla: "-", roja: "-" },
+                { num: 228, pos: "- años", nombre: "Francisco Javier Verduzco Arechiga",    cat: "5", amarilla: "-", roja: "-" },
+                { num: 217, pos: "- años", nombre: "Francisco Mondragon Valenzuela ",       cat: "3", amarilla: "-", roja: "-" },
+                { num: 215, pos: "- años", nombre: "Issac Pelayo Santana",                  cat: "5", amarilla: "-", roja: "-" },
+                { num: 272, pos: "- años", nombre: "Jonatan Antonio Lopez Santos",          cat: "5", amarilla: "-", roja: "-" },
+                { num: 211, pos: "- años", nombre: "Jonatan Josue Ruiz Rosales",            cat: "5", amarilla: "1", roja: "-" },
+                { num: 247, pos: "- años", nombre: "Juan Carlos Gonzalez Paz",              cat: "2", amarilla: "1", roja: "-" },
+                { num: 227, pos: "- años", nombre: "Juan Carlos Rico Lopez",                cat: "3", amarilla: "-", roja: "-" },
+                { num: 213, pos: "- años", nombre: "Juan Roman Sanchez Villavazo",          cat: "3", amarilla: "-", roja: "-" },
+                { num: 270, pos: "- años", nombre: "Marco Vizcarra Diaz",                   cat: "3", amarilla: "-", roja: "-" },
+                { num: 269, pos: "- años", nombre: "Raul Vizcarra Diaz",                    cat: "5", amarilla: "-", roja: "-" },
+                { num: 214, pos: "- años", nombre: "Victor Hugo Flores Bartolo",            cat: "2", amarilla: "-", roja: "-" }
             ],
-            cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
+            cuerpoTecnico: [{ cargo: "Equipero", nombre: "Cesar Lara" }],
             calendario: [
-                { j: "J1", fecha: "Mar 08/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg", res: "2 - 3", visita: "assets/logos/JR Transmisiones.png" },
-                { j: "J2", fecha: "Lun 28/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg", res: "1 - 5", visita: "assets/logos/Pansa_Brava.jpg" },
-                { j: "J3", fecha: "Lun 21/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Pansa_Brava.jpg", res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Titanes.jpg", res: "0 - 5", visita: "assets/logos/Pansa_Brava.jpg" },
-                { j: "J5", fecha: "Lun 12/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png", res: "2 - 5", visita: "assets/logos/Pansa_Brava.jpg" },
-                { j: "J6", fecha: "Lun 19/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg", res: "2 - 1", visita: "assets/logos/Robles.jpg" },
-                { j: "J7", fecha: "Lun 26/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png", res: "2 - 0", visita: "assets/logos/Pansa_Brava.jpg" },
-                { j: "J8", fecha: "Mar 03/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Pansa_Brava.jpg", res: "2 (2) - (3) 2", visita: "assets/logos/7_Mares.jpg" }
+                { j: "J1", fecha: "Mar 08/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "2 - 3",           visita: "assets/logos/JR Transmisiones.png" },
+                { j: "J2", fecha: "Lun 28/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",       res: "1 - 5",           visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J3", fecha: "Lun 21/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "5 - 0",           visita: "assets/logos/jalisco_FC.png" },
+                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Titanes.jpg",              res: "0 - 5",           visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J5", fecha: "Lun 12/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "2 - 5",           visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J6", fecha: "Lun 19/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "2 - 1",           visita: "assets/logos/Robles.jpg" },
+                { j: "J7", fecha: "Lun 26/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png",           res: "2 - 0",           visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J8", fecha: "Mar 03/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "2 (2) - (3) 2",   visita: "assets/logos/7_Mares.jpg" }
             ]
         },
         "6": { // Diablos Gordos
@@ -316,11 +316,12 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "8": { // Tortilleros FC
             plantilla: [
+                { num: 166, pos: "24 años", nombre: "Aaron Ezequiel Cisneros Sandoval", cat: "-", amarilla: "-", roja: "-" },
                 { num: 220, pos: "30 años", nombre: "Daniel Salvador Flores Olague", cat: "5", amarilla: "-", roja: "-" },
                 { num: 225, pos: "21 años", nombre: "Diego De Jesus Avalos Salgado", cat: "4", amarilla: "1", roja: "-" },
                 { num: 223, pos: "33 años", nombre: "Efraín López", cat: "1", amarilla: "-", roja: "-" },
                 { num: 164, pos: "26 años", nombre: "Gustavo Gomez T.", cat: "4", amarilla: "-", roja: "-" },
-                { num: 0, pos: " años", nombre: "Hugo Cisneros", cat: "2", amarilla: "1", roja: "1" },
+                { num: 165, pos: "28 años", nombre: "Hugo Ernesto Cisneros Covarrubias", cat: "2", amarilla: "1", roja: "1" },
                 { num: 219, pos: "29 años", nombre: "Jesus Jafeth González Ventura", cat: "4", amarilla: "-", roja: "-" },
                 { num: 221, pos: "33 años", nombre: "Jose Antonio Perez Peña", cat: "4", amarilla: "-", roja: "-" },
                 { num: 190, pos: "29 años", nombre: "Jose Jareth González Ventura", cat: "4", amarilla: "-", roja: "-" },
@@ -416,6 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 51, pos: "25 años", nombre: "Bernardo Antonio Peña García", cat: "4", amarilla: "-", roja: "-" },
                 { num: 238, pos: "42 años", nombre: "Edgar Roberto Contreras Roque", cat: "2", amarilla: "-", roja: "-" },
                 { num: 45, pos: "28 años", nombre: "Félix Cuevas Sánchez", cat: "2", amarilla: "-", roja: "1" },
+                { num: 241, pos: "44 años", nombre: "Gonzalo Martinez Gaviño", cat: "-", amarilla: "-", roja: "-" },
                 { num: 52, pos: "44 años", nombre: "Jorge Román Ortega Tapia", cat: "3", amarilla: "-", roja: "-" },
                 { num: 41, pos: "40 años", nombre: "José Arturo Alanis Suarez", cat: "3", amarilla: "-", roja: "-" },
                 { num: 42, pos: "41 años", nombre: "José Manuel Mercado Ballardo", cat: "3", amarilla: "1", roja: "-" },
@@ -609,7 +611,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const esValido = (j.num !== "-" && j.nombre !== "Sin jugadores registrados");
             const filaClass = esValido ? 'class="fila-jugador-click"' : '';
             const nombreHtml = esValido 
-                ? `<span class="nombre-jugador-link">${j.nombre} <i class="fas fa-id-card" title="Ver credencial"></i></span>`
+                ? `<span class="nombre-jugador-link">${j.nombre} <i class="" title="Ver credencial"></i></span>`
                 : j.nombre;
 
             tbodyPlantilla.innerHTML += `
@@ -707,19 +709,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="modal-jugador-nombre">${nombre}</div>
                 <div class="modal-jugador-grid">
                     <div class="modal-stat-item">
-                        <span class="modal-stat-label"><i class="fas fa-hashtag"></i> Número</span>
+                        <span class="modal-stat-label"><i class=""></i> Número</span>
                         <span class="modal-stat-valor">#${num}</span>
                     </div>
                     <div class="modal-stat-item">
-                        <span class="modal-stat-label"><i class="fas fa-birthday-cake"></i> Edad</span>
+                        <span class="modal-stat-label"><i class=""></i> Edad</span>
                         <span class="modal-stat-valor">${edad}</span>
                     </div>
                     <div class="modal-stat-item">
-                        <span class="modal-stat-label"><i class="fas fa-futbol"></i> J. Jugados</span>
+                        <span class="modal-stat-label"><i class=""></i> J. Jugados</span>
                         <span class="modal-stat-valor">${cat}</span>
                     </div>
                     <div class="modal-stat-item">
-                        <span class="modal-stat-label"><i class="fas fa-clone"></i> Tarjetas</span>
+                        <span class="modal-stat-label"><i class=""></i> Tarjetas</span>
                         <span class="modal-stat-valor" style="display: inline-flex; gap: 6px; align-items: center;">
                             ${taBadge} ${trBadge}
                         </span>
