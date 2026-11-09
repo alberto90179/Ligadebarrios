@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 4,    nombre: "Cruz Azul Mezquitán",      logo: "assets/logos/Cruz_Azul_mezquitan.png",   pj: 8, g: 6, e: 1, p: 1, pts: 20,   gf: 23, gc: 12, pe: 1, dg: "+11"},
         { id: 6,    nombre: "Diablos Gordos",           logo: "assets/logos/Diablos_Gordos.jpg",        pj: 8, g: 4, e: 2, p: 2, pts: 15,   gf: 19, gc: 16, pe: 1, dg: "+3" },
         { id: 0,    nombre: "Furia Roja",               logo: "assets/logos/Furia_Roja.png",            pj: 8, g: 4, e: 1, p: 3, pts: 13,   gf: 20, gc: 14, pe: 0, dg: "+6" },
-        { id: 10,   nombre: "Gordos Belicones",         logo: "assets/logos/belicones.png",             pj: 8, g: 3, e: 2, p: 3, pts: 11,   gf: 25, gc: 21, pe: 0, dg: "+4" },
-        { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 8, g: 0, e: 0, p: 8, pts: 0,    gf: 0,  gc: 40, pe: 0, dg: "-40"},
+        { id: 10,   nombre: "Gordos Belicones",         logo: "assets/logos/belicones.png",             pj: 9, g: 4, e: 2, p: 3, pts: 14,   gf: 30, gc: 21, pe: 0, dg: "+9" },
+        { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 9, g: 0, e: 0, p: 9, pts: 0,    gf: 0,  gc: 45, pe: 0, dg: "-45"},
         { id: 11,   nombre: "JR Transmisiones",         logo: "assets/logos/JR Transmisiones.png",      pj: 8, g: 5, e: 2, p: 1, pts: 18,   gf: 24, gc: 15, pe: 1, dg: "+9" },
         { id: 5,    nombre: "Pansa Brava",              logo: "assets/logos/Pansa_Brava.jpg",           pj: 8, g: 5, e: 1, p: 2, pts: 16,   gf: 26, gc: 11, pe: 0, dg: "+15"},
         { id: 7,    nombre: "Rayados FC",               logo: "assets/logos/Rayados.jpg",               pj: 8, g: 2, e: 1, p: 5, pts: 7,    gf: 15, gc: 28, pe: 0, dg: "-13"},
@@ -88,7 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J6", fecha: "Mar 20/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg",              res: "1 - 2",           visita: "assets/logos/Furia_Roja.png" },
                 { j: "J7", fecha: "Lun 26/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png",           res: "2 - 0",           visita: "assets/logos/Pansa_Brava.jpg" },
                 { j: "J8", fecha: "Lun 02/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg",               res: "3 - 1",           visita: "assets/logos/Furia_Roja.png" },
-                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "VS ",             visita: "assets/logos/Furia_Roja.png" }
+                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "VS ",             visita: "assets/logos/Furia_Roja.png" },
+                { j: "J10",fecha: "Lun 16/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png",           res: "VS ",             visita: "assets/logos/7_Mares.jpg" }
             ]
         },
         "1": { // 7 Mares
@@ -123,7 +124,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J6", fecha: "Mar 20/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",   res: "0 - 5",           visita: "assets/logos/7_Mares.jpg" },
                 { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg",      res: " ",               visita: "assets/logos/Titanes.jpg" },
                 { j: "J8", fecha: "Mar 03/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",  res: "2 (2) - (3) 2",   visita: "assets/logos/7_Mares.jpg" },
-                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg",      res: " VS ",            visita: "assets/logos/Robles.jpg" }
+                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg",      res: " VS ",            visita: "assets/logos/Robles.jpg" },
+                { j: "J10",fecha: "Lun 16/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png",   res: "VS ",             visita: "assets/logos/7_Mares.jpg" }
             ]
         },
         "2": { // Titanes L.A.
@@ -157,7 +159,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J6", fecha: "Mar 20/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg",              res: "1 - 2",           visita: "assets/logos/Furia_Roja.png" },
                 { j: "J7", fecha: "Mar 27/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg",              res: "  ",              visita: "assets/logos/Titanes.jpg" },
                 { j: "J8", fecha: "Mar 03/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Titanes.jpg",              res: "5 - 0",           visita: "assets/logos/villalobos.jpg" },
-                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/chuperamigos.png",         res: "vs",              visita: "assets/logos/Titanes.jpg" }
+                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/chuperamigos.png",         res: "vs",              visita: "assets/logos/Titanes.jpg" },
+                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",               res: "VS ",             visita: "assets/logos/Titanes.jpg" }
             ]
         },
         "3": { // Robles FC
@@ -190,7 +193,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J6", fecha: "Lun 19/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "2 - 1",           visita: "assets/logos/Robles.jpg" },
                 { j: "J7", fecha: "Mar 27/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "2 - 1",           visita: "assets/logos/Robles.jpg" },
                 { j: "J8", fecha: "Lun 02/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg",               res: "3 - 1",           visita: "assets/logos/Furia_Roja.png" },
-                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg",              res: " VS ",            visita: "assets/logos/Robles.jpg" }
+                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/7_Mares.jpg",              res: " VS ",            visita: "assets/logos/Robles.jpg" },
+                { j: "J10",fecha: "Mar 17/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Robles.jpg",               res: "VS ",             visita: "assets/logos/villalobos.jpg" }
             ]
         },
         "4": { // Cruz Azul Mezquitán
@@ -224,7 +228,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J6", fecha: "Lun 19/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",                  res: "1 - 2",           visita: "assets/logos/Cruz_Azul_mezquitan.png" },
                 { j: "J7", fecha: "Mar 27/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "2 - 1",           visita: "assets/logos/Robles.jpg" },
                 { j: "J8", fecha: "Mar 03/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.jpg",                      res: "0 - 5",           visita: "assets/logos/Cruz_Azul_mezquitan.png" },
-                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "VS ",             visita: "assets/logos/Furia_Roja.png" }
+                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "VS ",             visita: "assets/logos/Furia_Roja.png" },
+                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "vs",              visita: "assets/logos/Cruz_Azul_mezquitan.png" }
             ]
         },
         "5": { // Pansa Brava
@@ -258,7 +263,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J6", fecha: "Lun 19/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "2 - 1",           visita: "assets/logos/Robles.jpg" },
                 { j: "J7", fecha: "Lun 26/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png",           res: "2 - 0",           visita: "assets/logos/Pansa_Brava.jpg" },
                 { j: "J8", fecha: "Mar 03/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "2 (2) - (3) 2",   visita: "assets/logos/7_Mares.jpg" },
-                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "VS ",             visita: "assets/logos/Pansa_Brava.jpg" }
+                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/villalobos.jpg",           res: "VS ",             visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J10",fecha: "Mar 17/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "VS ",             visita: "assets/logos/chuperamigos.png" }
             ]
         },
         "6": { // Diablos Gordos
@@ -284,15 +290,16 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Jorge Alberto Guerrero" }],
             calendario: [
-                { j: "J1", fecha: "Lun 07/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg",          res: "1 (10) - (9) 1",  visita: "assets/logos/Diablos_Gordos.jpg" },
-                { j: "J2", fecha: "Lun 28/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "1 - 5",           visita: "assets/logos/Pansa_Brava.jpg" },
-                { j: "J3", fecha: "Mar 22/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Robles.jpg",           res: "1 - 4",           visita: "assets/logos/Diablos_Gordos.jpg" },
-                { j: "J4", fecha: "Mar 06/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "1 - 0",           visita: "assets/logos/Furia_Roja.png" },
-                { j: "J5", fecha: "Lun 12/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg",          res: "6 - 3",           visita: "assets/logos/Diablos_Gordos.jpg" },
-                { j: "J6", fecha: "Lun 19/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "1 (0) - (2) 1",   visita: "assets/logos/Diablos_Gordos.jpg" },
-                { j: "J7", fecha: "Mar 27/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "3 - 2",           visita: "assets/logos/chuperamigos.png" },
-                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",        res: "0 - 5",           visita: "assets/logos/Diablos_Gordos.jpg" },
-                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "VS ",             visita: "assets/logos/Tortilleros.png" }
+                { j: "J1",  fecha: "Lun 07/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Titanes.jpg",          res: "1 (10) - (9) 1",  visita: "assets/logos/Diablos_Gordos.jpg" },
+                { j: "J2",  fecha: "Lun 28/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "1 - 5",           visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J3",  fecha: "Mar 22/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Robles.jpg",           res: "1 - 4",           visita: "assets/logos/Diablos_Gordos.jpg" },
+                { j: "J4",  fecha: "Mar 06/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "1 - 0",           visita: "assets/logos/Furia_Roja.png" },
+                { j: "J5",  fecha: "Lun 12/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg",          res: "6 - 3",           visita: "assets/logos/Diablos_Gordos.jpg" },
+                { j: "J6",  fecha: "Lun 19/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "1 (0) - (2) 1",   visita: "assets/logos/Diablos_Gordos.jpg" },
+                { j: "J7",  fecha: "Mar 27/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "3 - 2",           visita: "assets/logos/chuperamigos.png" },
+                { j: "J8",  fecha: "Lun 02/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",        res: "0 - 5",           visita: "assets/logos/Diablos_Gordos.jpg" },
+                { j: "J9",  fecha: "Mar 10/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "VS ",             visita: "assets/logos/Tortilleros.png" },
+                { j: "J10", fecha: "Mar 17/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "VS",              visita: "assets/logos/Diablos_Gordos.jpg" }
             ]
         },  
         "7": { // Rayados FC
@@ -311,15 +318,16 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
-                { j: "J1", fecha: "Mar 08/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg",           res: "4 - 2",           visita: "assets/logos/Rayados.jpg" },
-                { j: "J2", fecha: "Mie 16/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Furia_Roja.png",       res: "8 - 2",           visita: "assets/logos/Rayados.jpg" },
-                { j: "J3", fecha: "Mar 22/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "3 - 1",           visita: "assets/logos/7_Mares.jpg" },
-                { j: "J4", fecha: "Mar 05/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "2 (3) - (2) 2",   visita: "assets/logos/Rayados.jpg" },
-                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "2 - 3",           visita: "assets/logos/chuperamigos.png" },
-                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",        res: "2 - 4",           visita: "assets/logos/Rayados.jpg" },
-                { j: "J7", fecha: "Lun 26/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "0 - 3",           visita: "assets/logos/Tortilleros.png" },
-                { j: "J8", fecha: "Mar 03/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "0 - 5",           visita: "assets/logos/Cruz_Azul_mezquitan.png" },
-                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "vs",              visita: "assets/logos/Rayados.jpg" }
+                { j: "J1",  fecha: "Mar 08/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.jpg",           res: "4 - 2",           visita: "assets/logos/Rayados.jpg" },
+                { j: "J2",  fecha: "Mie 16/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Furia_Roja.png",       res: "8 - 2",           visita: "assets/logos/Rayados.jpg" },
+                { j: "J3",  fecha: "Mar 22/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "3 - 1",           visita: "assets/logos/7_Mares.jpg" },
+                { j: "J4",  fecha: "Mar 05/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "2 (3) - (2) 2",   visita: "assets/logos/Rayados.jpg" },
+                { j: "J5",  fecha: "Mar 13/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "2 - 3",           visita: "assets/logos/chuperamigos.png" },
+                { j: "J6",  fecha: "Mar 20/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",        res: "2 - 4",           visita: "assets/logos/Rayados.jpg" },
+                { j: "J7",  fecha: "Lun 26/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "0 - 3",           visita: "assets/logos/Tortilleros.png" },
+                { j: "J8",  fecha: "Mar 03/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "0 - 5",           visita: "assets/logos/Cruz_Azul_mezquitan.png" },
+                { j: "J9",  fecha: "Lun 09/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "VS",              visita: "assets/logos/Rayados.jpg" },
+                { j: "J10", fecha: "Mar 17/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "VS",              visita: "assets/logos/Diablos_Gordos.jpg" }
             ]
         },
         "8": { // Tortilleros FC
@@ -341,15 +349,16 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Oswaldo Cisneros" }],
             calendario: [
-                { j: "J1", fecha: "Mar 08/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "2 (3) - (1) 2",    visita: "assets/logos/Furia_Roja.png" },
-                { j: "J2", fecha: "Lun 28/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg",          res: "3 - 4",            visita: "assets/logos/Tortilleros.png" },
-                { j: "J3", fecha: "Mar 22/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "1 - 0",            visita: "assets/logos/villalobos.jpg" },
-                { j: "J4", fecha: "Mar 06/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "4 - 0",            visita: "assets/logos/Tortilleros.png" },
-                { j: "J5", fecha: "Lun 12/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "1 - 4",            visita: "assets/logos/belicones.png" },
-                { j: "J6", fecha: "Lun 19/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "1 - 2",            visita: "assets/logos/Cruz_Azul_mezquitan.png" },
-                { j: "J7", fecha: "Lun 26/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "0 - 3",            visita: "assets/logos/Tortilleros.png" },
-                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "0 - 3",            visita: "assets/logos/JR Transmisiones.png" },
-                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "VS ",              visita: "assets/logos/Tortilleros.png" }
+                { j: "J1",  fecha: "Mar 08/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "2 (3) - (1) 2",    visita: "assets/logos/Furia_Roja.png" },
+                { j: "J2",  fecha: "Lun 28/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.jpg",          res: "3 - 4",            visita: "assets/logos/Tortilleros.png" },
+                { j: "J3",  fecha: "Mar 22/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "1 - 0",            visita: "assets/logos/villalobos.jpg" },
+                { j: "J4",  fecha: "Mar 06/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "4 - 0",            visita: "assets/logos/Tortilleros.png" },
+                { j: "J5",  fecha: "Lun 12/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "1 - 4",            visita: "assets/logos/belicones.png" },
+                { j: "J6",  fecha: "Lun 19/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "1 - 2",            visita: "assets/logos/Cruz_Azul_mezquitan.png" },
+                { j: "J7",  fecha: "Lun 26/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Rayados.jpg",          res: "0 - 3",            visita: "assets/logos/Tortilleros.png" },
+                { j: "J8",  fecha: "Lun 02/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "0 - 3",            visita: "assets/logos/JR Transmisiones.png" },
+                { j: "J9",  fecha: "Mar 10/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "vs",               visita: "assets/logos/Tortilleros.png" },
+                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",       res: "vs",               visita: "assets/logos/Tortilleros.png" }
             ]
         },
         "9": { // Carnicería Villalobos
@@ -383,43 +392,45 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J6", fecha: "Lun 19/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "1 (0) - (2) 1",   visita: "assets/logos/Diablos_Gordos.jpg" },
                 { j: "J7", fecha: "Lun 26/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "5 - 0",           visita: "assets/logos/jalisco_FC.png" },
                 { j: "J8", fecha: "Mar 03/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Titanes.jpg",          res: "5 - 0",           visita: "assets/logos/villalobos.jpg" },
-                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "VS ",             visita: "assets/logos/Pansa_Brava.jpg" }
+                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "VS ",             visita: "assets/logos/Pansa_Brava.jpg" },
+                { j: "J10",fecha: "Mar 17/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Robles.jpg",           res: "VS ",             visita: "assets/logos/villalobos.jpg" }
             ]
         },
         "10": { // Gordos Belicones
             plantilla: [
-                { num: 113, pos: "28 años", nombre: "Adán García Paz",                  cat: "2", amarilla: "-", roja: "-" },
-                { num: 126, pos: "-",       nombre: "Alejandro Sánchez Verde",          cat: "5", amarilla: "-", roja: "-" },
-                { num: 124, pos: "25 años", nombre: "Alexis Aguilar Ponce",             cat: "5", amarilla: "-", roja: "-" },
-                { num: 111, pos: "37 años", nombre: "Alonso Nuñez García",              cat: "5", amarilla: "1", roja: "-" },
-                { num: 114, pos: "-",       nombre: "Álvaro Rodríguez Ávalos",          cat: "5", amarilla: "-", roja: "-" },
-                { num: 117, pos: "42 años", nombre: "Antonio Reyes Naranjo",            cat: "3", amarilla: "-", roja: "-" },
-                { num: 115, pos: "36 años", nombre: "Fernando Paiz Lugo",               cat: "5", amarilla: "-", roja: "-" },
-                { num: 120, pos: "37 años", nombre: "Hermes Adalberto Orozco Paredes",  cat: "3", amarilla: "-", roja: "-" },
-                { num: 119, pos: "36 años", nombre: "Javier Ernesto García Gaspar",     cat: "3", amarilla: "-", roja: "-" },
-                { num: 121, pos: "26 años", nombre: "José Francisco Gómez Maldonado",   cat: "3", amarilla: "-", roja: "-" },
-                { num: 122, pos: "34 años", nombre: "José Manuel Pizano Gómez",         cat: "4", amarilla: "-", roja: "-" },
-                { num: 118, pos: "37 años", nombre: "Juan Carlos Sánchez Hernández",    cat: "5", amarilla: "2", roja: "-" },
-                { num: 109, pos: "-",       nombre: "Juan Paulo Limón Trinidad",        cat: "5", amarilla: "-", roja: "-" },
-                { num: 112, pos: "28 años", nombre: "Luis Alberto Ríos Carrizales",     cat: "4", amarilla: "-", roja: "-" },
-                { num: 123, pos: "-",       nombre: "Luis David Hernández Salazar",     cat: "3", amarilla: "-", roja: "-" },
-                { num: 125, pos: "39 años", nombre: "Martín Roberto Larios",            cat: "4", amarilla: "-", roja: "-" },
-                { num: 116, pos: "36 años", nombre: "Néstor Daniel Rodríguez Ávalos",   cat: "5", amarilla: "2", roja: "-" },
-                { num: 110, pos: "25 años", nombre: "Rafael Ceja Flores",               cat: "5", amarilla: "-", roja: "-" }
+                { num: 113, pos: "28 años", nombre: "Adán García Paz",                  cat: "3", amarilla: "-", roja: "-" },
+                { num: 126, pos: "-",       nombre: "Alejandro Sánchez Verde",          cat: "6", amarilla: "-", roja: "-" },
+                { num: 124, pos: "25 años", nombre: "Alexis Aguilar Ponce",             cat: "6", amarilla: "-", roja: "-" },
+                { num: 111, pos: "37 años", nombre: "Alonso Nuñez García",              cat: "6", amarilla: "1", roja: "-" },
+                { num: 114, pos: "-",       nombre: "Álvaro Rodríguez Ávalos",          cat: "6", amarilla: "-", roja: "-" },
+                { num: 117, pos: "42 años", nombre: "Antonio Reyes Naranjo",            cat: "4", amarilla: "-", roja: "-" },
+                { num: 115, pos: "36 años", nombre: "Fernando Paiz Lugo",               cat: "6", amarilla: "-", roja: "-" },
+                { num: 120, pos: "37 años", nombre: "Hermes Adalberto Orozco Paredes",  cat: "4", amarilla: "-", roja: "-" },
+                { num: 119, pos: "36 años", nombre: "Javier Ernesto García Gaspar",     cat: "4", amarilla: "-", roja: "-" },
+                { num: 121, pos: "26 años", nombre: "José Francisco Gómez Maldonado",   cat: "4", amarilla: "-", roja: "-" },
+                { num: 122, pos: "34 años", nombre: "José Manuel Pizano Gómez",         cat: "5", amarilla: "-", roja: "-" },
+                { num: 118, pos: "37 años", nombre: "Juan Carlos Sánchez Hernández",    cat: "6", amarilla: "2", roja: "-" },
+                { num: 109, pos: "-",       nombre: "Juan Paulo Limón Trinidad",        cat: "6", amarilla: "-", roja: "-" },
+                { num: 112, pos: "28 años", nombre: "Luis Alberto Ríos Carrizales",     cat: "5", amarilla: "-", roja: "-" },
+                { num: 123, pos: "-",       nombre: "Luis David Hernández Salazar",     cat: "4", amarilla: "-", roja: "-" },
+                { num: 125, pos: "39 años", nombre: "Martín Roberto Larios",            cat: "5", amarilla: "-", roja: "-" },
+                { num: 116, pos: "36 años", nombre: "Néstor Daniel Rodríguez Ávalos",   cat: "6", amarilla: "2", roja: "-" },
+                { num: 110, pos: "25 años", nombre: "Rafael Ceja Flores",               cat: "6", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [
                 { cargo: "Equipero", nombre: "José Manuel Pizano Gómez & Juan Paulo Limón Trinidad" }
             ],
             calendario: [
-                { j: "J1", fecha: "Lun 07/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/belicones.png",        res: "3 - 2",           visita: "assets/logos/7_Mares.jpg" },
-                { j: "J2", fecha: "Lun 14/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/villalobos.jpg",       res: "3 (3) - (2) 3",   visita: "assets/logos/belicones.png" },
-                { j: "J3", fecha: "Lun 21/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png",        res: "8 - 0",           visita: "assets/logos/chuperamigos.png" },
-                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png",        res: "2 (3) - (4) 2",   visita: "assets/logos/Cruz_Azul_mezquitan.png" },
-                { j: "J5", fecha: "Lun 12/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "1 - 4",           visita: "assets/logos/belicones.png" },
-                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",        res: "2 - 4",           visita: "assets/logos/Rayados.jpg" },
-                { j: "J7", fecha: "Lun 26/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "4 - 3",           visita: "assets/logos/belicones.png" },
-                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",        res: "0 - 5",           visita: "assets/logos/Diablos_Gordos.jpg" },
-                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/belicones.png",        res: "vs",              visita: "assets/logos/jalisco_FC.png" }
+                { j: "J1",  fecha: "Lun 07/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/belicones.png",               res: "3 - 2",           visita: "assets/logos/7_Mares.jpg" },
+                { j: "J2",  fecha: "Lun 14/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/villalobos.jpg",              res: "3 (3) - (2) 3",   visita: "assets/logos/belicones.png" },
+                { j: "J3",  fecha: "Lun 21/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png",               res: "8 - 0",           visita: "assets/logos/chuperamigos.png" },
+                { j: "J4",  fecha: "Lun 05/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png",               res: "2 (3) - (4) 2",   visita: "assets/logos/Cruz_Azul_mezquitan.png" },
+                { j: "J5",  fecha: "Lun 12/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/Tortilleros.png",             res: "1 - 4",           visita: "assets/logos/belicones.png" },
+                { j: "J6",  fecha: "Mar 20/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",               res: "2 - 4",           visita: "assets/logos/Rayados.jpg" },
+                { j: "J7",  fecha: "Lun 26/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/JR Transmisiones.png",        res: "4 - 3",           visita: "assets/logos/belicones.png" },
+                { j: "J8",  fecha: "Lun 02/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",               res: "0 - 5",           visita: "assets/logos/Diablos_Gordos.jpg" },
+                { j: "J9",  fecha: "Lun 09/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/belicones.png",               res: "5 - 0",           visita: "assets/logos/jalisco_FC.png" },
+                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",               res: "VS ",             visita: "assets/logos/Titanes.jpg" }
             ]
         },
         "11": { // JR Transmisiones
@@ -444,15 +455,16 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
-                { j: "J1", fecha: "Mar 08/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",      res: "2 - 3",           visita: "assets/logos/JR Transmisiones.png" },
-                { j: "J2", fecha: "Lun 28/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "0 - 0",           visita: "assets/logos/Robles.jpg" },
-                { j: "J3", fecha: "Mie 23/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Furia_Roja.png",       res: "0 - 5",           visita: "assets/logos/JR Transmisiones.png" },
-                { j: "J4", fecha: "Lun 05/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/7_Mares.jpg",          res: "4 - 2",           visita: "assets/logos/JR Transmisiones.png" },
-                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "3 (8) - (7) 3",   visita: "assets/logos/villalobos.jpg" },
-                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "3 - 4",           visita: "assets/logos/JR Transmisiones.png" },
-                { j: "J7", fecha: "Lun 26/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "4 - 3",           visita: "assets/logos/belicones.png" },
-                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "0 - 3",           visita: "assets/logos/JR Transmisiones.png" },
-                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "vs",              visita: "assets/logos/Rayados.jpg" }
+                { j: "J1",  fecha: "Mar 08/Sep/2026", hora: "20:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",      res: "2 - 3",           visita: "assets/logos/JR Transmisiones.png" },
+                { j: "J2",  fecha: "Lun 28/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "0 - 0",           visita: "assets/logos/Robles.jpg" },
+                { j: "J3",  fecha: "Mie 23/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Furia_Roja.png",       res: "0 - 5",           visita: "assets/logos/JR Transmisiones.png" },
+                { j: "J4",  fecha: "Lun 05/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/7_Mares.jpg",          res: "4 - 2",           visita: "assets/logos/JR Transmisiones.png" },
+                { j: "J5",  fecha: "Mar 13/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "3 (8) - (7) 3",   visita: "assets/logos/villalobos.jpg" },
+                { j: "J6",  fecha: "Mar 20/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "3 - 4",           visita: "assets/logos/JR Transmisiones.png" },
+                { j: "J7",  fecha: "Lun 26/Oct/2026", hora: "21:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "4 - 3",           visita: "assets/logos/belicones.png" },
+                { j: "J8",  fecha: "Lun 02/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "0 - 3",           visita: "assets/logos/JR Transmisiones.png" },
+                { j: "J9",  fecha: "Lun 09/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "vs",              visita: "assets/logos/Rayados.jpg" },
+                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "vs",              visita: "assets/logos/Cruz_Azul_mezquitan.png" }
             ]
         },
         "12": { // Chuper Amigos
@@ -486,22 +498,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J6", fecha: "Mar 20/Oct/2026", hora: "22:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "3 - 4", visita: "assets/logos/JR Transmisiones.png" },
                 { j: "J7", fecha: "Mar 27/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.jpg",   res: "3 - 2", visita: "assets/logos/chuperamigos.png" },
                 { j: "J8", fecha: "Lun 02/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",       res: "0 - 5", visita: "assets/logos/chuperamigos.png" },
-                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "vs",    visita: "assets/logos/Titanes.jpg" }
+                { j: "J9", fecha: "Mar 10/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "vs",    visita: "assets/logos/Titanes.jpg" },
+                { j: "J10",fecha: "Mar 17/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",      res: "VS ",   visita: "assets/logos/chuperamigos.png" }
             ]
         },
         "13": { // Jalisco FC
             plantilla: [],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
-                { j: "J1", fecha: "Mie 23/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J2", fecha: "Lun 14/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/Titanes.jpg" },
-                { j: "J3", fecha: "Lun 21/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J4", fecha: "Mar 06/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/Robles.jpg" },
-                { j: "J5", fecha: "Mar 13/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/Furia_Roja.png",           res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J6", fecha: "Mar 20/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/7_Mares.jpg" },
-                { j: "J7", fecha: "Lun 26/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/villalobos.jpg",           res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J8", fecha: "Lun 02/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/chuperamigos.png" },
-                { j: "J9", fecha: "Lun 09/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/belicones.png",            res: "vs",    visita: "assets/logos/jalisco_FC.png" }
+                { j: "J1",  fecha: "Mie 23/Sep/2026", hora: "19:40 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
+                { j: "J2",  fecha: "Lun 14/Sep/2026", hora: "21:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/Titanes.jpg" },
+                { j: "J3",  fecha: "Lun 21/Sep/2026", hora: "22:10 Hrs", local: "assets/logos/Pansa_Brava.jpg",          res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
+                { j: "J4",  fecha: "Mar 06/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/Robles.jpg" },
+                { j: "J5",  fecha: "Mar 13/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/Furia_Roja.png",           res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
+                { j: "J6",  fecha: "Mar 20/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/7_Mares.jpg" },
+                { j: "J7",  fecha: "Lun 26/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/villalobos.jpg",           res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
+                { j: "J8",  fecha: "Lun 02/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/chuperamigos.png" },
+                { j: "J9",  fecha: "Lun 09/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/belicones.png",            res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
+                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",          res: "vs",    visita: "assets/logos/Tortilleros.png" }
             ]
         }
     };
