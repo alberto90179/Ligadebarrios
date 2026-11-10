@@ -347,6 +347,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 218, pos: "29 años", nombre: "Jose Julian Cisneros C.",              cat: "3", amarilla: "3", roja: "-" },
                 { num: 224, pos: "36 años", nombre: "Juan Manuel Olague",                   cat: "3", amarilla: "-", roja: "-" },
                 { num: 222, pos: "29 años", nombre: "Luis Gaspar Aguila",                   cat: "3", amarilla: "-", roja: "-" },
+                { num: 167, pos: "27 años", nombre: "Luis Fernando Cayetano Reyes",         cat: "-", amarilla: "-", roja: "-" },
                 { num: 189, pos: "28 años", nombre: "Oswaldo Cisneros",                     cat: "5", amarilla: "-", roja: "-" },
                 { num: 163, pos: "33 años", nombre: "Ruben Gaspar",                         cat: "4", amarilla: "-", roja: "-" }
             ],
