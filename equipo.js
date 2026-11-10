@@ -304,6 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },  
         "7": { // Rayados FC
             plantilla: [
+                { num: 208, pos: "24 años", nombre: "Brayan Jesualdo Deniz López",          cat: "1", amarilla: "-", roja: "-" },
                 { num: 202, pos: "45 años", nombre: "Carlos Huerta",                        cat: "5", amarilla: "-", roja: "-" },
                 { num: 192, pos: "27 años", nombre: "Elvis Aron de la Rosa Hernández",      cat: "3", amarilla: "-", roja: "-" },
                 { num: 193, pos: "25 años", nombre: "Felipe de Jesús Castellón",            cat: "5", amarilla: "-", roja: "-" },
@@ -314,7 +315,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 194, pos: "29 años", nombre: "Marco Antonio Castellón De la Rosa",   cat: "1", amarilla: "-", roja: "-" },
                 { num: 197, pos: "25 años", nombre: "Oscar Ulises Guerrero Huerta",         cat: "3", amarilla: "-", roja: "1" },
                 { num: 198, pos: "33 años", nombre: "Pablo Misael Santana Pelayo",          cat: "5", amarilla: "2", roja: "-" },
-                { num: 196, pos: "27 años", nombre: "Pedro Alejandro Paez",                 cat: "5", amarilla: "1", roja: "-" }
+                { num: 196, pos: "27 años", nombre: "Pedro Alejandro Paez",                 cat: "5", amarilla: "1", roja: "-" },
+                { num: 201, pos: "35 años", nombre: "Ramon Zamora Chavez",                  cat: "1", amarilla: "-", roja: "-" },
+                { num: 207, pos: "30 años", nombre: "Roberto López",                        cat: "1", amarilla: "-", roja: "-" },
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "" }],
             calendario: [
