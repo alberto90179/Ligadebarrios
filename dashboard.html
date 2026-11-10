@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Liga Municipal de Fut7</title>
+    <link rel="icon" type="image/png" href="logo_liga.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="dashboard-body" style="display: none;"> <!-- Se oculta hasta validar sesión -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logo liga de barrios.PNG" alt="Logo Liga" class="logo-img">
+            <h1 class="site-title">Panel de Administración<br><span>Fut7 de Barrios</span></h1>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html" target="_blank"><i class="fas fa-external-link-alt"></i> Ver Sitio</a></li>
+                <li><a href="#" id="btn-logout" style="color: var(--color-rojo);"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="card dashboard-card">
+            <h2 class="card-title"><i class="fas fa-pen-square"></i> Registrar Resultado de Partido</h2>
+            <form id="form-resultados" class="admin-form dashboard-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="jornada">Jornada</label>
+                        <select id="jornada" required>
+                            <option value="">Selecciona Jornada...</option>
+                            <option value="J11">Jornada 11</option>
+                            <option value="J12">Jornada 12</option>
+                            <option value="J13">Jornada 13</option>
+                            <option value="LIG">Liguilla</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha y Hora</label>
+                        <input type="datetime-local" id="fecha" required>
+                    </div>
+                </div>
+
+                <div class="form-match-row">
+                    <!-- Equipo Local -->
+                    <div class="form-team-col">
+                        <label for="equipo-local">Equipo Local</label>
+                        <select id="equipo-local" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="0">Furia Roja</option>
+                            <option value="1">7 Mares</option>
+                            <option value="2">Titanes L.A.</option>
+                            <!-- Agrega el resto de los equipos -->
+                        </select>
+                        <input type="number" id="goles-local" placeholder="Goles" min="0" required>
+                    </div>
+                    
+                    <div class="vs-divider">VS</div>
+
+                    <!-- Equipo Visita -->
+                    <div class="form-team-col">
+                        <label for="equipo-visita">Equipo Visita</label>
+                        <select id="equipo-visita" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="0">Furia Roja</option>
+                            <option value="1">7 Mares</option>
+                            <option value="2">Titanes L.A.</option>
+                            <!-- Agrega el resto de los equipos -->
+                        </select>
+                        <input type="number" id="goles-visita" placeholder="Goles" min="0" required>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="partido-default">
+                    <label for="partido-default">Partido ganado por default / ausencia</label>
+                </div>
+
+                <button type="submit" class="btn-ver-resultados"><i class="fas fa-save"></i> Guardar Resultado</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
