@@ -480,7 +480,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 28, pos: "38 años", nombre: "Jesús Bautista Delgado",            cat: "5", amarilla: "-", roja: "-" },
                 { num: 19, pos: "36 años", nombre: "José Angel Isidro",                 cat: "2", amarilla: "-", roja: "-" },
                 { num: 36, pos: "40 años", nombre: "José de Jesús Contreras Aceves",    cat: "2", amarilla: "-", roja: "-" },
-                { num: 30, pos: "29 años", nombre: "Jose Eduardo Arcega vera",          cat: "3", amarilla: "-", roja: "-" },
+                { num: 30, pos: "29 años", nombre: "Jose Eduardo Arcega Vera",          cat: "3", amarilla: "-", roja: "-" },
                 { num: 22, pos: "40 años", nombre: "Juan Andres Vázquez Guerra",        cat: "4", amarilla: "-", roja: "-" },
                 { num: 26, pos: "34 años", nombre: "Juan Antonio Cervantes Díaz",       cat: "5", amarilla: "-", roja: "-" },
                 { num: 34, pos: "40 años", nombre: "Luis Javier Fabian Contreras",      cat: "2", amarilla: "-", roja: "-" },
