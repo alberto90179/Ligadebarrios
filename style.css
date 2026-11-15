@@ -2153,16 +2153,18 @@ body {
 }
 
 /* 4. TOTAL GOLES */
+/* 4. TOTAL GOLES */
 .total-goles-card {
     background: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center; /* Alinea los elementos al centro en lugar de flex-end */
     justify-content: center;
     padding: 20px;
     border-top: 3px solid #eeeeee;
+    text-align: center; /* Asegura el centrado absoluto del texto */
 }
 .tg-label {
     font-size: 1rem;
@@ -2172,9 +2174,10 @@ body {
 .tg-value {
     font-size: 4rem;
     font-weight: 800;
-    color: #a00d12;
+    color: #a00d12; /* Cambia el color rojo (#a00d12) por el amarillo usado en el tema */
     line-height: 1;
     margin-top: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Añade una ligera sombra para que contraste bien contra el fondo claro */
 }
 
 /* 5. DISCIPLINA (TARJETAS) */
@@ -2244,7 +2247,7 @@ body {
     font-weight: 800;
 }
 .disc-total {
-    color: #96d116;
+    color: #faf607;
     font-size: 1.6rem;
 }
 .match-penalties-dark {

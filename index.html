@@ -88,7 +88,7 @@
                                 <span>2026/11/16</span>
                                 <span>21:10</span>
                             </div>
-                            <div class="match-score-dark">- &nbsp; - &nbsp; -</div>
+                            <div class="match-score-dark"> &nbsp;  &nbsp; </div>
                             <span class="match-league">LOMA DEL AIRE</span>
                         </div>
                         <div class="match-bottom-bar"></div>
@@ -449,7 +449,7 @@
             <h2 class="sponsors-title">Nuestros Patrocinadores</h2>
             <div class="sponsors-grid">
                 <div class="sponsor-card">
-                    <img src="assets/patrocinadores/deportesvictoria.png" alt="Deportes Victoria="Deportes Victoria" onerror="this.src='https://via.placeholder.com/200x100?text=Cultura+Fit'">
+                    <img src="assets/patrocinadores/deportesvictoria.png" alt="Deportes Victoria" title="Deportes Victoria" onerror="this.src='https://via.placeholder.com/200x100?text=Cultura+Fit'">
                 </div>
                 <div class="sponsor-card">
                     <img src="assets/patrocinadores/uda.jpg" alt="Uniformes Deportivos Autlán" title="Uniformes Deportivos Autlán" onerror="this.src='https://via.placeholder.com/200x100?text=Uniformes+Autl%C3%A1n'">
@@ -1990,14 +1990,18 @@
         });
 
         const scrollAmountRes = 185; 
-        btnNextRes.addEventListener('click', () => {
-            const activeSlide = document.querySelector('.jornada-slide.active');
-            if(activeSlide) activeSlide.scrollBy({ left: scrollAmountRes, behavior: 'smooth' });
-        });
-        btnPrevRes.addEventListener('click', () => {
-            const activeSlide = document.querySelector('.jornada-slide.active');
-            if(activeSlide) activeSlide.scrollBy({ left: -scrollAmountRes, behavior: 'smooth' });
-        });
+        if (btnNextRes) {
+            btnNextRes.addEventListener('click', () => {
+                const activeSlide = document.querySelector('.jornada-slide.active');
+                if(activeSlide) activeSlide.scrollBy({ left: scrollAmountRes, behavior: 'smooth' });
+            });
+        }
+        if (btnPrevRes) {
+            btnPrevRes.addEventListener('click', () => {
+                const activeSlide = document.querySelector('.jornada-slide.active');
+                if(activeSlide) activeSlide.scrollBy({ left: -scrollAmountRes, behavior: 'smooth' });
+            });
+        }
     }
     </script>
     <script src="app.js"></script>
