@@ -1390,6 +1390,7 @@ body {
     .site-footer { padding: 25px 4% 15px; }
     .footer-grid { gap: 20px; }
 }
+
 /* =========================================
    ESTILOS DE INFORMACIÓN DETALLADA EN EL MODAL
    ========================================= */
@@ -1563,7 +1564,6 @@ body {
     padding: 20px 15px;
     overflow-y: auto;
     background: radial-gradient(circle at center top, rgba(20, 55, 30, 0.1), rgba(8, 20, 12, 0.88)), url('assets/estadio.png') center/cover no-repeat;
-    /* Ajuste para el scrollbar del modal */
     scrollbar-width: thin;
     scrollbar-color: var(--color-rojo) rgba(255, 255, 255, 0.1);
 }
@@ -1577,6 +1577,7 @@ body {
     background-color: var(--color-rojo);
     border-radius: 4px;
 }
+
 /* =========================================
    ESTILOS DEL PANEL DE ADMINISTRACIÓN
    ========================================= */
@@ -1703,11 +1704,9 @@ body {
         text-align: center;
     }
 }
+
 /* =========================================
-   NUEVO CARRUSEL TIPO TARJETA OSCURA
-   ========================================= */
-/* =========================================
-   NUEVO CARRUSEL TIPO TARJETA OSCURA
+   CARRUSEL TIPO TARJETA OSCURA
    ========================================= */
 .carousel-section-dark {
     background-color: #1a1a1a;
@@ -1721,7 +1720,7 @@ body {
 .carousel-container-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center; /* CENTRA EL CARRUSEL */
+    justify-content: center;
     width: 100%;             
     max-width: 1450px;      
     gap: 15px;              
@@ -1734,15 +1733,14 @@ body {
     gap: 15px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Oculta scroll en Firefox */
-    -ms-overflow-style: none; /* Oculta scroll en IE/Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     padding: 10px 0;
-    max-width: calc(100% - 120px); /* Garantiza espacio para no empalmar las flechas */
-    /* Eliminamos flex: 1 para que no ocupe todo el ancho si hay pocas tarjetas */
+    max-width: calc(100% - 120px);
 }
 
 .matches-carousel-dark::-webkit-scrollbar {
-    display: none; /* Oculta scroll visual en Chrome/Safari */
+    display: none;
 }
 
 .match-card-dark {
@@ -1875,20 +1873,20 @@ body {
         display: none; 
     }
 }
+
 /* =========================================
    NUEVO MODAL RESULTADOS (TABS Y CARRUSEL)
    ========================================= */
 .modal-resultados-wide {
-    max-width: 1250px !important; /* Se hace más ancho para el carrusel */
+    max-width: 1250px !important;
     background-color: #ffffff !important;
 }
 
 .modal-resultados-body {
-    background: #ffffff !important; /* Quitamos el fondo oscuro del modal anterior */
+    background: #ffffff !important;
     padding: 20px 20px 40px !important;
 }
 
-/* Contenedor de Pestañas */
 .tabs-jornadas-container {
     display: flex;
     overflow-x: auto;
@@ -1925,7 +1923,6 @@ body {
     box-shadow: 0 6px 12px rgba(211, 17, 24, 0.3);
 }
 
-/* Título de la Jornada Seleccionada */
 .titulo-jornada-activa {
     font-size: 1.25rem;
     font-weight: 800;
@@ -1935,7 +1932,6 @@ body {
     padding-left: 45px;
 }
 
-/* Contenedor del Carrusel de Resultados */
 .carrusel-resultados-wrapper {
     display: flex;
     align-items: center;
@@ -1946,12 +1942,11 @@ body {
 
 .carrusel-resultados-viewport {
     flex: 1;
-    overflow: hidden; /* Oculta todo lo que se salga */
+    overflow: hidden;
 }
 
-/* Slide de Jornada (Agrupa los partidos) */
 .jornada-slide {
-    display: none; /* Oculto por defecto */
+    display: none;
     gap: 15px;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -1965,13 +1960,12 @@ body {
 }
 
 .jornada-slide.active {
-    display: flex; /* Solo muestra la jornada seleccionada */
+    display: flex;
 }
 
-/* Tarjeta de Resultado (Gris Oscuro) */
 .match-card-result {
     flex: 0 0 170px;
-    background-color: #3b3f46; /* Tono gris de la imagen */
+    background-color: #3b3f46;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -1999,12 +1993,12 @@ body {
     display: block;
 }
 
-/* Ajuste color barra inferior a gris más oscuro como en la imagen */
 .match-card-result .match-bottom-bar {
     background-color: #2b2e33; 
 }
+
 /* =======================================================
-   ESTADÍSTICAS LIGA (DISEÑOS NUEVOS DE IMÁGENES)
+   ESTADÍSTICAS LIGA
    ======================================================= */
 .league-data-section {
     max-width: 1100px;
@@ -2015,7 +2009,6 @@ body {
     gap: 20px;
 }
 
-/* 1. DATOS PREMIER (LIGA) */
 .datos-premier-container {
     background: #ffffff;
     border-radius: 8px;
@@ -2071,7 +2064,6 @@ body {
     color: #3b5998;
 }
 
-/* 2. GRID PARA MEJOR OFENSIVA/DEFENSIVA, GOLES Y TARJETAS */
 .stats-grid-3 {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -2081,7 +2073,6 @@ body {
     .stats-grid-3 { grid-template-columns: 1fr; }
 }
 
-/* 3. MEJOR OFENSIVA / DEFENSIVA */
 .best-teams-card {
     background: #ffffff;
     border-radius: 8px;
@@ -2152,19 +2143,17 @@ body {
     .border-right { border-right: none !important; border-bottom: 1px solid #eeeeee; padding-bottom: 20px; }
 }
 
-/* 4. TOTAL GOLES */
-/* 4. TOTAL GOLES */
 .total-goles-card {
     background: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinea los elementos al centro en lugar de flex-end */
+    align-items: center;
     justify-content: center;
     padding: 20px;
     border-top: 3px solid #eeeeee;
-    text-align: center; /* Asegura el centrado absoluto del texto */
+    text-align: center;
 }
 .tg-label {
     font-size: 1rem;
@@ -2174,13 +2163,12 @@ body {
 .tg-value {
     font-size: 4rem;
     font-weight: 800;
-    color: #a00d12; /* Cambia el color rojo (#a00d12) por el amarillo usado en el tema */
+    color: #a00d12;
     line-height: 1;
     margin-top: 5px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Añade una ligera sombra para que contraste bien contra el fondo claro */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
-/* 5. DISCIPLINA (TARJETAS) */
 .disciplina-card {
     background: #000000;
     border-radius: 8px;
@@ -2251,15 +2239,14 @@ body {
     font-size: 1.6rem;
 }
 .match-penalties-dark {
-    color: #a0aec0; /* Un tono gris claro/azulado */
+    color: #a0aec0;
     font-size: 0.85em;
     text-align: center;
-    margin-top: -5px; /* Para acercarlo al marcador principal */
+    margin-top: -5px;
     margin-bottom: 10px;
 }
-/* --- CORRECCIÓN DE SIMETRÍA EN MARCADORES --- */
 
-/* 1. Reservar siempre el espacio de los penales, aunque esté vacío */
+/* --- CORRECCIÓN DE SIMETRÍA EN MARCADORES --- */
 .match-penalties-dark {
     min-height: 20px; 
     display: flex;
@@ -2268,15 +2255,449 @@ body {
     width: 100%;
 }
 
-/* 2. Forzar que el nombre de la liga se pegue siempre al fondo de la tarjeta */
 .match-league {
     margin-top: auto !important; 
     padding-bottom: 5px;
 }
 
-/* 3. Asegurar que los marcadores en el modal no pierdan el auto-margen */
 .match-card-result .match-card-content {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+/* =========================================
+   SECCIÓN DE LLAVES DE ELIMINACIÓN (BRACKET)
+   ========================================= */
+.bracket-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #1a252f 0%, #0d1e13 100%);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.bracket-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.bracket-subtitle {
+    text-align: center;
+    color: #ffee00;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+.bracket-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bracket-round {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bracket-round-future {
+    opacity: 0.7;
+}
+
+.round-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    background: var(--color-rojo);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.matchup {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.matchup-future {
+    background: rgba(255, 255, 255, 0.03);
+    border-style: dashed;
+}
+
+.team-slot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.team-top {
+    background: rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.team-bottom {
+    background: rgba(35, 35, 35, 0.6);
+}
+
+.team-slot:hover {
+    background: rgba(211, 17, 24, 0.25);
+}
+
+.seed {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    background: #ffee00;
+    color: #111111;
+    font-weight: 900;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.bracket-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 2px;
+    flex-shrink: 0;
+}
+
+.bracket-team-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bracket-team-name.tbd {
+    color: #888888;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Trofeo del Campeón */
+.champion-trophy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px 15px;
+    background: linear-gradient(135deg, #ffd700 0%, #ffb700 50%, #d4a017 100%);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    margin-top: auto;
+    animation: trophyGlow 2.5s ease-in-out infinite;
+}
+
+.trophy-icon {
+    font-size: 3.5rem;
+    color: #8b6914;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
+}
+
+.trophy-text {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #4a3500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.trophy-subtext {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #6b4f00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+@keyframes trophyGlow {
+    0%, 100% { box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4); }
+    50% { box-shadow: 0 6px 30px rgba(255, 215, 0, 0.8); }
+}
+
+/* =========================================
+   MARCADORES IDA / VUELTA EN EL BRACKET
+   ========================================= */
+.score-pair {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex-shrink: 0;
+}
+
+.score-pair-single {
+    flex-direction: row;
+    align-items: center;
+}
+
+.score-id,
+.score-vu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    height: 22px;
+    padding: 0 6px;
+    background: #000000;
+    color: #ffee00;
+    font-weight: 800;
+    font-size: 0.72rem;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 238, 0, 0.35);
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+}
+
+.score-vu {
+    background: #1a1a1a;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.score-single {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 30px;
+    padding: 0 10px;
+    background: #000000;
+    color: #ffee00;
+    font-weight: 900;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 238, 0, 0.4);
+}
+
+.score-id.tbd-score,
+.score-vu.tbd-score,
+.score-single.tbd-score {
+    background: rgba(255, 255, 255, 0.05);
+    color: #888888;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Fila de fecha con separador */
+.matchup-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, 0.35);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    color: #ffee00;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.matchup-date i {
+    font-size: 0.8rem;
+    color: #ffee00;
+    flex-shrink: 0;
+}
+
+.matchup-date span {
+    white-space: nowrap;
+}
+
+.date-sep {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+}
+
+.matchup-date-future {
+    color: #888888;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.matchup-date-future i {
+    color: #888888;
+}
+
+/* Fila de marcador global */
+.matchup-aggregate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 7px 12px;
+    background: rgba(211, 17, 24, 0.25);
+    border-top: 1px solid rgba(211, 17, 24, 0.4);
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.matchup-aggregate i {
+    font-size: 0.8rem;
+    color: #ffee00;
+}
+
+.matchup-aggregate-future {
+    background: rgba(255, 255, 255, 0.03);
+    border-top-color: rgba(255, 255, 255, 0.08);
+    color: #888888;
+}
+
+.matchup-aggregate-future i {
+    color: #666666;
+}
+
+/* Nota para la final (partido único) */
+.matchup-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 7px 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaaaaa;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+}
+
+.matchup-note i {
+    color: #ffee00;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* Responsivo del bracket */
+@media (max-width: 900px) {
+    .bracket-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bracket-round {
+        width: 100%;
+        max-width: 400px;
+    }
+    .bracket-title {
+        font-size: 1.5rem;
+    }
+    .trophy-icon {
+        font-size: 2.8rem;
+    }
+    .trophy-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bracket-section {
+        padding: 20px 12px;
+        margin: 25px auto;
+    }
+    .bracket-title {
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+    }
+    .bracket-subtitle {
+        font-size: 0.9rem;
+    }
+    .team-slot {
+        padding: 10px 10px;
+        font-size: 0.82rem;
+    }
+    .seed {
+        width: 22px;
+        height: 22px;
+        font-size: 0.7rem;
+    }
+    .bracket-logo {
+        width: 24px;
+        height: 24px;
+    }
+    .trophy-icon {
+        font-size: 2.5rem;
+    }
+    .trophy-text {
+        font-size: 1.05rem;
+    }
+    .trophy-subtext {
+        font-size: 0.7rem;
+    }
+    .score-pair {
+        gap: 2px;
+    }
+    .score-id,
+    .score-vu {
+        min-width: 60px;
+        height: 20px;
+        font-size: 0.65rem;
+        padding: 0 4px;
+    }
+    .score-single {
+        min-width: 36px;
+        height: 26px;
+        font-size: 0.9rem;
+    }
+    .matchup-date {
+        font-size: 0.66rem;
+        padding: 6px 8px;
+        gap: 4px;
+    }
+    .matchup-date i {
+        font-size: 0.7rem;
+    }
+    .date-sep {
+        display: none;
+    }
+    .matchup-date span {
+        white-space: normal;
+    }
+    .matchup-aggregate {
+        font-size: 0.72rem;
+        padding: 6px 10px;
+    }
+    .matchup-note {
+        font-size: 0.62rem;
+        padding: 6px 8px;
+    }
 }
