@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J6",  fecha: "Mar 20/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",              res: "0 - 5",           visita: "assets/logos/7_Mares.png" },
                 { j: "J8",  fecha: "Mar 03/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Pansa_Brava.png",             res: "2 (2) - (3) 2",   visita: "assets/logos/7_Mares.png" },
                 { j: "J10", fecha: "Lun 16/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png",              res: "VS ",             visita: "assets/logos/7_Mares.png" },
-                { j: "J11", fecha: "Lun 23/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",     res: "vs",              visita: "assets/logos/7_mares.png" },
+                { j: "J11", fecha: "Lun 23/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",     res: "vs",              visita: "assets/logos/7_Mares.png" },
                 { j: "J12", fecha: "Lun 30/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.png",                 res: "VS ",             visita: "assets/logos/villalobos.png" },
                 { j: "J13", fecha: "Lun 07/Dic/2026", hora: "22:10 Hrs", local: "assets/logos/chuperamigos.png",            res: "VS ",             visita: "assets/logos/7_Mares.png" }
             ]
