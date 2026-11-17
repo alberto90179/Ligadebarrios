@@ -1695,16 +1695,18 @@ body {
 }
 
 @media (max-width: 600px) {
-    .form-row, .form-match-row {
-        grid-template-columns: 1fr;
-        flex-direction: column;
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        /* Se elimina 'display: none;' para mantenerlas visibles */
     }
-    .vs-divider {
-        margin: 15px 0;
-        text-align: center;
+    
+    .matches-carousel-dark {
+        /* Ajusta el ancho máximo para dejar espacio a las flechas más pequeñas (35px cada una + padding) */
+        max-width: calc(100% - 90px);
     }
 }
-
 /* =========================================
    CARRUSEL TIPO TARJETA OSCURA
    ========================================= */

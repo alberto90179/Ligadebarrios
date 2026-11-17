@@ -29,20 +29,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const equipoId = parseInt(parametros.get('id'));
 
     const equipos = [
-        { id: 1,    nombre: "7 Mares",                  logo: "assets/logos/7_Mares.png",               pj: 9, g: 4, e: 1, p: 4, pts: 14,   gf: 28, gc: 17, pe: 1, dg: "+11" },
-        { id: 9,    nombre: "Carnicería Villalobos",    logo: "assets/logos/villalobos.png",            pj: 9, g: 2, e: 4, p: 3, pts: 12,   gf: 18, gc: 19, pe: 2, dg: "-1"  },
-        { id: 12,   nombre: "Chuper Amigos",            logo: "assets/logos/chuperamigos.png",          pj: 9, g: 3, e: 1, p: 5, pts: 10,   gf: 21, gc: 23, pe: 0, dg: "-2" },
-        { id: 4,    nombre: "Cruz Azul Mezquitán",      logo: "assets/logos/Cruz_Azul_mezquitan.png",   pj: 9, g: 6, e: 1, p: 2, pts: 20,   gf: 25, gc: 16, pe: 1, dg: "+9"},
-        { id: 6,    nombre: "Diablos Gordos",           logo: "assets/logos/Diablos_Gordos.png",        pj: 9, g: 5, e: 2, p: 2, pts: 18,   gf: 23, gc: 16, pe: 1, dg: "+7" },
-        { id: 0,    nombre: "Furia Roja",               logo: "assets/logos/Furia_Roja.png",            pj: 9, g: 5, e: 1, p: 3, pts: 16,   gf: 24, gc: 16, pe: 0, dg: "+8" },
-        { id: 10,   nombre: "Gordos Belicones",         logo: "assets/logos/belicones.png",             pj: 9, g: 4, e: 2, p: 3, pts: 14,   gf: 30, gc: 21, pe: 0, dg: "+9" },
-        { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 9, g: 0, e: 0, p: 9, pts: 0,    gf: 0,  gc: 45, pe: 0, dg: "-45"},
-        { id: 11,   nombre: "JR Transmisiones",         logo: "assets/logos/JR Transmisiones.png",      pj: 9, g: 6, e: 2, p: 1, pts: 21,   gf: 29, gc: 15, pe: 1, dg: "+14" },
-        { id: 5,    nombre: "Pansa Brava",              logo: "assets/logos/Pansa_Brava.png",           pj: 9, g: 6, e: 1, p: 2, pts: 19,   gf: 29, gc: 13, pe: 0, dg: "+16"},
-        { id: 7,    nombre: "Rayados FC",               logo: "assets/logos/Rayados.png",               pj: 9, g: 2, e: 1, p: 6, pts: 7,    gf: 15, gc: 33, pe: 0, dg: "-18"},
-        { id: 3,    nombre: "Robles FC",                logo: "assets/logos/Robles.png",                pj: 9, g: 3, e: 2, p: 4, pts: 12,   gf: 18, gc: 19, pe: 1, dg: "-1" },
-        { id: 2,    nombre: "Titanes L.A.",             logo: "assets/logos/Titanes.png",               pj: 9, g: 3, e: 2, p: 4, pts: 11,   gf: 15, gc: 12, pe: 2, dg: "+3" },
-        { id: 8,    nombre: "Tortilleros FC",           logo: "assets/logos/Tortilleros.png",           pj: 9, g: 3, e: 1, p: 5, pts: 11,   gf: 12, gc: 22, pe: 1, dg: "-10" }
+        { id: 1,    nombre: "7 Mares",                  logo: "assets/logos/7_Mares.png",               pj: 9,  g: 4, e: 1, p: 4,  pts: 14,     gf: 28, gc: 17, pe: 1, dg: "+11" },
+        { id: 9,    nombre: "Carnicería Villalobos",    logo: "assets/logos/villalobos.png",            pj: 9,  g: 2, e: 4, p: 3,  pts: 12,     gf: 18, gc: 19, pe: 2, dg: "-1"  },
+        { id: 12,   nombre: "Chuper Amigos",            logo: "assets/logos/chuperamigos.png",          pj: 9,  g: 3, e: 1, p: 5,  pts: 10,     gf: 21, gc: 23, pe: 0, dg: "-2" },
+        { id: 4,    nombre: "Cruz Azul Mezquitán",      logo: "assets/logos/Cruz_Azul_mezquitan.png",   pj: 9,  g: 6, e: 1, p: 2,  pts: 20,     gf: 25, gc: 16, pe: 1, dg: "+9"},
+        { id: 6,    nombre: "Diablos Gordos",           logo: "assets/logos/Diablos_Gordos.png",        pj: 9,  g: 5, e: 2, p: 2,  pts: 18,     gf: 23, gc: 16, pe: 1, dg: "+7" },
+        { id: 0,    nombre: "Furia Roja",               logo: "assets/logos/Furia_Roja.png",            pj: 9,  g: 5, e: 1, p: 3,  pts: 16,     gf: 24, gc: 16, pe: 0, dg: "+8" },
+        { id: 10,   nombre: "Gordos Belicones",         logo: "assets/logos/belicones.png",             pj: 9,  g: 4, e: 2, p: 3,  pts: 14,     gf: 30, gc: 21, pe: 0, dg: "+9" },
+        { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 10, g: 0, e: 0, p: 10, pts: 0,      gf: 0,  gc: 50, pe: 0, dg: "-50"},
+        { id: 11,   nombre: "JR Transmisiones",         logo: "assets/logos/JR Transmisiones.png",      pj: 9,  g: 6, e: 2, p: 1,  pts: 21,     gf: 29, gc: 15, pe: 1, dg: "+14" },
+        { id: 5,    nombre: "Pansa Brava",              logo: "assets/logos/Pansa_Brava.png",           pj: 9,  g: 6, e: 1, p: 2,  pts: 19,     gf: 29, gc: 13, pe: 0, dg: "+16"},
+        { id: 7,    nombre: "Rayados FC",               logo: "assets/logos/Rayados.png",               pj: 9,  g: 2, e: 1, p: 6,  pts: 7,      gf: 15, gc: 33, pe: 0, dg: "-18"},
+        { id: 3,    nombre: "Robles FC",                logo: "assets/logos/Robles.png",                pj: 9,  g: 3, e: 2, p: 4,  pts: 12,     gf: 18, gc: 19, pe: 1, dg: "-1" },
+        { id: 2,    nombre: "Titanes L.A.",             logo: "assets/logos/Titanes.png",               pj: 9,  g: 3, e: 2, p: 4,  pts: 11,     gf: 15, gc: 12, pe: 2, dg: "+3" },
+        { id: 8,    nombre: "Tortilleros FC",           logo: "assets/logos/Tortilleros.png",           pj: 10, g: 4, e: 1, p: 5,  pts: 14,     gf: 17, gc: 22, pe: 1, dg: "-5" }
     ];
 
     const clasificacion = [...equipos].sort((a, b) => {
@@ -357,21 +357,21 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "8": { // Tortilleros FC
             plantilla: [
-                { num: 166, pos: "24 años", nombre: "Aaron Ezequiel Cisneros Sandoval",     cat: "-", amarilla: "-", roja: "-" },
-                { num: 220, pos: "30 años", nombre: "Daniel Salvador Flores Olague",        cat: "6", amarilla: "-", roja: "-" },
-                { num: 225, pos: "21 años", nombre: "Diego De Jesus Avalos Salgado",        cat: "6", amarilla: "1", roja: "-" },
-                { num: 223, pos: "33 años", nombre: "Efraín López",                         cat: "3", amarilla: "-", roja: "-" },
-                { num: 164, pos: "26 años", nombre: "Gustavo Gomez T.",                     cat: "6", amarilla: "-", roja: "-" },
-                { num: 165, pos: "28 años", nombre: "Hugo Ernesto Cisneros Covarrubias",    cat: "3", amarilla: "1", roja: "1" },
-                { num: 219, pos: "29 años", nombre: "Jesus Jafeth González Ventura",        cat: "6", amarilla: "-", roja: "-" },
-                { num: 221, pos: "33 años", nombre: "Jose Antonio Perez Peña",              cat: "6", amarilla: "-", roja: "-" },
-                { num: 190, pos: "29 años", nombre: "Jose Jareth González Ventura",         cat: "6", amarilla: "-", roja: "-" },
-                { num: 218, pos: "29 años", nombre: "Jose Julian Cisneros C.",              cat: "3", amarilla: "3", roja: "-" },
-                { num: 224, pos: "36 años", nombre: "Juan Manuel Olague",                   cat: "3", amarilla: "-", roja: "-" },
-                { num: 222, pos: "29 años", nombre: "Luis Gaspar Aguila",                   cat: "4", amarilla: "-", roja: "-" },
-                { num: 167, pos: "27 años", nombre: "Luis Fernando Cayetano Reyes",         cat: "-", amarilla: "-", roja: "-" },
-                { num: 189, pos: "28 años", nombre: "Oswaldo Cisneros",                     cat: "6", amarilla: "-", roja: "-" },
-                { num: 163, pos: "33 años", nombre: "Ruben Gaspar",                         cat: "5", amarilla: "-", roja: "-" }
+                { num: 166, pos: "24 años", nombre: "Aaron Ezequiel Cisneros Sandoval",     cat: "1", amarilla: "-", roja: "-" },
+                { num: 220, pos: "30 años", nombre: "Daniel Salvador Flores Olague",        cat: "7", amarilla: "-", roja: "-" },
+                { num: 225, pos: "21 años", nombre: "Diego De Jesus Avalos Salgado",        cat: "7", amarilla: "1", roja: "-" },
+                { num: 223, pos: "33 años", nombre: "Efraín López",                         cat: "4", amarilla: "-", roja: "-" },
+                { num: 164, pos: "26 años", nombre: "Gustavo Gomez T.",                     cat: "7", amarilla: "-", roja: "-" },
+                { num: 165, pos: "28 años", nombre: "Hugo Ernesto Cisneros Covarrubias",    cat: "4", amarilla: "1", roja: "1" },
+                { num: 219, pos: "29 años", nombre: "Jesus Jafeth González Ventura",        cat: "7", amarilla: "-", roja: "-" },
+                { num: 221, pos: "33 años", nombre: "Jose Antonio Perez Peña",              cat: "7", amarilla: "-", roja: "-" },
+                { num: 190, pos: "29 años", nombre: "Jose Jareth González Ventura",         cat: "7", amarilla: "-", roja: "-" },
+                { num: 218, pos: "29 años", nombre: "Jose Julian Cisneros C.",              cat: "4", amarilla: "3", roja: "-" },
+                { num: 224, pos: "36 años", nombre: "Juan Manuel Olague",                   cat: "4", amarilla: "-", roja: "-" },
+                { num: 222, pos: "29 años", nombre: "Luis Gaspar Aguila",                   cat: "5", amarilla: "-", roja: "-" },
+                { num: 167, pos: "27 años", nombre: "Luis Fernando Cayetano Reyes",         cat: "1", amarilla: "-", roja: "-" },
+                { num: 189, pos: "28 años", nombre: "Oswaldo Cisneros",                     cat: "7", amarilla: "-", roja: "-" },
+                { num: 163, pos: "33 años", nombre: "Ruben Gaspar",                         cat: "6", amarilla: "-", roja: "-" }
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Oswaldo Cisneros" }],
             calendario: [
@@ -384,7 +384,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J7",  fecha: "Lun 26/Oct/2026", hora: "20:10 Hrs", local: "assets/logos/Rayados.png",          res: "0 - 3",            visita: "assets/logos/Tortilleros.png" },
                 { j: "J8",  fecha: "Lun 02/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "0 - 3",            visita: "assets/logos/JR Transmisiones.png" },
                 { j: "J9",  fecha: "Mar 10/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Diablos_Gordos.png",   res: "4 - 0",            visita: "assets/logos/Tortilleros.png" },
-                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",       res: "vs",               visita: "assets/logos/Tortilleros.png" },
+                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",       res: "0 - 5",            visita: "assets/logos/Tortilleros.png" },
                 { j: "J11", fecha: "Mar 24/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Titanes.png",          res: "VS ",             visita: "assets/logos/Tortilleros.png" },
                 { j: "J12", fecha: "Lun 30/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "VS ",             visita: "assets/logos/Pansa_Brava.png" },
                 { j: "J13", fecha: "Lun 07/Dic/2026", hora: "20:10 Hrs", local: "assets/logos/Tortilleros.png",      res: "VS ",             visita: "assets/logos/Robles.png" }
@@ -556,7 +556,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J7",  fecha: "Lun 26/Oct/2026", hora: "23:10 Hrs", local: "assets/logos/villalobos.png",           res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
                 { j: "J8",  fecha: "Lun 02/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/chuperamigos.png" },
                 { j: "J9",  fecha: "Lun 09/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/belicones.png",            res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "vs",    visita: "assets/logos/Tortilleros.png" },
+                { j: "J10", fecha: "Lun 16/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/Tortilleros.png" },
                 { j: "J11", fecha: "Lun 23/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/Rayados.png",              res: "VS",    visita: "assets/logos/jalisco_FC.png" },
                 { j: "J12", fecha: "Lun 30/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "VS",    visita: "assets/logos/JR Transmisiones.png" },
                 { j: "J13", fecha: "Lun 07/Dic/2026", hora: "23:10 Hrs", local: "assets/logos/Diablos_Gordos.png",                res: "VS",    visita: "assets/logos/jalisco_FC.png" }
