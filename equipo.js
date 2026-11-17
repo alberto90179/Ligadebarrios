@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J10",fecha: "Lun 16/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png",           res: "1 - 6 ",          visita: "assets/logos/7_Mares.png" },
                 { j: "J11",fecha: "Mar 24/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/villalobos.png",           res: "VS ",             visita: "assets/logos/Furia_Roja.png" },
                 { j: "J12",fecha: "Lun 30/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Furia_Roja.png",           res: "VS ",             visita: "assets/logos/chuperamigos.png" },
-                { j: "J13",fecha: "Mar 08/Dic/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png",            res: "VS ",             visita: "assets/logos/Furia_Roja.png" }
+                { j: "J13",fecha: "Lun 07/Dic/2026", hora: "22:10 Hrs", local: "assets/logos/belicones.png",            res: "VS ",             visita: "assets/logos/Furia_Roja.png" }
             ]
         },
         "1": { // 7 Mares
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J10", fecha: "Lun 16/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Furia_Roja.png",              res: "1 - 6",           visita: "assets/logos/7_Mares.png" },
                 { j: "J11", fecha: "Lun 23/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",     res: "vs",              visita: "assets/logos/7_Mares.png" },
                 { j: "J12", fecha: "Lun 30/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.png",                 res: "VS ",             visita: "assets/logos/villalobos.png" },
-                { j: "J13", fecha: "Lun 07/Dic/2026", hora: "22:10 Hrs", local: "assets/logos/chuperamigos.png",            res: "VS ",             visita: "assets/logos/7_Mares.png" }
+                { j: "J13", fecha: "Lun 07/Dic/2026", hora: "21:10 Hrs", local: "assets/logos/chuperamigos.png",            res: "VS ",             visita: "assets/logos/7_Mares.png" }
             ]
         },
         "2": { // Titanes L.A.
@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J10", fecha:   "Lun 16/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/JR Transmisiones.png",             res: "0 - 1",           visita: "assets/logos/Cruz_Azul_mezquitan.png" },
                 { j: "J11", fecha:   "Lun 23/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "vs",              visita: "assets/logos/7_Mares.png" },
                 { j: "J12", fecha:   "Mar 01/Dic/2026", hora: "20:10 Hrs", local: "assets/logos/Diablos_Gordos.png",               res: "VS",              visita: "assets/logos/Cruz_Azul_mezquitan.png" },
-                { j: "J13", fecha:   "Lun 07/Dic/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "VS ",             visita: "assets/logos/villalobos.png" }
+                { j: "J13", fecha:   "Mar 08/Dic/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",          res: "VS ",             visita: "assets/logos/villalobos.png" }
             ]
         },
         "5": { // Pansa Brava
@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J10",fecha: "Mar 17/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.png",               res: "VS ",             visita: "assets/logos/villalobos.png" },
                 { j: "J11",fecha: "Mar 24/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/villalobos.png",           res: "VS ",             visita: "assets/logos/Furia_Roja.png" },
                 { j: "J12",fecha: "Lun 30/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/7_Mares.png",              res: "VS ",             visita: "assets/logos/villalobos.png" },
-                { j: "J13",fecha: "Lun 07/Dic/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "VS ",             visita: "assets/logos/villalobos.png" }
+                { j: "J13",fecha: "Mar 08/Dic/2026", hora: "21:10 Hrs", local: "assets/logos/Cruz_Azul_mezquitan.png",  res: "VS ",             visita: "assets/logos/villalobos.png" }
             ]
         },
         "10": { // Gordos Belicones
@@ -465,7 +465,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J10", fecha: "Lun 16/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/belicones.png",               res: "5 - 0 ",          visita: "assets/logos/Titanes.png" },
                 { j: "J11", fecha: "Lun 23/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png",               res: "VS ",             visita: "assets/logos/Pansa_Brava.png" },
                 { j: "J12", fecha: "Mar 01/Dic/2026", hora: "22:10 Hrs", local: "assets/logos/Robles.png",                  res: "VS ",             visita: "assets/logos/belicones.png" },
-                { j: "J13", fecha: "Mar 08/Dic/2026", hora: "21:10 Hrs", local: "assets/logos/belicones.png",               res: "VS ",             visita: "assets/logos/Furia_Roja.png" }
+                { j: "J13", fecha: "Lun 07/Dic/2026", hora: "22:10 Hrs", local: "assets/logos/belicones.png",               res: "VS ",             visita: "assets/logos/Furia_Roja.png" }
             ]
         },
         "11": { // JR Transmisiones
@@ -540,7 +540,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J10",fecha: "Mar 17/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/Pansa_Brava.png",      res: "VS ",                 visita: "assets/logos/chuperamigos.png" },
                 { j: "J11",fecha: "Mar 24/Nov/2026", hora: "21:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "VS ",                 visita: "assets/logos/Robles.png" },
                 { j: "J12",fecha: "Lun 30/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Furia_Roja.png",       res: "VS ",                 visita: "assets/logos/chuperamigos.png" },
-                { j: "J13",fecha: "Lun 07/Dic/2026", hora: "22:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "VS ",                 visita: "assets/logos/7_Mares.png" }
+                { j: "J13",fecha: "Lun 07/Dic/2026", hora: "21:10 Hrs", local: "assets/logos/chuperamigos.png",     res: "VS ",                 visita: "assets/logos/7_Mares.png" }
             ],
         },
         "13": { // Jalisco FC
