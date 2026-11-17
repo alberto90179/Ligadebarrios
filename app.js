@@ -32,19 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. DATOS DE LOS EQUIPOS (CON ID FIJO AÑADIDO)
     // ==========================================
       const equipos = [
-        { id: 1,    nombre: "7 Mares",                  logo: "assets/logos/7_Mares.png",               pj: 9,  g: 4, e: 1, p: 4,  pts: 14,     gf: 28, gc: 17, pe: 1, dg: "+11" },
+        { id: 1,    nombre: "7 Mares",                  logo: "assets/logos/7_Mares.png",               pj: 10, g: 5, e: 1, p: 4,  pts: 17,     gf: 34, gc: 18, pe: 1, dg: "+16" },
         { id: 9,    nombre: "Carnicería Villalobos",    logo: "assets/logos/villalobos.png",            pj: 9,  g: 2, e: 4, p: 3,  pts: 12,     gf: 18, gc: 19, pe: 2, dg: "-1"  },
         { id: 12,   nombre: "Chuper Amigos",            logo: "assets/logos/chuperamigos.png",          pj: 9,  g: 3, e: 1, p: 5,  pts: 10,     gf: 21, gc: 23, pe: 0, dg: "-2" },
-        { id: 4,    nombre: "Cruz Azul Mezquitán",      logo: "assets/logos/Cruz_Azul_mezquitan.png",   pj: 9,  g: 6, e: 1, p: 2,  pts: 20,     gf: 25, gc: 16, pe: 1, dg: "+9"},
+        { id: 4,    nombre: "Cruz Azul Mezquitán",      logo: "assets/logos/Cruz_Azul_mezquitan.png",   pj: 10, g: 7, e: 1, p: 2,  pts: 23,     gf: 26, gc: 16, pe: 1, dg: "+10"},
         { id: 6,    nombre: "Diablos Gordos",           logo: "assets/logos/Diablos_Gordos.png",        pj: 9,  g: 5, e: 2, p: 2,  pts: 18,     gf: 23, gc: 16, pe: 1, dg: "+7" },
-        { id: 0,    nombre: "Furia Roja",               logo: "assets/logos/Furia_Roja.png",            pj: 9,  g: 5, e: 1, p: 3,  pts: 16,     gf: 24, gc: 16, pe: 0, dg: "+8" },
-        { id: 10,   nombre: "Gordos Belicones",         logo: "assets/logos/belicones.png",             pj: 9,  g: 4, e: 2, p: 3,  pts: 14,     gf: 30, gc: 21, pe: 0, dg: "+9" },
+        { id: 0,    nombre: "Furia Roja",               logo: "assets/logos/Furia_Roja.png",            pj: 10, g: 5, e: 1, p: 4,  pts: 16,     gf: 25, gc: 22, pe: 0, dg: "+3" },
+        { id: 10,   nombre: "Gordos Belicones",         logo: "assets/logos/belicones.png",             pj: 10, g: 5, e: 2, p: 3,  pts: 17,     gf: 35, gc: 21, pe: 0, dg: "+14" },
         { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 10, g: 0, e: 0, p: 10, pts: 0,      gf: 0,  gc: 50, pe: 0, dg: "-50"},
-        { id: 11,   nombre: "JR Transmisiones",         logo: "assets/logos/JR Transmisiones.png",      pj: 9,  g: 6, e: 2, p: 1,  pts: 21,     gf: 29, gc: 15, pe: 1, dg: "+14" },
+        { id: 11,   nombre: "JR Transmisiones",         logo: "assets/logos/JR Transmisiones.png",      pj: 10, g: 6, e: 2, p: 2,  pts: 21,     gf: 29, gc: 16, pe: 1, dg: "+13" },
         { id: 5,    nombre: "Pansa Brava",              logo: "assets/logos/Pansa_Brava.png",           pj: 9,  g: 6, e: 1, p: 2,  pts: 19,     gf: 29, gc: 13, pe: 0, dg: "+16"},
         { id: 7,    nombre: "Rayados FC",               logo: "assets/logos/Rayados.png",               pj: 9,  g: 2, e: 1, p: 6,  pts: 7,      gf: 15, gc: 33, pe: 0, dg: "-18"},
         { id: 3,    nombre: "Robles FC",                logo: "assets/logos/Robles.png",                pj: 9,  g: 3, e: 2, p: 4,  pts: 12,     gf: 18, gc: 19, pe: 1, dg: "-1" },
-        { id: 2,    nombre: "Titanes L.A.",             logo: "assets/logos/Titanes.png",               pj: 9,  g: 3, e: 2, p: 4,  pts: 11,     gf: 15, gc: 12, pe: 2, dg: "+3" },
+        { id: 2,    nombre: "Titanes L.A.",             logo: "assets/logos/Titanes.png",               pj: 10, g: 3, e: 2, p: 5,  pts: 11,     gf: 15, gc: 17, pe: 2, dg: "-2" },
         { id: 8,    nombre: "Tortilleros FC",           logo: "assets/logos/Tortilleros.png",           pj: 10, g: 4, e: 1, p: 5,  pts: 14,     gf: 17, gc: 22, pe: 1, dg: "-5" }
     ];
 
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let pendientes = totalPartidosTemporada - partidosJugados;
 
         // Tarjetas simuladas o recuperadas
-        let totalAmarillas = 30;
+        let totalAmarillas = 32;
         let totalRojas = 4;
 
         const el = (id) => document.getElementById(id);
