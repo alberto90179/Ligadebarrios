@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { num: 108, pos: "33 años", nombre: "Abel Alejandro Aguilar Andrade",           cat: "6", amarilla: "1", roja: "-" },
                 { num: 92,  pos: "25 años", nombre: "Carlos Daniel Jiménez Camacho",            cat: "7", amarilla: "-", roja: "-" },
                 { num: 106, pos: "38 años", nombre: "Carlos Iván Jiménez Ruiz",                 cat: "4", amarilla: "-", roja: "-" },
-                { num: 103, pos: "38 años", nombre: "César Daniel Aguilar García",              cat: "5", amarilla: "-", roja: "-" },
+                { num: 103, pos: "39 años", nombre: "César Daniel Aguilar García",              cat: "5", amarilla: "-", roja: "-" },
                 { num: 93,  pos: "28 años", nombre: "Diego Adolfo Raudales Peñaloza",           cat: "3", amarilla: "-", roja: "-" },
                 { num: 98,  pos: "27 años", nombre: "Diego Iván Mejía Vizcarra",                cat: "2", amarilla: "-", roja: "-" },
                 { num: 101, pos: "41 años", nombre: "Ernesto Iván Herrera Ibarra",              cat: "5", amarilla: "-", roja: "-" },
