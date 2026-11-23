@@ -323,20 +323,20 @@ document.addEventListener("DOMContentLoaded", () => {
         },  
         "7": { // Rayados FC
             plantilla: [
-                { num: 0,   pos: "24 años", nombre: "Brayan Daniel López",                  cat: "1", amarilla: "-", roja: "-" },
-                { num: 202, pos: "45 años", nombre: "Carlos Huerta Jimenez",                cat: "7", amarilla: "-", roja: "-" },
-                { num: 192, pos: "27 años", nombre: "Elvis Aron de la Rosa Hernández",      cat: "4", amarilla: "-", roja: "-" },
-                { num: 193, pos: "25 años", nombre: "Felipe de Jesús Castellón De la Rosa", cat: "7", amarilla: "-", roja: "-" },
-                { num: 191, pos: "24 años", nombre: "Joel Heriberto Castañeda López",       cat: "7", amarilla: "2", roja: "-" },
-                { num: 199, pos: "34 años", nombre: "Jose Octavio Ponce Fonseca",           cat: "5", amarilla: "-", roja: "-" },
-                { num: 0,   pos: "- años",  nombre: "Jesus Castelllon Ortiz",               cat: "1", amarilla: "-", roja: "-" },
-                { num: 200, pos: "24 años", nombre: "Leobardo Leonel de la Rosa Hernádez",  cat: "7", amarilla: "-", roja: "-" },
-                { num: 194, pos: "29 años", nombre: "Marco Antonio Castellón De la Rosa",   cat: "2", amarilla: "-", roja: "-" },
-                { num: 197, pos: "25 años", nombre: "Oscar Ulises Guerrero Huerta",         cat: "4", amarilla: "-", roja: "1" },
-                { num: 198, pos: "33 años", nombre: "Pablo Misael Santana Pelayo",          cat: "7", amarilla: "2", roja: "-" },
-                { num: 196, pos: "27 años", nombre: "Pedro Alejandro Paez Llamas",          cat: "6", amarilla: "1", roja: "-" },
-                { num: 201, pos: "35 años", nombre: "Ramon Zamora Chavez",                  cat: "1", amarilla: "-", roja: "-" },
-                { num: 207, pos: "30 años", nombre: "Roberto López López",                  cat: "2", amarilla: "-", roja: "-" },
+                { num: 0,   pos: "24 años", nombre: "Brayan Daniel López",                  cat: "2", amarilla: "-", roja: "-" },
+                { num: 202, pos: "45 años", nombre: "Carlos Huerta Jimenez",                cat: "8", amarilla: "-", roja: "-" },
+                { num: 192, pos: "27 años", nombre: "Elvis Aron de la Rosa Hernández",      cat: "5", amarilla: "-", roja: "-" },
+                { num: 193, pos: "25 años", nombre: "Felipe de Jesús Castellón De la Rosa", cat: "8", amarilla: "-", roja: "-" },
+                { num: 191, pos: "24 años", nombre: "Joel Heriberto Castañeda López",       cat: "8", amarilla: "2", roja: "-" },
+                { num: 199, pos: "34 años", nombre: "Jose Octavio Ponce Fonseca",           cat: "6", amarilla: "-", roja: "-" },
+                { num: 0,   pos: "- años",  nombre: "Jesus Castelllon Ortiz",               cat: "2", amarilla: "-", roja: "-" },
+                { num: 200, pos: "24 años", nombre: "Leobardo Leonel de la Rosa Hernádez",  cat: "8", amarilla: "-", roja: "-" },
+                { num: 194, pos: "29 años", nombre: "Marco Antonio Castellón De la Rosa",   cat: "3", amarilla: "-", roja: "-" },
+                { num: 197, pos: "25 años", nombre: "Oscar Ulises Guerrero Huerta",         cat: "5", amarilla: "-", roja: "1" },
+                { num: 198, pos: "33 años", nombre: "Pablo Misael Santana Pelayo",          cat: "8", amarilla: "2", roja: "-" },
+                { num: 196, pos: "27 años", nombre: "Pedro Alejandro Paez Llamas",          cat: "7", amarilla: "1", roja: "-" },
+                { num: 201, pos: "35 años", nombre: "Ramon Zamora Chavez",                  cat: "2", amarilla: "-", roja: "-" },
+                { num: 207, pos: "30 años", nombre: "Roberto López López",                  cat: "3", amarilla: "-", roja: "-" },
             ],
             cuerpoTecnico: [{ cargo: "Equipero", nombre: "Felipe de Jesús Castellón" }],
             calendario: [
@@ -350,7 +350,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J8",  fecha: "Mar 03/Nov/2026", hora: "22:10 Hrs", local: "assets/logos/Rayados.png",          res: "0 - 5",           visita: "assets/logos/Cruz_Azul_mezquitan.png" },
                 { j: "J9",  fecha: "Lun 09/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/JR Transmisiones.png", res: "5 -0",            visita: "assets/logos/Rayados.png" },
                 { j: "J10", fecha: "Mar 17/Nov/2026", hora: "20:10 Hrs", local: "assets/logos/Rayados.png",          res: "2 - 5",           visita: "assets/logos/Diablos_Gordos.png" },
-                { j: "J11", fecha: "Lun 23/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/Rayados.png",          res: "VS",              visita: "assets/logos/jalisco_FC.png" },
+                { j: "J11", fecha: "Lun 23/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/Rayados.png",          res: "5 - 0",           visita: "assets/logos/jalisco_FC.png" },
                 { j: "J12", fecha: "Mar 01/Dic/2026", hora: "21:10 Hrs", local: "assets/logos/Rayados.png",          res: "VS",              visita: "assets/logos/Titanes.png" },
                 { j: "J13",fecha: "Mar 08/Dic/2026", hora: "22:10 Hrs", local: "assets/logos/Pansa_Brava.png",       res: "VS ",             visita: "assets/logos/Rayados.png" }
             ]
@@ -557,9 +557,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J8",  fecha: "Lun 02/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/chuperamigos.png" },
                 { j: "J9",  fecha: "Lun 09/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/belicones.png",            res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
                 { j: "J10", fecha: "Lun 16/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/Tortilleros.png" },
-                { j: "J11", fecha: "Lun 23/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/Rayados.png",              res: "VS",    visita: "assets/logos/jalisco_FC.png" },
+                { j: "J11", fecha: "Lun 23/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/Rayados.png",              res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
                 { j: "J12", fecha: "Lun 30/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "VS",    visita: "assets/logos/JR Transmisiones.png" },
-                { j: "J13", fecha: "Lun 07/Dic/2026", hora: "23:10 Hrs", local: "assets/logos/Diablos_Gordos.png",                res: "VS",    visita: "assets/logos/jalisco_FC.png" }
+                { j: "J13", fecha: "Lun 07/Dic/2026", hora: "23:10 Hrs", local: "assets/logos/Diablos_Gordos.png",       res: "VS",    visita: "assets/logos/jalisco_FC.png" }
             ]
         }
     };

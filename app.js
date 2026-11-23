@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 6,    nombre: "Diablos Gordos",           logo: "assets/logos/Diablos_Gordos.png",        pj: 10, g: 6, e: 2, p: 2,  pts: 21,     gf: 28, gc: 18, pe: 1, dg: "+10" },
         { id: 0,    nombre: "Furia Roja",               logo: "assets/logos/Furia_Roja.png",            pj: 10, g: 5, e: 1, p: 4,  pts: 16,     gf: 25, gc: 22, pe: 0, dg: "+3" },
         { id: 10,   nombre: "Gordos Belicones",         logo: "assets/logos/belicones.png",             pj: 10, g: 5, e: 2, p: 3,  pts: 17,     gf: 35, gc: 21, pe: 0, dg: "+14" },
-        { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 10, g: 0, e: 0, p: 10, pts: 0,      gf: 0,  gc: 50, pe: 0, dg: "-50"},
+        { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 11, g: 0, e: 0, p: 11, pts: 0,      gf: 0,  gc: 55, pe: 0, dg: "-55"},
         { id: 11,   nombre: "JR Transmisiones",         logo: "assets/logos/JR Transmisiones.png",      pj: 10, g: 6, e: 2, p: 2,  pts: 21,     gf: 29, gc: 16, pe: 1, dg: "+13" },
         { id: 5,    nombre: "Pansa Brava",              logo: "assets/logos/Pansa_Brava.png",           pj: 10, g: 7, e: 1, p: 2,  pts: 22,     gf: 32, gc: 15, pe: 0, dg: "+17"},
-        { id: 7,    nombre: "Rayados FC",               logo: "assets/logos/Rayados.png",               pj: 10, g: 2, e: 1, p: 7,  pts: 7,      gf: 17, gc: 38, pe: 0, dg: "-21"},
+        { id: 7,    nombre: "Rayados FC",               logo: "assets/logos/Rayados.png",               pj: 11, g: 3, e: 1, p: 7,  pts: 10,     gf: 22, gc: 38, pe: 0, dg: "-16"},
         { id: 3,    nombre: "Robles FC",                logo: "assets/logos/Robles.png",                pj: 10, g: 3, e: 3, p: 4,  pts: 13,     gf: 19, gc: 20, pe: 1, dg: "-1" },
         { id: 2,    nombre: "Titanes L.A.",             logo: "assets/logos/Titanes.png",               pj: 10, g: 3, e: 2, p: 5,  pts: 11,     gf: 15, gc: 17, pe: 2, dg: "-2" },
         { id: 8,    nombre: "Tortilleros FC",           logo: "assets/logos/Tortilleros.png",           pj: 10, g: 4, e: 1, p: 5,  pts: 14,     gf: 17, gc: 22, pe: 1, dg: "-5" }
