@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // 1 Partido = 2 Equipos jugando
         let partidosJugados = totalPJ / 2;
-        let empates = (totalEmpates / 2)-0.5;
+        let empates = (totalEmpates / 2);
         let victorias = totalVictorias; 
         
         // 14 equipos juegan 13 jornadas (81 partidos totales)
