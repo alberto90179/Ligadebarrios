@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 6,    nombre: "Diablos Gordos",           logo: "assets/logos/Diablos_Gordos.png",        pj: 11, g: 7, e: 2, p: 2,  pts: 24,     gf: 32, gc: 20, pe: 1, dg: "+12" },
         { id: 0,    nombre: "Furia Roja",               logo: "assets/logos/Furia_Roja.png",            pj: 11, g: 5, e: 1, p: 5,  pts: 16,     gf: 27, gc: 26, pe: 0, dg: "+1" },
         { id: 10,   nombre: "Gordos Belicones",         logo: "assets/logos/belicones.png",             pj: 11, g: 5, e: 2, p: 4,  pts: 17,     gf: 37, gc: 25, pe: 0, dg: "+12" },
-        { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 11, g: 0, e: 0, p: 11, pts: 0,      gf: 0,  gc: 55, pe: 0, dg: "-55"},
-        { id: 11,   nombre: "JR Transmisiones",         logo: "assets/logos/JR Transmisiones.png",      pj: 11, g: 6, e: 2, p: 3,  pts: 21,     gf: 31, gc: 20, pe: 1, dg: "+11" },
+        { id: 13,   nombre: "Jalisco FC",               logo: "assets/logos/jalisco_FC.png",            pj: 12, g: 0, e: 0, p: 12, pts: 0,      gf: 0,  gc: 60, pe: 0, dg: "-60"},
+        { id: 11,   nombre: "JR Transmisiones",         logo: "assets/logos/JR Transmisiones.png",      pj: 12, g: 7, e: 2, p: 3,  pts: 24,     gf: 36, gc: 20, pe: 1, dg: "+16" },
         { id: 5,    nombre: "Pansa Brava",              logo: "assets/logos/Pansa_Brava.png",           pj: 11, g: 8, e: 1, p: 2,  pts: 25,     gf: 36, gc: 17, pe: 0, dg: "+19"},
         { id: 7,    nombre: "Rayados FC",               logo: "assets/logos/Rayados.png",               pj: 11, g: 3, e: 1, p: 7,  pts: 10,     gf: 22, gc: 38, pe: 0, dg: "-16"},
         { id: 3,    nombre: "Robles FC",                logo: "assets/logos/Robles.png",                pj: 11, g: 3, e: 3, p: 5,  pts: 13,     gf: 23, gc: 25, pe: 1, dg: "-2" },
@@ -558,7 +558,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 { j: "J9",  fecha: "Lun 09/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/belicones.png",            res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
                 { j: "J10", fecha: "Lun 16/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/Tortilleros.png" },
                 { j: "J11", fecha: "Lun 23/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/Rayados.png",              res: "5 - 0", visita: "assets/logos/jalisco_FC.png" },
-                { j: "J12", fecha: "Lun 30/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "VS",    visita: "assets/logos/JR Transmisiones.png" },
+                { j: "J12", fecha: "Lun 30/Nov/2026", hora: "23:10 Hrs", local: "assets/logos/jalisco_FC.png",           res: "0 - 5", visita: "assets/logos/JR Transmisiones.png" },
                 { j: "J13", fecha: "Lun 07/Dic/2026", hora: "23:10 Hrs", local: "assets/logos/Diablos_Gordos.png",       res: "VS",    visita: "assets/logos/jalisco_FC.png" }
             ]
         }
