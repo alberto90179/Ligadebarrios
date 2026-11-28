@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const detallesPorEquipo = {
         "0": { // Furia Roja
             plantilla: [
-                { num: 171, pos: "27 años", nombre: "Antonio Joel Saldaña Martinez",        cat: "3", amarilla: "-", roja: "-" },
-                { num: 184, pos: "37 años", nombre: "Carlos Alberto Ortega Corona",         cat: "6", amarilla: "-", roja: "-" },
+                { num: 184, pos: "27 años", nombre: "Antonio Joel Saldaña Martinez",        cat: "3", amarilla: "-", roja: "-" },
+                { num: 171, pos: "37 años", nombre: "Carlos Alberto Ortega Corona",         cat: "6", amarilla: "-", roja: "-" },
                 { num: 179, pos: "30 años", nombre: "Carlos Alonso Aguilar Yañez",          cat: "3", amarilla: "-", roja: "-" },
                 { num: 172, pos: "25 años", nombre: "Edgar Rigoberto Estrada Llamas",       cat: "7", amarilla: "-", roja: "-" },
                 { num: 173, pos: "29 años", nombre: "Francisco Javier Saldaña Martínez",    cat: "5", amarilla: "-", roja: "-" },
